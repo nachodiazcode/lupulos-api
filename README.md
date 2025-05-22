@@ -1,119 +1,105 @@
-## Lúpulos App - API
+# 🍺 Lúpulos App - API
 
-Lúpulos App es una API desarrollada en **Node.js** con **Express y MongoDB**, diseñada para gestionar una comunidad de amantes de la **cerveza artesanal**.  
+**Lúpulos App** es una poderosa API REST desarrollada con **Node.js**, **Express** y **MongoDB**, creada especialmente para reunir a los fanáticos de la **cerveza artesanal** en una comunidad digital vibrante.
 
-Esta API permite a los usuarios **compartir opiniones, subir imágenes y descubrir nuevas cervezas**, además de interactuar en **publicaciones, comentarios y chats en tiempo real**.
-
----
-
-## 🚀 Características Principales
-
-- ✅ **Autenticación de usuarios con JWT y Refresh Token**  
-- ✅ **Creación y gestión de cervezas con imágenes**  
-- ✅ **Publicaciones y comentarios en posts**  
-- ✅ **Sistema de seguidores y comunidad**  
-- ✅ **Soft Delete y recuperación de usuarios eliminados**  
-- ✅ **Chat en tiempo real con WebSockets**  
-- ✅ **Cerveza del Día seleccionada automáticamente**  
-- ✅ **Documentación con Swagger**  
-- ✅ **Pruebas unitarias con Jest**  
-- ✅ **Métricas de rendimiento con Prometheus**  
-- ✅ **Registro de logs con Winston**  
+La plataforma permite a los usuarios **explorar cervezas, compartir opiniones, interactuar mediante publicaciones y comentarios**, y participar en un **chat en tiempo real**. Todo esto acompañado de un sistema robusto de autenticación, métricas, pruebas y documentación.
 
 ---
 
-## 📂 Estructura del Proyecto
+## 🚀 Funcionalidades Destacadas
+
+- 🔐 **Autenticación con JWT y Refresh Tokens**
+- 🍻 **Gestión de cervezas con imágenes y descripciones**
+- 📝 **Publicaciones y comentarios interactivos**
+- 👥 **Sistema de seguidores y comunidad**
+- ♻️ **Eliminación lógica (Soft Delete) y recuperación de cuentas**
+- 💬 **Chat en tiempo real usando WebSockets**
+- 🌟 **Selección automática de la “Cerveza del Día”**
+- 📚 **Documentación Swagger integrada**
+- 🧪 **Pruebas unitarias con Jest**
+- 📈 **Métricas Prometheus para monitoreo**
+- 🧾 **Logs avanzados con Winston**
+
+---
+
+## 📁 Estructura del Proyecto (actualizada al 22 de mayo de 2025)
 
 ```
-package-lock.json
+├── README.md
+├── favicon.png
+├── logs/
 ├── package.json
-├── server.js
-├── src
+├── public/uploads/
+│   ├── beers/
+│   ├── locations/
+│   ├── posts/
+│   └── profile/
+├── src/
 │   ├── app.js
-│   ├── config
-│   │   ├── config.js       # Configuración general
-│   │   ├── db.js           # Conexión a MongoDB
-│   │   └── swagger.js      # Configuración de Swagger
-│   ├── controllers
-│   │   ├── authController.js   # Lógica de autenticación
-│   │   ├── beerController.js   # Controlador de cervezas
-│   │   ├── followController.js # Controlador de seguidores
-│   │   ├── postController.js   # Controlador de publicaciones
-│   │   ├── chatController.js   # Controlador del chat
-│   │   ├── notificationController.js # Notificaciones (pendiente)
-│   │   └── userController.js   # Controlador de usuarios con Soft Delete
-│   ├── middlewares
-│   │   ├── authMiddleware.js   # Middleware de autenticación
-│   │   ├── rateLimit.js        # Middleware de limitación de peticiones
-│   │   └── errorHandler.js      # Middleware global de manejo de errores
-│   ├── models
-│   │   ├── Beer.js           # Modelo de cerveza
-│   │   ├── Comment.js        # Modelo de comentarios
-│   │   ├── Message.js        # Modelo de mensajes del chat
-│   │   ├── Notifications.js  # Modelo de notificaciones
-│   │   ├── Post.js           # Modelo de publicaciones
-│   │   └── User.js           # Modelo de usuarios con Soft Delete
-│   ├── routes
-│   │   ├── authRoutes.js     # Rutas de autenticación
-│   │   ├── beerRoutes.js     # Rutas de cervezas
-│   │   ├── followRoutes.js   # Rutas de seguidores
-│   │   ├── postRoutes.js     # Rutas de publicaciones
-│   │   ├── chatRoutes.js     # Rutas del chat en tiempo real
-│   │   ├── userRoutes.js     # Rutas de usuarios con Soft Delete
-│   │   └── notificationRoutes.js # Rutas de notificaciones (pendiente)
-│   ├── services
-│   │   ├── authService.js    # Lógica de autenticación
-│   │   ├── beerService.js    # Lógica de cervezas
-│   │   ├── chatService.js    # Lógica del chat
-│   │   └── notificationService.js # Notificaciones (pendiente)
-│   ├── utils
-│   │   ├── logger.js         # Registro de logs con Winston
-│   │   ├── metrics.js        # Monitoreo con Prometheus
-│   │   └── helper.js         # Funciones auxiliares
-└── tests
-    ├── auth.test.js          # Pruebas de autenticación
-    ├── beer.test.js          # Pruebas de cervezas
-    ├── chat.test.js          # Pruebas del chat en tiempo real
-    ├── user.test.js          # Pruebas de usuarios con Soft Delete
+│   ├── config/
+│   ├── controllers/
+│   ├── middlewares/
+│   ├── models/
+│   ├── routes/
+│   ├── services/
+│   ├── uploads/
+│   └── utils/
+├── tests/
 ```
 
 ---
 
-## 🛠️ Instalación y Configuración
+## ⚙️ Instalación y Configuración
 
-### 1️⃣ Clonar el repositorio
+### 🔧 1. Clonar el repositorio
+
 ```bash
 git clone https://github.com/tu_usuario/lupulos-app.git
 cd lupulos-app
 ```
-### 2️⃣ Instalar dependencias
+
+### 📦 2. Instalar dependencias
+
 ```bash
 npm install
 ```
-### 3️⃣ Configurar variables de entorno
-Crea un archivo `.env` en la raíz del proyecto y agrega:
+
+### 🔐 3. Configurar variables de entorno
+
+Crea un archivo `.env` con lo siguiente:
+
 ```env
 PORT=3940
 MONGO_URI=mongodb://localhost:27017/lupulos
 JWT_SECRET=tu_clave_secreta
 REFRESH_SECRET=otra_clave_secreta
 ```
-### 4️⃣ Iniciar el servidor
+
+### ▶️ 4. Iniciar el servidor
+
 ```bash
 npm start
 ```
-El servidor correrá en `http://localhost:3940`
+
+Tu API estará disponible en `http://localhost:3940`
 
 ---
 
 ## 📉 Mejoras Pendientes
-- [ ] Implementar notificaciones en tiempo real
-- [ ] Seguridad avanzada con sanitización de datos
-- [ ] Ampliar cobertura de pruebas
-- [ ] Mejorar escalabilidad con Docker y Kubernetes
+
+- [ ] Integrar sistema de notificaciones en tiempo real
+- [ ] Agregar protección contra XSS, CSRF y sanitización
+- [ ] Ampliar cobertura de pruebas unitarias
+- [ ] Preparar el entorno para despliegue con Docker/Kubernetes
 
 ---
 
-📢 **Contribuciones**: Haz un fork y envía un PR.
-🚀 ¡Gracias por contribuir a Lúpulos App! 🍻
+## 🤝 Contribuye con la Comunidad
 
+¿Te gustaría aportar? Haz un fork, crea tu rama y envía un **Pull Request**.  
+Cada línea de código cuenta para fortalecer esta comunidad cervecera 🍻
+
+---
+
+**Última actualización:** 22 de mayo de 2025  
+**Autor:** Ignacio Díaz · [nachodiazcode.io](https://nachodiazcode.io)

@@ -77,3 +77,5 @@ info: [Petición] GET /api/post {"timestamp":"2025-05-22 00:15:21"}
 info: [Petición] GET /api/post {"timestamp":"2025-05-22 00:15:21"}
 info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-22 00:15:48"}
 info: ✅ Conectado a MongoDB correctamente {"timestamp":"2025-05-22 00:15:49"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-22 00:57:01"}
+info: ✅ Conectado a MongoDB correctamente {"timestamp":"2025-05-22 00:57:01"}
