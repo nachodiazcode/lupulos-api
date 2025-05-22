@@ -1,0 +1,187 @@
+[90m2025-04-02 16:44:20[39m [94m[INFO][39m: [37mServidor iniciado en el puerto 3940[39m
+[90m2025-04-02 16:44:20[39m [94m[INFO][39m: [37m✅ Conectado a MongoDB correctamente[39m
+[90m2025-04-02 16:44:27[39m [94m[INFO][39m: [37mServidor iniciado en el puerto 3940[39m
+[90m2025-04-02 16:44:28[39m [94m[INFO][39m: [37m✅ Conectado a MongoDB correctamente[39m
+[90m2025-04-02 16:44:37[39m [94m[INFO][39m: [37m[Petición] POST /api/auth/login[39m
+[90m2025-04-02 16:44:46[39m [94m[INFO][39m: [37m[Petición] POST /api/auth/login[39m
+[90m2025-04-02 16:46:40[39m [94m[INFO][39m: [37m[Petición] POST /api/auth/login[39m
+[90m2025-04-02 16:46:40[39m [94m[INFO][39m: [37m[Petición] POST /api/auth/login[39m
+[90m2025-04-02 16:46:44[39m [94m[INFO][39m: [37m[Petición] POST /api/auth/login[39m
+[90m2025-04-02 16:46:55[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-02 16:46:56[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-02 16:46:56[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-02 16:46:56[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-02 16:47:06[39m [94m[INFO][39m: [37m[Petición] GET /api/location[39m
+[90m2025-04-02 16:47:06[39m [94m[INFO][39m: [37m📍 [GET] Solicitando lista de locales[39m
+[90m2025-04-02 16:47:06[39m [94m[INFO][39m: [37m✅ Se encontraron 10 locales[39m
+[90m2025-04-02 16:47:06[39m [94m[INFO][39m: [37m[Petición] GET /api/location[39m
+[90m2025-04-02 16:47:06[39m [94m[INFO][39m: [37m📍 [GET] Solicitando lista de locales[39m
+[90m2025-04-02 16:47:06[39m [94m[INFO][39m: [37m✅ Se encontraron 10 locales[39m
+[90m2025-04-02 16:47:11[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 16:47:12[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 16:48:16[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 19:04:24[39m [94m[INFO][39m: [37mServidor iniciado en el puerto 3940[39m
+[90m2025-04-02 19:04:24[39m [94m[INFO][39m: [37m✅ Conectado a MongoDB correctamente[39m
+[90m2025-04-02 19:05:17[39m [94m[INFO][39m: [37m[Petición] POST /api/auth/login[39m
+[90m2025-04-02 19:05:19[39m [94m[INFO][39m: [37m[Petición] POST /api/auth/login[39m
+[90m2025-04-02 19:05:22[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-02 19:05:23[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-02 19:05:23[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-02 19:05:23[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-02 20:56:11[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-02 20:56:11[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-02 20:56:17[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 20:56:18[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 20:56:54[39m [94m[INFO][39m: [37mServidor iniciado en el puerto 3940[39m
+[90m2025-04-02 20:56:54[39m [94m[INFO][39m: [37m✅ Conectado a MongoDB correctamente[39m
+[90m2025-04-02 20:56:58[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:03:59[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-02 21:04:01[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-02 21:04:01[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-02 21:04:01[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-02 21:04:23[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-02 21:04:23[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-02 21:04:23[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-02 21:04:23[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-02 21:04:32[39m [94m[INFO][39m: [37m[Petición] GET /api/location[39m
+[90m2025-04-02 21:04:32[39m [94m[INFO][39m: [37m📍 [GET] Solicitando lista de locales[39m
+[90m2025-04-02 21:04:32[39m [94m[INFO][39m: [37m✅ Se encontraron 10 locales[39m
+[90m2025-04-02 21:04:32[39m [94m[INFO][39m: [37m[Petición] GET /api/location[39m
+[90m2025-04-02 21:04:32[39m [94m[INFO][39m: [37m📍 [GET] Solicitando lista de locales[39m
+[90m2025-04-02 21:04:32[39m [94m[INFO][39m: [37m✅ Se encontraron 10 locales[39m
+[90m2025-04-02 21:04:36[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:04:37[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:04:40[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:04:40[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:04:42[39m [94m[INFO][39m: [37m[Petición] GET /api/location[39m
+[90m2025-04-02 21:04:42[39m [94m[INFO][39m: [37m📍 [GET] Solicitando lista de locales[39m
+[90m2025-04-02 21:04:42[39m [94m[INFO][39m: [37m✅ Se encontraron 10 locales[39m
+[90m2025-04-02 21:04:42[39m [94m[INFO][39m: [37m[Petición] GET /api/location[39m
+[90m2025-04-02 21:04:42[39m [94m[INFO][39m: [37m📍 [GET] Solicitando lista de locales[39m
+[90m2025-04-02 21:04:42[39m [94m[INFO][39m: [37m✅ Se encontraron 10 locales[39m
+[90m2025-04-02 21:04:47[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:04:47[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:04:51[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:06:28[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:06:30[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:13:53[39m [94m[INFO][39m: [37mServidor iniciado en el puerto 3940[39m
+[90m2025-04-02 21:13:53[39m [94m[INFO][39m: [37m✅ Conectado a MongoDB correctamente[39m
+[90m2025-04-02 21:14:14[39m [94m[INFO][39m: [37mServidor iniciado en el puerto 3940[39m
+[90m2025-04-02 21:14:14[39m [94m[INFO][39m: [37m✅ Conectado a MongoDB correctamente[39m
+[90m2025-04-02 21:14:17[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:14:18[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:14:32[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:14:34[39m [94m[INFO][39m: [37m[Petición] POST /api/auth/login[39m
+[90m2025-04-02 21:14:35[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-02 21:14:35[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-02 21:14:35[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-02 21:14:35[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-02 21:14:38[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:14:38[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:15:02[39m [94m[INFO][39m: [37mServidor iniciado en el puerto 3940[39m
+[90m2025-04-02 21:15:02[39m [94m[INFO][39m: [37m✅ Conectado a MongoDB correctamente[39m
+[90m2025-04-02 21:15:12[39m [94m[INFO][39m: [37mServidor iniciado en el puerto 3940[39m
+[90m2025-04-02 21:15:12[39m [94m[INFO][39m: [37m✅ Conectado a MongoDB correctamente[39m
+[90m2025-04-02 21:15:40[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:15:44[39m [94m[INFO][39m: [37m[Petición] POST /api/auth/login[39m
+[90m2025-04-02 21:15:47[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-02 21:15:47[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-02 21:15:47[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-02 21:15:47[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-02 21:15:52[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:15:52[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:18:32[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:19:03[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:19:13[39m [94m[INFO][39m: [37m[Petición] POST /api/upload[39m
+[90m2025-04-02 21:20:34[39m [94m[INFO][39m: [37mServidor iniciado en el puerto 3940[39m
+[90m2025-04-02 21:20:34[39m [94m[INFO][39m: [37m✅ Conectado a MongoDB correctamente[39m
+[90m2025-04-02 21:20:40[39m [94m[INFO][39m: [37mServidor iniciado en el puerto 3940[39m
+[90m2025-04-02 21:20:40[39m [94m[INFO][39m: [37m✅ Conectado a MongoDB correctamente[39m
+[90m2025-04-02 21:21:18[39m [94m[INFO][39m: [37mServidor iniciado en el puerto 3940[39m
+[90m2025-04-02 21:21:18[39m [94m[INFO][39m: [37m✅ Conectado a MongoDB correctamente[39m
+[90m2025-04-02 21:21:21[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:21:37[39m [94m[INFO][39m: [37m[Petición] POST /api/upload[39m
+[90m2025-04-02 21:25:20[39m [94m[INFO][39m: [37mServidor iniciado en el puerto 3940[39m
+[90m2025-04-02 21:25:20[39m [94m[INFO][39m: [37m✅ Conectado a MongoDB correctamente[39m
+[90m2025-04-02 21:25:37[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:25:45[39m [94m[INFO][39m: [37m[Petición] POST /api/upload[39m
+[90m2025-04-02 21:25:47[39m [94m[INFO][39m: [37m[Petición] POST /api/upload[39m
+[90m2025-04-02 21:28:20[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:28:23[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:28:29[39m [94m[INFO][39m: [37m[Petición] POST /api/upload[39m
+[90m2025-04-02 21:29:33[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:29:34[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 21:29:44[39m [94m[INFO][39m: [37m[Petición] POST /api/upload[39m
+[90m2025-04-02 22:35:39[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 22:37:21[39m [94m[INFO][39m: [37m[Petición] POST /api/upload[39m
+[90m2025-04-02 22:52:56[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 23:02:46[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 23:02:52[39m [94m[INFO][39m: [37m[Petición] POST /api/upload[39m
+[90m2025-04-02 23:06:56[39m [94m[INFO][39m: [37mServidor iniciado en el puerto 3940[39m
+[90m2025-04-02 23:06:56[39m [94m[INFO][39m: [37m✅ Conectado a MongoDB correctamente[39m
+[90m2025-04-02 23:06:59[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 23:07:03[39m [94m[INFO][39m: [37m[Petición] POST /api/upload[39m
+[90m2025-04-02 23:07:03[39m [94m[INFO][39m: [37m[Petición] POST /api/post[39m
+[90m2025-04-02 23:07:03[39m [94m[INFO][39m: [37m✅ Nuevo post creado por usuario 679a9a7ec0fd31f8046370ac: asdads[39m
+[90m2025-04-02 23:07:03[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 23:07:03[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646023743.jpg[39m
+[90m2025-04-02 23:07:16[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 23:07:16[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646023743.jpg[39m
+[90m2025-04-02 23:07:43[39m [94m[INFO][39m: [37m[Petición] POST /api/upload[39m
+[90m2025-04-02 23:07:43[39m [94m[INFO][39m: [37m[Petición] POST /api/post[39m
+[90m2025-04-02 23:07:44[39m [94m[INFO][39m: [37m✅ Nuevo post creado por usuario 679a9a7ec0fd31f8046370ac: asdads[39m
+[90m2025-04-02 23:07:44[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 23:07:46[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646063584.jpg[39m
+[90m2025-04-02 23:16:39[39m [94m[INFO][39m: [37mServidor iniciado en el puerto 3940[39m
+[90m2025-04-02 23:16:39[39m [94m[INFO][39m: [37m✅ Conectado a MongoDB correctamente[39m
+[90m2025-04-02 23:16:43[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 23:16:46[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646023743.jpg[39m
+[90m2025-04-02 23:16:46[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646063584.jpg[39m
+[90m2025-04-02 23:16:54[39m [94m[INFO][39m: [37m[Petición] POST /api/upload[39m
+[90m2025-04-02 23:16:54[39m [94m[INFO][39m: [37m[Petición] POST /api/post[39m
+[90m2025-04-02 23:16:55[39m [94m[INFO][39m: [37m✅ Nuevo post creado por usuario 679a9a7ec0fd31f8046370ac: asdasd[39m
+[90m2025-04-02 23:16:55[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 23:16:55[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646614808.jpg[39m
+[90m2025-04-02 23:18:35[39m [94m[INFO][39m: [37mServidor iniciado en el puerto 3940[39m
+[90m2025-04-02 23:18:35[39m [94m[INFO][39m: [37m✅ Conectado a MongoDB correctamente[39m
+[90m2025-04-02 23:21:17[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 23:21:20[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646023743.jpg[39m
+[90m2025-04-02 23:21:20[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646063584.jpg[39m
+[90m2025-04-02 23:21:20[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646614808.jpg[39m
+[90m2025-04-02 23:23:03[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 23:23:05[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646023743.jpg[39m
+[90m2025-04-02 23:23:05[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646063584.jpg[39m
+[90m2025-04-02 23:23:05[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646614808.jpg[39m
+[90m2025-04-02 23:23:14[39m [94m[INFO][39m: [37m[Petición] POST /api/upload[39m
+[90m2025-04-02 23:23:14[39m [94m[INFO][39m: [37m[Petición] POST /api/post[39m
+[90m2025-04-02 23:23:14[39m [94m[INFO][39m: [37m✅ Nuevo post creado por usuario 679a9a7ec0fd31f8046370ac: asddsaads[39m
+[90m2025-04-02 23:23:14[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 23:23:14[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646994237.jpg[39m
+[90m2025-04-02 23:24:56[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 23:24:56[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646023743.jpg[39m
+[90m2025-04-02 23:24:56[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646063584.jpg[39m
+[90m2025-04-02 23:24:56[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646614808.jpg[39m
+[90m2025-04-02 23:24:56[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646994237.jpg[39m
+[90m2025-04-02 23:25:11[39m [94m[INFO][39m: [37m[Petición] POST /api/upload[39m
+[90m2025-04-02 23:25:11[39m [94m[INFO][39m: [37m[Petición] POST /api/post[39m
+[90m2025-04-02 23:25:12[39m [94m[INFO][39m: [37m✅ Nuevo post creado por usuario 679a9a7ec0fd31f8046370ac: adassda[39m
+[90m2025-04-02 23:25:12[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 23:25:12[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743647111449.jpg[39m
+[90m2025-04-02 23:32:01[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 23:32:03[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646023743.jpg[39m
+[90m2025-04-02 23:32:03[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646063584.jpg[39m
+[90m2025-04-02 23:32:03[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646614808.jpg[39m
+[90m2025-04-02 23:32:03[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646994237.jpg[39m
+[90m2025-04-02 23:32:03[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743647111449.jpg[39m
+[90m2025-04-02 23:34:40[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 23:34:41[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646063584.jpg[39m
+[90m2025-04-02 23:34:41[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646614808.jpg[39m
+[90m2025-04-02 23:34:41[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646994237.jpg[39m
+[90m2025-04-02 23:34:41[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646023743.jpg[39m
+[90m2025-04-02 23:34:41[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743647111449.jpg[39m
+[90m2025-04-02 23:35:14[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-02 23:35:16[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646023743.jpg[39m
+[90m2025-04-02 23:35:16[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646063584.jpg[39m
+[90m2025-04-02 23:35:16[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646614808.jpg[39m
+[90m2025-04-02 23:35:16[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743646994237.jpg[39m
+[90m2025-04-02 23:35:16[39m [94m[INFO][39m: [37m[Petición] GET /uploads/posts/1743647111449.jpg[39m

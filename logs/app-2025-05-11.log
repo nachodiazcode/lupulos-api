@@ -1,0 +1,164 @@
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 14:28:37"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 14:28:37"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:16:00"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:16:00"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:16:01"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:16:01"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-11 17:16:16"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:16:16"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:16:16"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:16:16"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:16:16"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:18:53"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:18:53"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:24:06"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:24:06"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:24:07"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:24:07"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:24:09"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:24:09"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:24:10"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:24:10"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:24:11"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:24:11"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:24:18"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:24:18"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:24:25"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:24:25"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:24:40"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:24:40"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:24:41"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:24:41"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:24:42"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:24:42"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:24:43"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:24:43"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:44:28"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:44:28"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:44:29"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:44:29"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:52:40"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:52:40"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:52:41"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:52:41"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:52:41"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:52:41"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:52:42"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:52:42"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-11 17:52:52"}
+info: ✅ Conectado a MongoDB correctamente {"timestamp":"2025-05-11 17:52:52"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:55:59"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:55:59"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-11 17:56:07"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:56:07"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:56:07"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 17:56:07"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 17:56:07"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 18:46:03"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 18:46:03"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 18:46:17"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 18:46:17"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 18:50:13"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 18:50:13"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 18:54:33"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 18:54:33"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 19:17:45"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 19:17:45"}
+info: [Petición] POST /api/beer/680baa1b009ac0d8120f1f3b/unlike {"timestamp":"2025-05-11 19:18:20"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-11 19:18:20"}
+info: [Petición] POST /api/beer/680baa1b009ac0d8120f1f3b/unlike {"timestamp":"2025-05-11 19:18:21"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-11 19:18:21"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 19:18:22"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 19:18:22"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 19:20:25"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 19:20:25"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-11 19:20:28"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-11 19:20:28"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 19:20:31"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 19:20:31"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 19:20:31"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 19:20:31"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-11 19:25:45"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-11 19:25:45"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 19:25:49"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 19:25:49"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 19:25:49"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 19:25:49"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 19:25:54"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 19:25:54"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 19:25:54"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 19:25:54"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-11 19:25:57"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 19:25:57"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 19:25:57"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 19:25:57"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 19:25:57"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 19:26:52"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 19:26:53"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 19:26:53"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 19:26:53"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-11 19:27:03"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 19:27:03"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 19:27:03"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 19:27:03"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 19:27:03"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-11 19:27:09"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-11 19:27:09"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-11 19:27:12"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-11 19:27:12"}
+info: [Petición] GET /api/post {"timestamp":"2025-05-11 19:27:15"}
+info: [Petición] GET /api/post {"timestamp":"2025-05-11 19:27:15"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 19:31:47"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 19:31:47"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 19:31:47"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 19:31:47"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-11 19:33:24"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 19:33:24"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 19:33:24"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 19:33:24"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 19:33:24"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 19:41:36"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 19:41:36"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 19:41:38"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 19:41:38"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-11 20:23:18"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x7qQpM3NHUmzCM6Ro14DSWTu4ZYwWf1caV353IgWjJEFtkI2t-jWyzu__DeNF5z1A&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none {"timestamp":"2025-05-11 20:23:18"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-11 20:23:20"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x6tB0D6WAXmSj6uL6OF2F4dULovyT1xVkRrxFFegLxY88klb5wnzHt4iv72T5FR3g&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none {"timestamp":"2025-05-11 20:23:21"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-11 20:23:23"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 20:23:23"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 20:23:23"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 20:23:23"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 20:23:23"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-11 20:23:35"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-11 20:23:35"}
+info: [Petición] GET /api/user {"timestamp":"2025-05-11 20:23:41"}
+info: [Petición] GET /api/user {"timestamp":"2025-05-11 20:23:41"}
+info: [Petición] GET /api/user/679bf02d60de95e560a690bc {"timestamp":"2025-05-11 20:23:48"}
+info: [Petición] GET /api/user/679bf02d60de95e560a690bc {"timestamp":"2025-05-11 20:23:48"}
+info: [Petición] POST /api/follow/679bf02d60de95e560a690bc/follow {"timestamp":"2025-05-11 20:23:50"}
+info: 🔐 Usuario autenticado correctamente: 679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-11 20:23:50"}
+info: [Petición] GET /api/user/679bf02d60de95e560a690bc {"timestamp":"2025-05-11 20:23:50"}
+info: [Petición] POST /api/follow/679bf02d60de95e560a690bc/unfollow {"timestamp":"2025-05-11 20:23:53"}
+info: 🔐 Usuario autenticado correctamente: 679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-11 20:23:53"}
+info: [Petición] GET /api/user/679bf02d60de95e560a690bc {"timestamp":"2025-05-11 20:23:53"}
+info: [Petición] POST /api/follow/679bf02d60de95e560a690bc/follow {"timestamp":"2025-05-11 20:23:54"}
+info: 🔐 Usuario autenticado correctamente: 679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-11 20:23:54"}
+info: [Petición] GET /api/user/679bf02d60de95e560a690bc {"timestamp":"2025-05-11 20:23:54"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-11 21:17:30"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 21:17:30"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 21:17:30"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 21:17:30"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 21:17:30"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-11 21:40:16"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 21:40:17"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 21:40:17"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 21:40:17"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 21:40:17"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 21:43:08"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 21:43:08"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-11 21:43:12"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 21:43:12"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 21:43:12"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-11 21:43:12"}
+info: 🔍 GET /api/beer → 5 cervezas encontradas {"timestamp":"2025-05-11 21:43:12"}

@@ -1,0 +1,79 @@
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-22 00:00:32"}
+info: ✅ Conectado a MongoDB correctamente {"timestamp":"2025-05-22 00:00:32"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-22 00:01:37"}
+info: ✅ Conectado a MongoDB correctamente {"timestamp":"2025-05-22 00:01:37"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-22 00:01:48"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-22 00:01:48"}
+info: 🔍 GET /api/beer → 6 cervezas encontradas {"timestamp":"2025-05-22 00:01:48"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-22 00:01:48"}
+info: 🔍 GET /api/beer → 6 cervezas encontradas {"timestamp":"2025-05-22 00:01:48"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-22 00:01:58"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-22 00:01:58"}
+info: [Petición] POST /api/location {"timestamp":"2025-05-22 00:02:12"}
+info: 🔐 Usuario autenticado correctamente: 679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-22 00:02:12"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-22 00:02:12"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-22 00:06:20"}
+info: ✅ Conectado a MongoDB correctamente {"timestamp":"2025-05-22 00:06:20"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-22 00:06:28"}
+info: [Petición] POST /api/location {"timestamp":"2025-05-22 00:06:40"}
+info: 🔐 Usuario autenticado correctamente: 679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-22 00:06:40"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-22 00:06:40"}
+info: [Petición] GET /api/location/682ea2d060bd20858e1b8132 {"timestamp":"2025-05-22 00:06:49"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-22 00:06:51"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-22 00:07:07"}
+info: [Petición] GET /api/user {"timestamp":"2025-05-22 00:08:38"}
+info: [Petición] GET /api/user {"timestamp":"2025-05-22 00:08:38"}
+info: [Petición] GET /api/post {"timestamp":"2025-05-22 00:08:43"}
+info: [Petición] GET /api/post {"timestamp":"2025-05-22 00:08:43"}
+info: [Petición] GET /api/post {"timestamp":"2025-05-22 00:10:08"}
+info: [Petición] GET /api/post {"timestamp":"2025-05-22 00:10:08"}
+info: [Petición] POST /api/post/upload {"timestamp":"2025-05-22 00:10:44"}
+info: [Petición] POST /api/post {"timestamp":"2025-05-22 00:10:44"}
+info: ✅ Nuevo post creado por usuario 679a9a7ec0fd31f8046370ac: Blondie, la mejor discoteque !  {"timestamp":"2025-05-22 00:10:44"}
+info: [Petición] GET /api/post {"timestamp":"2025-05-22 00:10:44"}
+info: [Petición] POST /api/post/682ea3c460bd20858e1b815b/like {"timestamp":"2025-05-22 00:10:53"}
+info: [Petición] GET /api/post {"timestamp":"2025-05-22 00:10:53"}
+info: [Petición] GET /api/post/6811c8002e3ae6f06f626a0b/comentarios {"timestamp":"2025-05-22 00:11:18"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-22 00:11:40"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-22 00:11:41"}
+info: 🔍 GET /api/beer → 6 cervezas encontradas {"timestamp":"2025-05-22 00:11:41"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-22 00:11:41"}
+info: 🔍 GET /api/beer → 6 cervezas encontradas {"timestamp":"2025-05-22 00:11:41"}
+info: [Petición] POST /api/beer {"timestamp":"2025-05-22 00:13:41"}
+info: 🔐 Usuario autenticado correctamente: 679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-22 00:13:41"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-22 00:13:41"}
+info: 🔍 GET /api/beer → 7 cervezas encontradas {"timestamp":"2025-05-22 00:13:41"}
+info: [Petición] GET /api/beer/682ea47560bd20858e1b817e {"timestamp":"2025-05-22 00:13:51"}
+info: [Petición] GET /api/beer/682ea47560bd20858e1b817e {"timestamp":"2025-05-22 00:13:51"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-22 00:14:00"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-22 00:14:00"}
+info: 🔍 GET /api/beer → 7 cervezas encontradas {"timestamp":"2025-05-22 00:14:00"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-22 00:14:00"}
+info: 🔍 GET /api/beer → 7 cervezas encontradas {"timestamp":"2025-05-22 00:14:00"}
+info: [Petición] GET /api/beer/680baa54009ac0d8120f1f43 {"timestamp":"2025-05-22 00:14:08"}
+info: [Petición] GET /api/beer/680baa54009ac0d8120f1f43 {"timestamp":"2025-05-22 00:14:08"}
+info: [Petición] GET /api/beer/680baa54009ac0d8120f1f43 {"timestamp":"2025-05-22 00:14:18"}
+info: [Petición] GET /api/beer/680baa54009ac0d8120f1f43 {"timestamp":"2025-05-22 00:14:18"}
+info: [Petición] PUT /api/beer/680baa54009ac0d8120f1f43 {"timestamp":"2025-05-22 00:14:28"}
+info: 🔐 Usuario autenticado correctamente: 679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-22 00:14:28"}
+info: ✏️ Actualizada por 679a9a7ec0fd31f8046370ac → CARRÁN AMBAR {"timestamp":"2025-05-22 00:14:28"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-22 00:14:30"}
+info: 🔍 GET /api/beer → 7 cervezas encontradas {"timestamp":"2025-05-22 00:14:30"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-22 00:14:30"}
+info: 🔍 GET /api/beer → 7 cervezas encontradas {"timestamp":"2025-05-22 00:14:30"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-22 00:14:36"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-22 00:14:36"}
+info: [Petición] GET /api/location/68102c462b4abded75f230cb {"timestamp":"2025-05-22 00:14:42"}
+info: [Petición] PATCH /api/location/68102c462b4abded75f230cb {"timestamp":"2025-05-22 00:15:00"}
+info: 🔐 Usuario autenticado correctamente: 679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-22 00:15:00"}
+info: [Petición] GET /api/location/68102c462b4abded75f230cb {"timestamp":"2025-05-22 00:15:01"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-22 00:15:06"}
+info: [Petición] GET /api/location/681c2cf167d4165bd32d8b76 {"timestamp":"2025-05-22 00:15:10"}
+info: [Petición] DELETE /api/location/681c2cf167d4165bd32d8b76 {"timestamp":"2025-05-22 00:15:13"}
+info: 🔐 Usuario autenticado correctamente: 679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-22 00:15:13"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-22 00:15:16"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-22 00:15:16"}
+info: [Petición] GET /api/post {"timestamp":"2025-05-22 00:15:21"}
+info: [Petición] GET /api/post {"timestamp":"2025-05-22 00:15:21"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-22 00:15:48"}
+info: ✅ Conectado a MongoDB correctamente {"timestamp":"2025-05-22 00:15:49"}

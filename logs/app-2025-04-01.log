@@ -1,0 +1,570 @@
+[90m2025-04-01 00:01:24[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 00:01:25[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 00:01:30[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 00:01:30[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 00:04:24[39m [94m[INFO][39m: [37m[Petición] GET /api/beers/search?nombre=cuello&tipo=&cerveceria=&minABV=&maxABV=[39m
+[90m2025-04-01 00:04:28[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 00:04:28[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 00:26:34[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 00:26:35[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 00:26:35[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 00:26:35[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 00:27:40[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 00:27:40[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 00:27:42[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 00:27:42[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 00:29:56[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 00:29:56[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 00:29:58[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 00:29:58[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 00:43:36[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 00:43:38[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 00:43:38[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 00:43:38[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 00:46:24[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 00:46:24[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 00:46:24[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 00:46:24[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 00:47:15[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 00:47:15[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 00:47:16[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 00:47:16[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 00:47:18[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 00:47:18[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 00:47:20[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 00:47:20[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 00:55:46[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 00:55:46[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 00:55:48[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 00:55:48[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:03:45[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:03:46[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:03:47[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:03:47[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:03:47[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:03:47[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:03:49[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:03:49[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:03:50[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:03:50[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:03:55[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:03:55[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:03:55[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:03:55[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:04:02[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:04:02[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:04:34[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:04:34[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:04:34[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:04:34[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:04:36[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:04:36[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:05:17[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:05:17[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:05:18[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:05:18[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:05:18[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:05:18[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:05:20[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:05:20[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:05:26[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:05:26[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:05:28[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:05:28[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:05:28[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:05:28[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:05:30[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:05:30[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:05:30[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:05:30[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:05:42[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:05:42[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:05:43[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:05:43[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:05:43[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:05:43[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:05:45[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:05:45[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:06:11[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:06:11[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:06:29[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:06:29[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:06:29[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:06:29[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:06:30[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:06:30[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:06:30[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:06:30[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:06:31[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:06:31[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:06:36[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:06:36[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:06:39[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:06:39[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:06:39[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:06:39[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:06:40[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:06:40[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:06:42[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:06:42[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:06:42[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:06:42[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:06:45[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:06:45[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:06:46[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:06:46[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:06:46[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:06:46[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:06:51[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:06:51[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:06:53[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:06:53[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:06:53[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:06:53[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:06:56[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:06:56[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:06:57[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:06:57[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:06:57[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:06:57[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:07:08[39m [94m[INFO][39m: [37m[Petición] GET /api/beer/67da7bb5209fc74517561ebf[39m
+[90m2025-04-01 01:07:08[39m [94m[INFO][39m: [37m[Petición] GET /api/beer/67da7bb5209fc74517561ebf[39m
+[90m2025-04-01 01:07:09[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:07:09[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:07:09[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:07:09[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:07:48[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:07:48[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:07:56[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:07:56[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:08:01[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:08:01[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:08:02[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:08:02[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:08:07[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:08:07[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:14:21[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:14:21[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:14:22[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:14:22[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:14:23[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:14:24[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:14:39[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:14:39[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:14:40[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:14:40[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:14:40[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:14:40[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:14:44[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:14:44[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:14:46[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:14:46[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:14:46[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:14:46[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:14:50[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:14:50[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:14:52[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:14:52[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:14:52[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:14:52[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:15:01[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:15:01[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:15:02[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:15:02[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:15:02[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:15:02[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:15:08[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:15:08[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:15:10[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:15:10[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:15:11[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:15:11[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:15:14[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:15:14[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:15:19[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:15:19[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:15:38[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:15:38[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:15:40[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:15:40[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:15:40[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:15:41[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:15:42[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:15:42[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:15:48[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:15:48[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:15:49[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:15:49[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:15:49[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:15:49[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:16:03[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:16:03[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:16:05[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:16:05[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:16:05[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:16:05[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:16:11[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:16:12[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:16:12[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:16:12[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:26:37[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:26:37[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:26:37[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:26:37[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:26:38[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:26:38[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:28:07[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:28:07[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:28:07[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:28:07[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:28:09[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:28:09[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:28:27[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:28:27[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:28:46[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:28:46[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:29:47[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:29:48[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:34:33[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:34:33[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:45:44[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:45:44[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:45:44[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:45:44[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:47:06[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:47:06[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:47:09[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:47:09[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:50:17[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:50:18[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:50:19[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:50:19[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:50:21[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:50:21[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:58:13[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:58:14[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 01:58:17[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 01:58:17[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:03:34[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:03:34[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:03:34[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:03:34[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:03:51[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:03:52[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:03:52[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:03:52[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:06:02[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:06:02[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:06:05[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:06:05[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:06:57[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:06:57[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:07:00[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:07:00[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:07:41[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:07:41[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:07:47[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:07:47[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:08:03[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:08:03[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:08:03[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:08:03[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:08:04[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:08:04[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:08:16[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:08:16[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:08:17[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:08:17[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:08:18[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:08:18[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:08:23[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:08:23[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:08:24[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:08:24[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:08:24[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:08:24[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:08:45[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:08:45[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:08:47[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:08:47[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:08:49[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:08:49[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:08:50[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:08:50[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:09:08[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:09:08[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:09:08[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:09:08[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:09:14[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:09:14[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:09:22[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:09:22[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:09:23[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:09:23[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:09:37[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:09:37[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:09:37[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:09:37[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:09:38[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:09:38[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:09:39[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:09:39[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:09:40[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:09:40[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:09:44[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:09:44[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:09:45[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:09:45[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:09:51[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:09:51[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:09:53[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:09:53[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:09:54[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:09:54[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:09:55[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:09:55[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:09:56[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:09:56[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:10:00[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:10:00[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:10:13[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:10:13[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:10:15[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:10:15[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:10:27[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:10:27[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:10:28[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:10:28[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:10:30[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:10:30[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:10:36[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:10:36[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:10:37[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:10:37[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:10:37[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:10:37[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:10:38[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:10:38[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:10:42[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:10:42[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:10:43[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:10:43[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:10:53[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:10:53[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:10:54[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:10:54[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:10:54[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:10:54[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:10:55[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:10:55[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:10:58[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:10:58[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:10:59[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:10:59[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:10:59[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:10:59[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:11:03[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:11:03[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:11:04[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:11:04[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:11:04[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:11:04[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:11:14[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:11:14[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:11:20[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:11:20[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:11:21[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:11:22[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:11:35[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:11:35[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:11:38[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:11:39[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:11:39[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:11:39[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:15:03[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:15:03[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:17:10[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:17:10[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:17:26[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:17:26[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:17:50[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:17:50[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:17:53[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:17:53[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:17:59[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:17:59[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:18:01[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:18:01[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:20:07[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:20:07[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:20:07[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:20:07[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:20:40[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:20:40[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:20:42[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:20:42[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:21:26[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:21:26[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:24:28[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:24:28[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:24:38[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:24:38[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:25:48[39m [94m[INFO][39m: [37m[Petición] GET /api/location[39m
+[90m2025-04-01 02:25:48[39m [94m[INFO][39m: [37m📍 [GET] Solicitando lista de locales[39m
+[90m2025-04-01 02:25:48[39m [94m[INFO][39m: [37m✅ Se encontraron 10 locales[39m
+[90m2025-04-01 02:25:48[39m [94m[INFO][39m: [37m[Petición] GET /api/location[39m
+[90m2025-04-01 02:25:48[39m [94m[INFO][39m: [37m📍 [GET] Solicitando lista de locales[39m
+[90m2025-04-01 02:25:48[39m [94m[INFO][39m: [37m✅ Se encontraron 10 locales[39m
+[90m2025-04-01 02:26:29[39m [94m[INFO][39m: [37m[Petición] GET /api/location/search?query=hop[39m
+[90m2025-04-01 02:26:30[39m [94m[INFO][39m: [37m[Petición] GET /api/location[39m
+[90m2025-04-01 02:26:30[39m [94m[INFO][39m: [37m📍 [GET] Solicitando lista de locales[39m
+[90m2025-04-01 02:26:30[39m [94m[INFO][39m: [37m✅ Se encontraron 10 locales[39m
+[90m2025-04-01 02:26:33[39m [94m[INFO][39m: [37m[Petición] GET /api/location/search?query=provi[39m
+[90m2025-04-01 02:26:35[39m [94m[INFO][39m: [37m[Petición] GET /api/location[39m
+[90m2025-04-01 02:26:35[39m [94m[INFO][39m: [37m📍 [GET] Solicitando lista de locales[39m
+[90m2025-04-01 02:26:35[39m [94m[INFO][39m: [37m✅ Se encontraron 10 locales[39m
+[90m2025-04-01 02:26:47[39m [94m[INFO][39m: [37m[Petición] GET /api/location[39m
+[90m2025-04-01 02:26:47[39m [94m[INFO][39m: [37m📍 [GET] Solicitando lista de locales[39m
+[90m2025-04-01 02:26:47[39m [94m[INFO][39m: [37m✅ Se encontraron 10 locales[39m
+[90m2025-04-01 02:26:49[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:26:49[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:26:49[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:26:49[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:26:51[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:26:51[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:27:57[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:27:57[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:28:00[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:28:00[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:29:41[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:29:41[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:29:58[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:29:58[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:30:06[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:30:06[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:30:17[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:30:17[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:30:26[39m [94m[INFO][39m: [37m[Petición] GET /api/beer/search?nombre=stout[39m
+[90m2025-04-01 02:30:27[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:30:27[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:30:58[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 02:30:58[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 02:31:07[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 02:33:51[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:33:51[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:34:31[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:34:31[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:34:58[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:34:58[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:39:15[39m [94m[INFO][39m: [37m[Petición] GET /api/users[39m
+[90m2025-04-01 02:39:15[39m [94m[INFO][39m: [37m[Petición] GET /api/comments[39m
+[90m2025-04-01 02:39:15[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:39:16[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 02:39:16[39m [94m[INFO][39m: [37m[Petición] GET /api/users[39m
+[90m2025-04-01 02:39:16[39m [94m[INFO][39m: [37m[Petición] GET /api/comments[39m
+[90m2025-04-01 02:39:16[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 02:39:16[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 03:28:40[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 03:28:41[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 03:32:19[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 03:32:19[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 03:32:24[39m [94m[INFO][39m: [37m[Petición] GET /api/location[39m
+[90m2025-04-01 03:32:24[39m [94m[INFO][39m: [37m📍 [GET] Solicitando lista de locales[39m
+[90m2025-04-01 03:32:24[39m [94m[INFO][39m: [37m✅ Se encontraron 10 locales[39m
+[90m2025-04-01 03:32:24[39m [94m[INFO][39m: [37m[Petición] GET /api/location[39m
+[90m2025-04-01 03:32:24[39m [94m[INFO][39m: [37m📍 [GET] Solicitando lista de locales[39m
+[90m2025-04-01 03:32:24[39m [94m[INFO][39m: [37m✅ Se encontraron 10 locales[39m
+[90m2025-04-01 03:32:25[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 03:32:25[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 03:32:25[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 03:32:25[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 03:32:26[39m [94m[INFO][39m: [37m[Petición] GET /api/location[39m
+[90m2025-04-01 03:32:26[39m [94m[INFO][39m: [37m📍 [GET] Solicitando lista de locales[39m
+[90m2025-04-01 03:32:26[39m [94m[INFO][39m: [37m✅ Se encontraron 10 locales[39m
+[90m2025-04-01 03:32:26[39m [94m[INFO][39m: [37m[Petición] GET /api/location[39m
+[90m2025-04-01 03:32:26[39m [94m[INFO][39m: [37m📍 [GET] Solicitando lista de locales[39m
+[90m2025-04-01 03:32:26[39m [94m[INFO][39m: [37m✅ Se encontraron 10 locales[39m
+[90m2025-04-01 03:34:49[39m [94m[INFO][39m: [37m[Petición] GET /api/location[39m
+[90m2025-04-01 03:34:49[39m [94m[INFO][39m: [37m📍 [GET] Solicitando lista de locales[39m
+[90m2025-04-01 03:34:49[39m [94m[INFO][39m: [37m✅ Se encontraron 10 locales[39m
+[90m2025-04-01 03:34:49[39m [94m[INFO][39m: [37m[Petición] GET /api/location[39m
+[90m2025-04-01 03:34:49[39m [94m[INFO][39m: [37m📍 [GET] Solicitando lista de locales[39m
+[90m2025-04-01 03:34:49[39m [94m[INFO][39m: [37m✅ Se encontraron 10 locales[39m
+[90m2025-04-01 12:34:28[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 12:34:29[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 12:34:36[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 12:34:36[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 12:37:56[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 12:37:56[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 12:38:20[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 12:38:20[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 12:48:46[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 12:48:46[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 12:48:46[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 12:48:46[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 12:50:12[39m [94m[INFO][39m: [37m[Petición] GET /api/location[39m
+[90m2025-04-01 12:50:12[39m [94m[INFO][39m: [37m📍 [GET] Solicitando lista de locales[39m
+[90m2025-04-01 12:50:12[39m [94m[INFO][39m: [37m✅ Se encontraron 10 locales[39m
+[90m2025-04-01 12:50:12[39m [94m[INFO][39m: [37m[Petición] GET /api/location[39m
+[90m2025-04-01 12:50:12[39m [94m[INFO][39m: [37m📍 [GET] Solicitando lista de locales[39m
+[90m2025-04-01 12:50:12[39m [94m[INFO][39m: [37m✅ Se encontraron 10 locales[39m
+[90m2025-04-01 12:50:14[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 12:50:14[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 12:54:00[39m [94m[INFO][39m: [37mServidor iniciado en el puerto 3940[39m
+[90m2025-04-01 12:54:00[39m [94m[INFO][39m: [37m✅ Conectado a MongoDB correctamente[39m
+[90m2025-04-01 12:55:10[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 19:07:33[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 20:12:46[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 20:12:46[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 20:12:46[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 20:12:46[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 20:12:51[39m [94m[INFO][39m: [37m[Petición] GET /api/location[39m
+[90m2025-04-01 20:12:51[39m [94m[INFO][39m: [37m📍 [GET] Solicitando lista de locales[39m
+[90m2025-04-01 20:12:51[39m [94m[INFO][39m: [37m✅ Se encontraron 10 locales[39m
+[90m2025-04-01 20:12:51[39m [94m[INFO][39m: [37m[Petición] GET /api/location[39m
+[90m2025-04-01 20:12:51[39m [94m[INFO][39m: [37m📍 [GET] Solicitando lista de locales[39m
+[90m2025-04-01 20:12:51[39m [94m[INFO][39m: [37m✅ Se encontraron 10 locales[39m
+[90m2025-04-01 20:45:07[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 20:45:13[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 20:45:28[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 20:46:39[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 20:46:48[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 20:46:56[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 21:05:42[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 21:54:01[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 22:03:52[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 22:03:55[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 22:06:43[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 22:10:29[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 22:10:36[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 22:11:00[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 22:11:25[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 22:12:38[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 22:12:39[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 22:12:39[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 22:12:39[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 22:12:39[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 22:12:43[39m [94m[INFO][39m: [37m[Petición] GET /api/location[39m
+[90m2025-04-01 22:12:43[39m [94m[INFO][39m: [37m📍 [GET] Solicitando lista de locales[39m
+[90m2025-04-01 22:12:43[39m [94m[INFO][39m: [37m✅ Se encontraron 10 locales[39m
+[90m2025-04-01 22:12:43[39m [94m[INFO][39m: [37m[Petición] GET /api/location[39m
+[90m2025-04-01 22:12:43[39m [94m[INFO][39m: [37m📍 [GET] Solicitando lista de locales[39m
+[90m2025-04-01 22:12:43[39m [94m[INFO][39m: [37m✅ Se encontraron 10 locales[39m
+[90m2025-04-01 22:12:47[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 22:12:47[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 22:13:48[39m [94m[INFO][39m: [37m[Petición] POST /api/auth/login[39m
+[90m2025-04-01 22:13:50[39m [94m[INFO][39m: [37m[Petición] POST /api/auth/login[39m
+[90m2025-04-01 22:13:53[39m [94m[INFO][39m: [37m[Petición] POST /api/auth/login[39m
+[90m2025-04-01 22:13:56[39m [94m[INFO][39m: [37m[Petición] POST /api/auth/login[39m
+[90m2025-04-01 22:14:01[39m [94m[INFO][39m: [37m[Petición] POST /api/auth/login[39m
+[90m2025-04-01 22:14:02[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 22:14:02[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 22:14:02[39m [94m[INFO][39m: [37m[Petición] GET /api/beer[39m
+[90m2025-04-01 22:14:02[39m [94m[INFO][39m: [37m✅ Se encontraron 13 cervezas[39m
+[90m2025-04-01 22:14:06[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 22:14:08[39m [94m[INFO][39m: [37m[Petición] GET /api/post[39m
+[90m2025-04-01 22:17:00[39m [94m[INFO][39m: [37m[Petición] POST /api/upload[39m
+[90m2025-04-01 22:19:09[39m [94m[INFO][39m: [37mServidor iniciado en el puerto 3940[39m
+[90m2025-04-01 22:19:09[39m [94m[INFO][39m: [37m✅ Conectado a MongoDB correctamente[39m
+[90m2025-04-01 22:19:15[39m [94m[INFO][39m: [37mServidor iniciado en el puerto 3940[39m
+[90m2025-04-01 22:19:15[39m [94m[INFO][39m: [37m✅ Conectado a MongoDB correctamente[39m

@@ -1,0 +1,431 @@
+error: ❌ Error en autenticación: jwt expired {"timestamp":"2025-04-07 12:27:14"}
+error: ❌ Error en autenticación: jwt expired {"timestamp":"2025-04-07 13:48:59"}
+error: ❌ Error en autenticación: jwt expired {"timestamp":"2025-04-07 13:49:11"}
+error: ❌ Error en autenticación: jwt expired {"timestamp":"2025-04-07 16:26:47"}
+error: ❌ Error en autenticación: jwt expired {"timestamp":"2025-04-07 18:03:49"}
+error: ❌ Error en autenticación: jwt expired {"timestamp":"2025-04-07 18:04:43"}
+error: ❌ Error en autenticación: jwt expired {"timestamp":"2025-04-08 02:12:42"}
+error: ❌ Error en autenticación: jwt expired {"timestamp":"2025-04-10 12:00:45"}
+error: ❌ Error en autenticación: jwt expired {"timestamp":"2025-04-11 19:27:01"}
+error: ❌ Error en autenticación: jwt expired {"timestamp":"2025-04-11 19:27:02"}
+error: ❌ Error en autenticación: jwt expired {"timestamp":"2025-04-11 19:27:10"}
+error: ❌ Error en autenticación: jwt expired {"timestamp":"2025-04-12 02:06:58"}
+error: ❌ Error en autenticación: jwt expired {"timestamp":"2025-04-12 03:19:36"}
+error: ❌ Error en autenticación: jwt expired {"timestamp":"2025-04-12 03:19:42"}
+error: ❌ Error en autenticación: jwt expired {"timestamp":"2025-04-12 03:27:06"}
+error: ❌ Error en autenticación: jwt expired {"timestamp":"2025-04-12 03:27:15"}
+error: ❌ Error al crear post: Post validation failed: usuario: Path `usuario` is required. {"timestamp":"2025-04-12 03:29:45"}
+error: ❌ Error al crear post: Post validation failed: usuario: Path `usuario` is required. {"timestamp":"2025-04-12 03:29:48"}
+error: ❌ Error al crear post: Post validation failed: usuario: Path `usuario` is required. {"timestamp":"2025-04-12 03:29:51"}
+error: ❌ Error en autenticación: jwt expired {"timestamp":"2025-04-12 21:57:09"}
+error: ❌ Error en autenticación: jwt expired {"timestamp":"2025-04-12 21:57:22"}
+error: ❌ Error en autenticación: jwt expired {"timestamp":"2025-04-13 23:33:31"}
+error: ❌ Error al crear post: Post validation failed: usuario: Path `usuario` is required. {"timestamp":"2025-04-14 14:08:06"}
+error: ❌ Error al crear post: Post validation failed: usuario: Path `usuario` is required. {"timestamp":"2025-04-14 14:08:43"}
+error: ❌ Error al crear post: Post validation failed: usuario: Path `usuario` is required. {"timestamp":"2025-04-14 14:12:13"}
+error: ❌ Error al crear post: Post validation failed: usuario: Path `usuario` is required. {"timestamp":"2025-04-14 14:12:25"}
+error: ❌ Error al crear post: Post validation failed: usuario: Path `usuario` is required. {"timestamp":"2025-04-14 14:12:57"}
+error: ❌ Error al crear post: Post validation failed: usuario: Path `usuario` is required. {"timestamp":"2025-04-14 14:15:52"}
+error: ❌ Error al crear post: Post validation failed: usuario: Path `usuario` is required. {"timestamp":"2025-04-14 14:44:01"}
+error: ❌ Error al crear post: Post validation failed: usuario: Path `usuario` is required. {"timestamp":"2025-04-14 14:50:35"}
+error: ❌ Error al crear post: Post validation failed: usuario: Path `usuario` is required. {"timestamp":"2025-04-14 14:51:49"}
+error: ❌ Error al crear post: Post validation failed: usuario: Path `usuario` is required. {"timestamp":"2025-04-14 14:58:57"}
+error: ❌ Error al crear post: Post validation failed: usuario: Path `usuario` is required. {"timestamp":"2025-04-14 17:52:42"}
+error: 🔥 Uncaught Exception: protect is not defined
+ReferenceError: protect is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/locationRoutes.js:63:46
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-17 02:57:48"}
+error: 🔥 Uncaught Exception: protect is not defined
+ReferenceError: protect is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/locationRoutes.js:63:46
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-17 02:57:48"}
+error: 🔥 Uncaught Exception: editReviewLocation is not defined
+ReferenceError: editReviewLocation is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/locationRoutes.js:63:62
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-17 02:58:16"}
+error: ❌ Error en autenticación: jwt expired {"timestamp":"2025-04-17 12:22:11"}
+error: 🔥 Uncaught Exception: s is not defined
+ReferenceError: s is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/beerRoutes.js:82:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-21 19:56:16"}
+error: 🔥 Uncaught Exception: Cannot access 'app' before initialization
+ReferenceError: Cannot access 'app' before initialization
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/app.js:14:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-23 01:15:06"}
+error: 🔥 Uncaught Exception: Cannot access 'app' before initialization
+ReferenceError: Cannot access 'app' before initialization
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/app.js:14:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-23 01:15:10"}
+error: 🔥 Uncaught Exception: passport is not defined
+ReferenceError: passport is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/config/passport.js:2:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-23 02:17:42"}
+error: 🔥 Uncaught Exception: passport is not defined
+ReferenceError: passport is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/authRoutes.js:41:23
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-23 02:39:57"}
+error: 🔥 Uncaught Exception: passport is not defined
+ReferenceError: passport is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/authRoutes.js:41:23
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-23 02:40:05"}
+error: 🔥 Uncaught Exception: loginWithGoogle is not defined
+ReferenceError: loginWithGoogle is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/authRoutes.js:51:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-23 02:41:56"}
+error: 🔥 Uncaught Exception: loginWithGoogle is not defined
+ReferenceError: loginWithGoogle is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/authRoutes.js:51:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-23 02:42:23"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-23 15:50:45"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 15:29:39"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 15:31:56"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 15:32:19"}
+error: 🔥 Uncaught Exception: authMidlleware is not defined
+ReferenceError: authMidlleware is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/beerRoutes.js:47:18
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-24 15:39:46"}
+error: 🔥 Uncaught Exception: verifyToken is not defined
+ReferenceError: verifyToken is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/beerRoutes.js:47:18
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-24 15:40:03"}
+error: 🔥 Uncaught Exception: s is not defined
+ReferenceError: s is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/beerRoutes.js:82:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-24 15:40:42"}
+error: 🔥 Uncaught Exception: verifyToken is not defined
+ReferenceError: verifyToken is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/beerRoutes.js:53:3
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-24 17:21:39"}
+error: 🔥 Uncaught Exception: verifyToken is not defined
+ReferenceError: verifyToken is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/beerRoutes.js:53:3
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-24 17:21:41"}
+error: 🔥 Uncaught Exception: verifyToken is not defined
+ReferenceError: verifyToken is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/beerRoutes.js:53:3
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-24 17:22:01"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 17:32:36"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 17:37:08"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 17:37:09"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 17:37:11"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 17:37:14"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 17:37:15"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 17:37:21"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 18:02:51"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 18:02:52"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 18:02:52"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 18:02:52"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 18:02:53"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 18:02:53"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 18:02:53"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 18:02:53"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 18:02:53"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 18:02:53"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 18:02:53"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 18:02:54"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 23:09:04"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-24 23:53:25"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 00:25:10"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 02:06:06"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 02:06:27"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 02:06:44"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:36:55"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:36:56"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:36:56"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:36:57"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:36:57"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:36:57"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:36:57"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:36:57"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:36:57"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:36:58"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:36:58"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:36:58"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:36:58"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:36:58"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:36:58"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:36:59"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:36:59"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:36:59"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:36:59"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:36:59"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:36:59"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:36:59"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:36:59"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:37:00"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 17:37:00"}
+error: ❌ Error de autenticación: jwt must be provided {"timestamp":"2025-04-25 21:37:14"}
+error: ❌ Error de autenticación: jwt must be provided {"timestamp":"2025-04-25 21:39:39"}
+error: ❌ Error de autenticación: jwt must be provided {"timestamp":"2025-04-25 21:40:06"}
+error: ❌ Error de autenticación: jwt must be provided {"timestamp":"2025-04-25 21:40:09"}
+error: ❌ Error de autenticación: jwt must be provided {"timestamp":"2025-04-25 21:43:08"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 22:15:32"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 22:15:33"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 22:22:07"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-25 23:49:33"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-26 00:08:37"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-26 00:38:10"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-26 00:43:48"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-26 00:45:56"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-26 01:18:58"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-26 01:19:00"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-26 01:19:01"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-26 01:46:55"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-26 02:13:10"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-28 20:15:00"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-28 21:26:01"}
+error: 🔥 Uncaught Exception: listen EADDRINUSE: address already in use :::3940
+Error: listen EADDRINUSE: address already in use :::3940
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Function.listen (/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/express/lib/application.js:635:24)
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/app.js:104:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-28 21:53:53"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-28 22:50:04"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-28 23:26:35"}
+error: ❌ Error de autenticación: jwt malformed {"timestamp":"2025-04-28 23:26:47"}
+error: ❌ Error de autenticación: jwt malformed {"timestamp":"2025-04-28 23:26:52"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-29 01:48:48"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-29 01:49:44"}
+error: 🔥 Uncaught Exception: listen EADDRINUSE: address already in use :::3940
+Error: listen EADDRINUSE: address already in use :::3940
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Function.listen (/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/express/lib/application.js:635:24)
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/app.js:104:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-29 01:53:20"}
+error: 🔥 Uncaught Exception: listen EADDRINUSE: address already in use :::3940
+Error: listen EADDRINUSE: address already in use :::3940
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Function.listen (/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/express/lib/application.js:635:24)
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/app.js:104:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-29 01:54:15"}
+error: ❌ Error al crear post: Post validation failed: usuario: Path `usuario` is required. {"timestamp":"2025-04-29 15:07:44"}
+error: 🔥 Uncaught Exception: __dirname is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and '/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+ReferenceError: __dirname is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and '/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/authRoutes.js:35:30
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-29 21:24:05"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-29 22:30:47"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-30 00:55:29"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-30 00:55:30"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-30 00:55:32"}
+error: 🚨 Unhandled Rejection: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:405:5)
+    at ServerResponse.setHeader (node:_http_outgoing:655:11)
+    at ServerResponse.header (/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.json (/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/express/lib/response.js:275:10)
+    at getBeerById (file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/controllers/beerController.js:64:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {"timestamp":"2025-04-30 01:05:24"}
+error: 🚨 Unhandled Rejection: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:405:5)
+    at ServerResponse.setHeader (node:_http_outgoing:655:11)
+    at ServerResponse.header (/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.json (/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/express/lib/response.js:275:10)
+    at getBeerById (file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/controllers/beerController.js:64:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {"timestamp":"2025-04-30 01:05:25"}
+error: 🚨 Unhandled Rejection: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:405:5)
+    at ServerResponse.setHeader (node:_http_outgoing:655:11)
+    at ServerResponse.header (/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.json (/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/express/lib/response.js:275:10)
+    at getBeerById (file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/controllers/beerController.js:64:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {"timestamp":"2025-04-30 01:05:26"}
+error: 🔥 Uncaught Exception: editReviewLocation is not defined
+ReferenceError: editReviewLocation is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/beerRoutes.js:74:62
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-30 01:51:37"}
+error: 🔥 Uncaught Exception: editReviewLocation is not defined
+ReferenceError: editReviewLocation is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/beerRoutes.js:74:62
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-30 01:51:40"}
+error: 🔥 Uncaught Exception: editReviewLocation is not defined
+ReferenceError: editReviewLocation is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/beerRoutes.js:75:62
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-30 01:52:30"}
+error: 🔥 Uncaught Exception: asyncHandler is not defined
+ReferenceError: asyncHandler is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/controllers/locationsController.js:236:37
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-30 02:02:18"}
+error: 🔥 Uncaught Exception: asyncHandler is not defined
+ReferenceError: asyncHandler is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/controllers/locationsController.js:236:37
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-30 02:04:43"}
+error: 🔥 Uncaught Exception: asyncHandler is not defined
+ReferenceError: asyncHandler is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/controllers/locationsController.js:236:37
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-04-30 02:05:36"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-30 02:14:53"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-30 02:14:58"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-04-30 02:15:43"}
+error: 🔥 Uncaught Exception: app is not defined
+ReferenceError: app is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/userRoutes.js:43:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-08 00:30:03"}
+error: ❌ Error de autenticación: jwt malformed {"timestamp":"2025-05-08 00:49:36"}
+error: ❌ Error de autenticación: jwt malformed {"timestamp":"2025-05-08 00:51:46"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-08 01:24:21"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-08 01:24:44"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-08 01:29:03"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-08 01:52:07"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-08 01:52:09"}
+error: 🔥 Uncaught Exception: axios is not defined
+ReferenceError: axios is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/followRoutes.js:15:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-08 02:00:15"}
+error: 🔥 Uncaught Exception: axios is not defined
+ReferenceError: axios is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/followRoutes.js:15:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-08 02:00:27"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-08 02:09:49"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-08 12:14:06"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-08 12:39:59"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-08 12:40:00"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-08 12:40:00"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-08 12:40:01"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-08 12:40:01"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-08 12:40:02"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-08 12:40:10"}
+error: ❌ Error de autenticación: jwt malformed {"timestamp":"2025-05-08 22:43:47"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-11 19:18:20"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-11 19:18:21"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-12 16:46:40"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-12 16:47:29"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-12 16:47:47"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-12 16:49:54"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-12 16:49:55"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-12 16:50:14"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-12 16:53:27"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-19 02:47:17"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-19 13:40:33"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-19 13:57:49"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-19 14:15:47"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-19 14:55:39"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-19 15:17:00"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-20 02:48:31"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-20 03:12:26"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-20 03:12:30"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-20 03:29:08"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-21 18:27:07"}
+error: 🔥 Uncaught Exception: ENOENT: no such file or directory, mkdir '/uploads/locations'
+Error: ENOENT: no such file or directory, mkdir '/uploads/locations'
+    at Object.mkdirSync (node:fs:1391:3)
+    at DiskStorage.destination [as getDestination] (file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/locationRoutes.js:35:10)
+    at DiskStorage._handleFile (/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/multer/storage/disk.js:31:8)
+    at /Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/multer/lib/make-middleware.js:137:17
+    at allowAll (/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/multer/index.js:8:3)
+    at wrappedFileFilter (/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/multer/index.js:44:7)
+    at Multipart.<anonymous> (/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/multer/lib/make-middleware.js:107:7)
+    at Multipart.emit (node:events:517:28)
+    at HeaderParser.cb (/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/busboy/lib/types/multipart.js:358:14)
+    at HeaderParser.push (/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/busboy/lib/types/multipart.js:162:20) {"timestamp":"2025-05-21 23:51:40"}
+error: 🔥 Uncaught Exception: ENOENT: no such file or directory, mkdir '/uploads/locations'
+Error: ENOENT: no such file or directory, mkdir '/uploads/locations'
+    at Object.mkdirSync (node:fs:1391:3)
+    at DiskStorage.destination [as getDestination] (file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/locationRoutes.js:35:10)
+    at DiskStorage._handleFile (/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/multer/storage/disk.js:31:8)
+    at /Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/multer/lib/make-middleware.js:137:17
+    at allowAll (/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/multer/index.js:8:3)
+    at wrappedFileFilter (/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/multer/index.js:44:7)
+    at Multipart.<anonymous> (/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/multer/lib/make-middleware.js:107:7)
+    at Multipart.emit (node:events:517:28)
+    at HeaderParser.cb (/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/busboy/lib/types/multipart.js:358:14)
+    at HeaderParser.push (/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/busboy/lib/types/multipart.js:162:20) {"timestamp":"2025-05-21 23:57:12"}
