@@ -123,56 +123,50 @@ export const deletePost = async (req, res) => {
 
 // 📌 Like
 export const likePost = async (req, res) => {
-  const { tipo, userId } = req.body;
   const { id } = req.params;
+  const { userId, tipo } = req.body;
 
   try {
-    if (!["salud", "recomendado", "meGusta"].includes(tipo)) {
-      return res.status(400).json({ exito: false, mensaje: "Tipo de reacción inválido" });
-    }
-
     const post = await Post.findById(id);
     if (!post) return res.status(404).json({ exito: false, mensaje: "Post no encontrado" });
 
-    const reaccion = post.reacciones[tipo] || { count: 0, usuarios: [] };
-    const yaDioLike = reaccion.usuarios.includes(userId);
-
-    if (yaDioLike) {
-      return res.status(200).json({ exito: false, mensaje: "Ya reaccionaste a este post" });
-    }
-
-    reaccion.count += 1;
-    reaccion.usuarios.push(userId);
-    post.reacciones[tipo] = reaccion;
-
-    await post.save();
-
-    res.status(200).json({ exito: true, mensaje: "Reacción registrada" });
-  } catch (error) {
-    res.status(500).json({ exito: false, mensaje: "Error interno del servidor" });
-  }
-};
-
-// 📌 Unlike
-export const unlikePost = async (req, res) => {
-  try {
-    const { tipo, userId } = req.body;
-    const post = await Post.findById(req.params.id);
-    if (!post) return res.status(404).json({ exito: false, mensaje: "Post no encontrado" });
-
+    if (!post.reacciones) post.reacciones = {};
     if (!post.reacciones[tipo]) {
       post.reacciones[tipo] = { count: 0, usuarios: [] };
     }
 
-    post.reacciones[tipo].usuarios = post.reacciones[tipo].usuarios.filter(
-      (uid) => uid.toString() !== userId
-    );
-    post.reacciones[tipo].count = post.reacciones[tipo].usuarios.length;
+    // Prevenir duplicados
+    if (!post.reacciones[tipo].usuarios.includes(userId)) {
+      post.reacciones[tipo].usuarios.push(userId);
+      post.reacciones[tipo].count += 1;
+    }
 
     await post.save();
-
-    res.json({ exito: true, mensaje: "Like quitado correctamente" });
+    res.json({ exito: true, mensaje: "Like agregado", post });
   } catch (error) {
+    console.error("❌ Error en likePost:", error);
+    res.status(500).json({ exito: false, mensaje: "Error al dar like" });
+  }
+};
+
+export const unlikePost = async (req, res) => {
+  const { id } = req.params;
+  const { userId, tipo } = req.body;
+
+  try {
+    const post = await Post.findById(id);
+    if (!post) return res.status(404).json({ exito: false, mensaje: "Post no encontrado" });
+
+    const reaccion = post.reacciones[tipo];
+    if (reaccion && reaccion.usuarios.includes(userId)) {
+      reaccion.usuarios = reaccion.usuarios.filter(uid => uid !== userId);
+      reaccion.count = Math.max(0, reaccion.count - 1);
+    }
+
+    await post.save();
+    res.json({ exito: true, mensaje: "Like quitado", post });
+  } catch (error) {
+    console.error("❌ Error en unlikePost:", error);
     res.status(500).json({ exito: false, mensaje: "Error al quitar like" });
   }
 };

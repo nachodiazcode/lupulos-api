@@ -1,0 +1,132 @@
+info: [Petición] GET /api/beer {"timestamp":"2025-05-23 00:26:20"}
+info: 🔍 GET /api/beer → 8 cervezas encontradas {"timestamp":"2025-05-23 00:26:21"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-23 00:26:27"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-23 00:26:27"}
+info: [Petición] GET /api/user {"timestamp":"2025-05-23 00:26:33"}
+info: [Petición] GET /api/user {"timestamp":"2025-05-23 00:26:33"}
+info: [Petición] GET /api/user {"timestamp":"2025-05-23 00:26:43"}
+info: [Petición] GET /api/user {"timestamp":"2025-05-23 00:27:13"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-23 00:27:30"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-23 00:27:30"}
+info: 🔍 GET /api/beer → 8 cervezas encontradas {"timestamp":"2025-05-23 00:27:30"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-23 00:27:30"}
+info: 🔍 GET /api/beer → 8 cervezas encontradas {"timestamp":"2025-05-23 00:27:30"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-23 00:27:37"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-23 00:27:37"}
+info: [Petición] GET /api/user {"timestamp":"2025-05-23 00:27:41"}
+info: [Petición] GET /api/user {"timestamp":"2025-05-23 00:27:41"}
+info: [Petición] GET /api/post {"timestamp":"2025-05-23 00:27:49"}
+info: [Petición] GET /api/post {"timestamp":"2025-05-23 00:27:50"}
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 00:28:11"}
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 00:28:11"}
+info: [Petición] GET /uploads/profiles/1746168051066-Captura%20de%20pantalla%202025-05-02%20a%20la(s)%2012.15.32%C3%A2%C2%80%C2%AFa.m..png {"timestamp":"2025-05-23 00:28:11"}
+info: [Petición] POST /api/auth/upload/profile {"timestamp":"2025-05-23 00:28:31"}
+info: [Petición] PUT /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 00:28:31"}
+info: [Petición] GET /uploads/profiles/1747974511466-Captura%20de%20pantalla%202025-05-22%20a%20la(s)%204.25.33%C3%A2%C2%80%C2%AFp.m..png {"timestamp":"2025-05-23 00:28:31"}
+info: [Petición] POST /api/auth/upload/profile {"timestamp":"2025-05-23 00:28:39"}
+info: [Petición] PUT /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 00:28:39"}
+info: [Petición] GET /uploads/profiles/1747974519443-Captura%20de%20pantalla%202025-05-13%20a%20la(s)%2011.36.47%C3%A2%C2%80%C2%AFp.m..png {"timestamp":"2025-05-23 00:28:39"}
+info: [Petición] PUT /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 00:28:41"}
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 00:28:44"}
+info: [Petición] GET /uploads/profiles/1747974519443-Captura%20de%20pantalla%202025-05-13%20a%20la(s)%2011.36.47%C3%A2%C2%80%C2%AFp.m..png {"timestamp":"2025-05-23 00:28:44"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-23 00:29:59"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-23 00:30:00"}
+info: 🔍 GET /api/beer → 8 cervezas encontradas {"timestamp":"2025-05-23 00:30:00"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-23 00:30:00"}
+info: 🔍 GET /api/beer → 8 cervezas encontradas {"timestamp":"2025-05-23 00:30:00"}
+info: [Petición] GET /api/post {"timestamp":"2025-05-23 00:30:04"}
+info: [Petición] GET /api/post {"timestamp":"2025-05-23 00:30:04"}
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 00:30:19"}
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 00:30:19"}
+info: [Petición] GET /uploads/profiles/1747974519443-Captura%20de%20pantalla%202025-05-13%20a%20la(s)%2011.36.47%C3%A2%C2%80%C2%AFp.m..png {"timestamp":"2025-05-23 00:30:19"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-23 00:31:01"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-23 00:31:02"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-23 00:31:02"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-23 00:31:02"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-23 00:31:04"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-23 00:31:04"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-23 01:42:38"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-23 01:42:38"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-23 01:43:32"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-23 01:43:32"}
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 01:51:31"}
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 01:51:31"}
+info: [Petición] GET /uploads/profiles/1747974519443-Captura%20de%20pantalla%202025-05-13%20a%20la(s)%2011.36.47%C3%A2%C2%80%C2%AFp.m..png {"timestamp":"2025-05-23 01:51:32"}
+info: [Petición] POST /api/auth/upload/profile {"timestamp":"2025-05-23 01:52:18"}
+info: [Petición] PUT /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 01:52:18"}
+info: [Petición] GET /uploads/profiles/1747979538323-Captura%20de%20pantalla%202025-05-22%20a%20la(s)%204.25.33%C3%A2%C2%80%C2%AFp.m..png {"timestamp":"2025-05-23 01:52:18"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-23 01:58:19"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-23 01:58:19"}
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 01:58:47"}
+info: [Petición] GET /uploads/profiles/1747979538323-Captura%20de%20pantalla%202025-05-22%20a%20la(s)%204.25.33%C3%A2%C2%80%C2%AFp.m..png {"timestamp":"2025-05-23 01:58:47"}
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 01:58:51"}
+info: [Petición] GET /uploads/profiles/1747979538323-Captura%20de%20pantalla%202025-05-22%20a%20la(s)%204.25.33%C3%A2%C2%80%C2%AFp.m..png {"timestamp":"2025-05-23 01:58:51"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-23 02:10:57"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-23 02:10:57"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-23 02:11:09"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-23 02:11:16"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-23 02:11:17"}
+info: 🔍 GET /api/beer → 8 cervezas encontradas {"timestamp":"2025-05-23 02:11:17"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-23 02:11:17"}
+info: 🔍 GET /api/beer → 8 cervezas encontradas {"timestamp":"2025-05-23 02:11:17"}
+info: [Petición] GET /api/post {"timestamp":"2025-05-23 02:11:28"}
+info: [Petición] GET /api/post {"timestamp":"2025-05-23 02:11:29"}
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 02:11:32"}
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 02:11:32"}
+info: [Petición] GET /uploads/profiles/1747979538323-Captura%20de%20pantalla%202025-05-22%20a%20la(s)%204.25.33%C3%A2%C2%80%C2%AFp.m..png {"timestamp":"2025-05-23 02:11:32"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-23 02:19:28"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-23 02:19:28"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-23 02:28:30"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-23 02:28:30"}
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 02:39:12"}
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 02:39:12"}
+info: [Petición] GET /uploads/profiles/1747979538323-Captura%20de%20pantalla%202025-05-22%20a%20la(s)%204.25.33%C3%A2%C2%80%C2%AFp.m..png {"timestamp":"2025-05-23 02:39:12"}
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 02:42:14"}
+info: [Petición] GET /uploads/profiles//uploads/profiles/1747979538323-Captura%20de%20pantalla%202025-05-22%20a%20la(s)%204.25.33%C3%A2%C2%80%C2%AFp.m..png {"timestamp":"2025-05-23 02:42:15"}
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 02:42:18"}
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 02:42:18"}
+info: [Petición] GET /uploads/profiles//uploads/profiles/1747979538323-Captura%20de%20pantalla%202025-05-22%20a%20la(s)%204.25.33%C3%A2%C2%80%C2%AFp.m..png {"timestamp":"2025-05-23 02:42:18"}
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 02:42:23"}
+info: [Petición] GET /uploads/profiles//uploads/profiles/1747979538323-Captura%20de%20pantalla%202025-05-22%20a%20la(s)%204.25.33%C3%A2%C2%80%C2%AFp.m..png {"timestamp":"2025-05-23 02:42:23"}
+info: [Petición] POST /api/auth/upload/profile {"timestamp":"2025-05-23 02:42:32"}
+info: [Petición] PUT /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 02:42:32"}
+info: [Petición] GET /uploads/profiles//uploads/profiles/1747982552354-Captura%20de%20pantalla%202025-05-22%20a%20la(s)%204.25.33%C3%A2%C2%80%C2%AFp.m..png {"timestamp":"2025-05-23 02:42:32"}
+info: [Petición] PUT /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 02:42:33"}
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 02:42:36"}
+info: [Petición] GET /uploads/profiles//uploads/profiles/1747982552354-Captura%20de%20pantalla%202025-05-22%20a%20la(s)%204.25.33%C3%A2%C2%80%C2%AFp.m..png {"timestamp":"2025-05-23 02:42:36"}
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 03:11:36"}
+info: [Petición] GET /uploads/profiles//uploads/profiles/1747982552354-Captura%20de%20pantalla%202025-05-22%20a%20la(s)%204.25.33%C3%A2%C2%80%C2%AFp.m..png {"timestamp":"2025-05-23 03:11:36"}
+warn: ⚠️ Conexión a MongoDB perdida {"timestamp":"2025-05-23 04:39:11"}
+info: 🔄 MongoDB reconectado {"timestamp":"2025-05-23 04:39:21"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-23 16:12:03"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-23 16:12:03"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-23 16:16:01"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-23 16:16:01"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-23 16:16:05"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-23 16:16:05"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-23 16:16:08"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-23 16:16:08"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-23 16:17:04"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-23 16:17:07"}
+info: 🔍 GET /api/beer → 8 cervezas encontradas {"timestamp":"2025-05-23 16:17:07"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-23 16:17:07"}
+info: 🔍 GET /api/beer → 8 cervezas encontradas {"timestamp":"2025-05-23 16:17:07"}
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 16:17:11"}
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-23 16:17:11"}
+info: [Petición] GET /uploads/profiles//uploads/profiles/1747982552354-Captura%20de%20pantalla%202025-05-22%20a%20la(s)%204.25.33%C3%A2%C2%80%C2%AFp.m..png {"timestamp":"2025-05-23 16:17:11"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-23 16:21:09"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-23 16:21:09"}
+error: 🔥 Uncaught Exception: uploadProfileImage is not defined
+ReferenceError: uploadProfileImage is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/userRoutes.js:55:43
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-23 16:21:32"}
+error: 🔥 Uncaught Exception: uploadProfileImage is not defined
+ReferenceError: uploadProfileImage is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/userRoutes.js:55:43
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-23 19:31:00"}

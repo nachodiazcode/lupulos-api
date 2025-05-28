@@ -67,7 +67,6 @@ export const createLocation = async (req, res) => {
   }
 };
 
-
 export const createMultipleLocations = async (req, res) => {
   try {
     const locations = req.body;
@@ -88,15 +87,15 @@ export const createMultipleLocations = async (req, res) => {
 // locationsController.js
 export const getLocations = async (req, res) => {
   try {
-    const lugares = await Location.find()
-      .sort({ createdAt: -1 })
-      .populate('comentarios.usuario', 'username'); // 🔥 ESTE populate falta
+    const lugares = await Location.find({}, null, { sort: { createdAt: -1 } }) // ← Otra forma equivalente
+      .populate('comentarios.usuario', 'username');
 
     res.json({ exito: true, data: lugares });
   } catch (error) {
     res.status(500).json({ exito: false, mensaje: "Error al obtener lugares" });
   }
 };
+
 
 export const getLocationById = async (req, res) => {
   try {

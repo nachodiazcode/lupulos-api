@@ -1,25 +1,30 @@
 import jwt from "jsonwebtoken";
+import config from "../config/config.js";
 
+// 🔐 Generar Access Token
 export const generateAccessToken = (userId) => {
   return jwt.sign(
     { userId },
-    process.env.JWT_SECRET || "secreto_super_seguro",
-    { expiresIn: process.env.JWT_EXPIRATION || "15m" } // Ej: 15 minutos
+    config.jwtSecret,
+    { expiresIn: config.tokenExpiration } // Ej: 15m
   );
 };
 
+// 🔁 Generar Refresh Token
 export const generateRefreshToken = (userId) => {
   return jwt.sign(
     { userId },
-    process.env.REFRESH_SECRET || "secreto_refresh",
-    { expiresIn: process.env.REFRESH_EXPIRATION || "7d" } // Ej: 7 días
+    config.jwtRefreshSecret,
+    { expiresIn: config.refreshTokenExpiration } // Ej: 30d
   );
 };
 
+// ✅ Verificar Access Token
 export const verifyAccessToken = (token) => {
-  return jwt.verify(token, process.env.JWT_SECRET || "secreto_super_seguro");
+  return jwt.verify(token, config.jwtSecret);
 };
 
+// ✅ Verificar Refresh Token
 export const verifyRefreshToken = (token) => {
-  return jwt.verify(token, process.env.REFRESH_SECRET || "secreto_refresh");
+  return jwt.verify(token, config.jwtRefreshSecret);
 };

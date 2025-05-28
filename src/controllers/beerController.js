@@ -11,15 +11,20 @@ const asyncHandler = fn => (req, res, next) =>
 ─────────────────────────────── */
 
 // 🔍 Obtener todas las cervezas
-export const getAllBeers = asyncHandler(async (req, res) => {
-  const beers = await Cerveza.find()
-    .populate('usuario', 'username')
-    .populate('reviews.usuario', 'username')
+export const getAllBeers = async (req, res) => {
+  try {
+    const beers = await Cerveza.find().sort({ createdAt: -1 }); // 👈 aquí está la clave
 
-
-  logger.info(`🔍 GET /api/beer → ${beers.length} cervezas encontradas`);
-  res.status(200).json({ exito: true, mensaje: `Se encontraron ${beers.length} cervezas.`, datos: beers });
-});
+    res.json({
+      exito: true,
+      mensaje: "Cervezas obtenidas con éxito",
+      datos: beers,
+    });
+  } catch (error) {
+    console.error("❌ Error al obtener cervezas:", error);
+    res.status(500).json({ exito: false, mensaje: "Error al obtener cervezas", error: error.message });
+  }
+};
 
 // 🔍 Buscar cervezas por filtros
 export const searchBeers = asyncHandler(async (req, res) => {
@@ -102,11 +107,6 @@ export const getBeerOfTheDay = asyncHandler(async (req, res) => {
   res.json({ exito: true, mensaje: '🎉 Nueva Cerveza del Día', datos: selectedBeer });
 });
 
-/* ───────────────────────────────
-   📝 POST: Crear y agregar datos
-─────────────────────────────── */
-
-
 export const createBeer = async (req, res) => {
   try {
     const { nombre, tipo, cerveceria, abv, descripcion } = req.body;
@@ -117,17 +117,10 @@ export const createBeer = async (req, res) => {
     }
 
     const imagen = req.file.path
-      .replace(/^.*public/, "")   // ✅ solo deja la parte pública
-      .replace(/\\/g, "/");
+      .replace(/^.*public/, "") // ✅ deja solo la parte pública
+      .replace(/\\/g, "/");     // ✅ reemplaza backslashes en Windows
 
-    if (
-      !nombre?.trim() ||
-      !tipo?.trim() ||
-      !cerveceria?.trim() ||
-      !descripcion?.trim() ||
-      !abv ||
-      !usuario
-    ) {
+    if (!nombre?.trim() || !tipo?.trim() || !cerveceria?.trim() || !descripcion?.trim() || !abv || !usuario) {
       return res.status(400).json({ exito: false, mensaje: "Faltan campos obligatorios" });
     }
 
@@ -141,14 +134,20 @@ export const createBeer = async (req, res) => {
       usuario,
     });
 
-    await nuevaCerveza.save();
-    res.status(201).json({ exito: true, mensaje: "Cerveza creada", datos: nuevaCerveza });
+    const cervezaGuardada = await nuevaCerveza.save();
+
+    res.status(201).json({
+      exito: true,
+      mensaje: "Cerveza creada con éxito",
+      datos: cervezaGuardada,
+    });
   } catch (error) {
     console.error("❌ Error al crear cerveza:", error);
-    res.status(500).json({ exito: false, mensaje: "Error interno del servidor" });
+    res.status(500).json({ exito: false, mensaje: "Error al crear cerveza", error: error.message });
   }
 };
 
+ 
 
 // 📷 Subir imagen
 export const uploadBeerImage = asyncHandler(async (req, res) => {

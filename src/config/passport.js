@@ -1,38 +1,53 @@
-import passport from "passport";
-import { Strategy as GoogleStrategy } from "passport-google-oauth20";
-import User from "../models/User.js"; // asegúrate que la ruta esté bien
-import dotenv from "dotenv";
-dotenv.config();
+import passport from 'passport';
+import { Strategy as GoogleStrategy } from 'passport-google-oauth20';
+import bcrypt from 'bcryptjs'; // asegúrate de tenerlo instalado
+import User from '../models/User.js';
+import config from '../config/config.js'; // Reutilizar config centralizado
 
+// ✅ Validar envs críticos
+if (!config.googleClientId || !config.googleClientSecret || !config.googleCallbackUrl) {
+  throw new Error('❌ Faltan variables de entorno para Google OAuth');
+}
+
+// 📌 Estrategia de Google
 passport.use(new GoogleStrategy({
-  clientID: process.env.GOOGLE_CLIENT_ID,
-  clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-  callbackURL: process.env.GOOGLE_CALLBACK_URL,
+  clientID: config.googleClientId,
+  clientSecret: config.googleClientSecret,
+  callbackURL: config.googleCallbackUrl,
 }, async (accessToken, refreshToken, profile, done) => {
   try {
-    let usuario = await User.findOne({ email: profile.emails[0].value });
+    const email = profile.emails?.[0]?.value;
+    const existingUser = await User.findOne({ email });
 
-    if (!usuario) {
-      usuario = new User({
-        username: profile.displayName,
-        email: profile.emails[0].value,
-        fotoPerfil: profile.photos[0].value,
-        password: await bcrypt.hash(profile.id, 10), // genera una "clave falsa"
-      });
-      await usuario.save();
+    if (existingUser) {
+      return done(null, existingUser);
     }
 
-    return done(null, usuario);
+    // ✅ Crear nuevo usuario si no existe
+    const newUser = new User({
+      username: profile.displayName,
+      email,
+      fotoPerfil: profile.photos?.[0]?.value || '',
+      password: await bcrypt.hash(profile.id, 10), // Contraseña fake
+    });
+
+    await newUser.save();
+    return done(null, newUser);
   } catch (error) {
     return done(error, null);
   }
 }));
 
-// Para usar req.user
+// 🎒 Serialización
 passport.serializeUser((user, done) => {
   done(null, user.id);
 });
+
 passport.deserializeUser(async (id, done) => {
-  const user = await User.findById(id);
-  done(null, user);
+  try {
+    const user = await User.findById(id);
+    done(null, user);
+  } catch (err) {
+    done(err, null);
+  }
 });

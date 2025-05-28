@@ -378,7 +378,4 @@ export const actualizarPerfilUsuario = async (req, res) => {
     console.error("❌ Error al actualizar perfil:", error);
     res.status(500).json({ exito: false, mensaje: "Error al actualizar perfil", error: error.message });
   }
-
-  console.log("🔁 Actualizando perfil con:", req.body);
-
 };

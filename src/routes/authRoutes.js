@@ -38,7 +38,7 @@ const loginLimiter = rateLimit({
 /* ───────────────────────────────────────────────
    🖼️ Configuración de subida de foto de perfil
 ─────────────────────────────────────────────── */
-const profileDir = path.join(__dirname, "../uploads/profiles");
+const profileDir = path.join(__dirname, "../../public/uploads/profiles");
 
 if (!fs.existsSync(profileDir)) {
   fs.mkdirSync(profileDir, { recursive: true });

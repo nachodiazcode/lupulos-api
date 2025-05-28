@@ -429,3 +429,55 @@ Error: ENOENT: no such file or directory, mkdir '/uploads/locations'
     at Multipart.emit (node:events:517:28)
     at HeaderParser.cb (/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/busboy/lib/types/multipart.js:358:14)
     at HeaderParser.push (/Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/node_modules/busboy/lib/types/multipart.js:162:20) {"timestamp":"2025-05-21 23:57:12"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-22 21:04:20"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-22 21:04:22"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-22 21:04:23"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-22 21:04:23"}
+error: 🔥 Uncaught Exception: uploadProfileImage is not defined
+ReferenceError: uploadProfileImage is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/userRoutes.js:55:43
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-23 16:21:32"}
+error: 🔥 Uncaught Exception: uploadProfileImage is not defined
+ReferenceError: uploadProfileImage is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/userRoutes.js:55:43
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-23 19:31:00"}
+error: 🔥 Uncaught Exception: uploadProfileImage is not defined
+ReferenceError: uploadProfileImage is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/userRoutes.js:55:43
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-24 04:00:25"}
+error: 🔥 Uncaught Exception: upload is not defined
+ReferenceError: upload is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/userRoutes.js:55:43
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-24 04:01:16"}
+error: 🔥 Uncaught Exception: uploadProfileImage is not defined
+ReferenceError: uploadProfileImage is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/userRoutes.js:55:43
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-24 04:09:35"}
+error: 🔥 Uncaught Exception: actualizarFotoPerfil is not defined
+ReferenceError: actualizarFotoPerfil is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/userRoutes.js:55:44
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-24 04:09:52"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-25 05:05:51"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-25 05:05:52"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-27 08:22:08"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-27 08:22:10"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-27 08:22:12"}
+error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-27 08:22:12"}

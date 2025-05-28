@@ -1,14 +1,32 @@
+// 📦 Cargar variables de entorno
 import dotenv from 'dotenv';
+dotenv.config();
 
-dotenv.config(); // 🔹 Cargar variables de entorno
-
-const config = {  // 🔹 Definir la constante antes de exportarla
+// 🛠️ Configuración centralizada de la app
+const config = {
+    // 🔧 Servidor
     port: process.env.PORT || 3940,
-    mongoURI: process.env.MONGO_URI || 'mongodb://localhost:27017/lupulos',
-    jwtSecret: process.env.JWT_SECRET || 'supersecreto',
-    logLevel: process.env.LOG_LEVEL || 'info',
-    tokenExpiration: process.env.TOKEN_EXPIRATION || '30d',
 
+    // 🗄️ Base de datos
+    mongoURI: process.env.MONGO_URI || 'mongodb://localhost:27017/lupulos',
+
+    // 🔐 JWT - Tokens
+    jwtSecret: process.env.JWT_SECRET, // ❗ Requerido
+    jwtRefreshSecret: process.env.JWT_REFRESH_SECRET, // ❗ Requerido
+    tokenExpiration: process.env.TOKEN_EXPIRATION || '15m',
+    refreshTokenExpiration: process.env.REFRESH_TOKEN_EXPIRATION || '30d',
+
+    // 🌐 OAuth (Google)
+    googleClientId: process.env.GOOGLE_CLIENT_ID,
+    googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
+    googleCallbackUrl: process.env.GOOGLE_CALLBACK_URL,
+
+    // 📋 Logs
+    logLevel: process.env.LOG_LEVEL || 'info',
 };
 
-export default config; // 🔹 Exportación por defecto
+if (!config.jwtSecret || !config.jwtRefreshSecret) {
+    throw new Error('❌ JWT_SECRET y JWT_REFRESH_SECRET son obligatorios en el archivo .env');
+}
+
+export default config;

@@ -94,3 +94,14 @@ export const getPerfilPublico = async (req, res) => {
         res.status(500).json({ message: "Error al obtener perfil", error: error.message });
     }
 };
+
+export const getFollowingList = async (req, res) => {
+  try {
+    const user = await User.findById(req.params.id).populate('following', 'username fotoPerfil email');
+    if (!user) return res.status(404).json({ mensaje: 'Usuario no encontrado' });
+
+    res.json({ exito: true, usuarios: user.following });
+  } catch (error) {
+    res.status(500).json({ mensaje: 'Error al obtener los usuarios seguidos' });
+  }
+};

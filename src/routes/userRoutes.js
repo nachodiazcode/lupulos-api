@@ -52,4 +52,11 @@ router.get("/zona/facebook", authMiddleware, authFacebook, (req, res) => {
   res.json({ exito: true, mensaje: "Bienvenido usuario Facebook 📘" });
 });
 
+import { getFollowingList } from "../controllers/userController.js";
+
+router.get("/:id/siguiendo", getFollowingList);
+
+
+
+
 export default router;

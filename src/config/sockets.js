@@ -1,36 +1,47 @@
 const { Server } = require('socket.io');
+const Message = require('../models/Message'); // ✅ Requiere fuera de callbacks
 
 module.exports = function setupSocket(server) {
     const io = new Server(server, {
         cors: {
-            origin: "*", // Permitir cualquier origen (ajustar en producción)
-        }
+            origin: "*", // 🔒 En producción: poner frontend URL
+        },
     });
 
     io.on('connection', (socket) => {
-        console.log('Usuario conectado:', socket.id);
+        console.log('🟢 Usuario conectado:', socket.id);
 
-        // Unirse a un chat específico
+        // 🔸 Unirse a sala específica
         socket.on('joinChat', (chatId) => {
+            if (!chatId) return;
             socket.join(chatId);
-            console.log(`Usuario ${socket.id} se unió al chat ${chatId}`);
+            console.log(`👥 Usuario ${socket.id} se unió al chat ${chatId}`);
         });
 
-        // Escuchar mensajes
+        // ✉️ Enviar mensaje
         socket.on('sendMessage', async ({ chatId, sender, message }) => {
-            const newMessage = { chatId, sender, message, createdAt: new Date() };
-            
-            // Guardar en MongoDB
-            const Message = require('../models/Message');
-            await Message.create(newMessage);
+            if (!chatId || !sender || !message) {
+                return console.warn('⚠️ Datos incompletos en sendMessage');
+            }
 
-            // Emitir a los usuarios en el chat
-            io.to(chatId).emit('receiveMessage', newMessage);
+            const newMessage = {
+                chatId,
+                sender,
+                message,
+                createdAt: new Date().toISOString(),
+            };
+
+            try {
+                await Message.create(newMessage);
+                io.to(chatId).emit('receiveMessage', newMessage);
+            } catch (err) {
+                console.error('❌ Error guardando mensaje en DB:', err);
+            }
         });
 
-        // Desconexión
+        // 🔌 Desconexión
         socket.on('disconnect', () => {
-            console.log('Usuario desconectado:', socket.id);
+            console.log('🔴 Usuario desconectado:', socket.id);
         });
     });
 
