@@ -45,14 +45,16 @@ export const verificarToken = (req, res, next) => {
     const token = tokenHeader.split(" ")[1];
     const decoded = jwt.verify(token, config.jwtSecret);
 
-    req.user = {
-      id: decoded.id || decoded._id || decoded.userId || null,
+    console.log("🔍 Decoded JWT:", decoded); // <-- MUEVELO AQUÍ
+
+    req.usuario = {
+      id: decoded.id || decoded._id || decoded.userId || decoded.sub || null,
       rol: decoded.rol || "user",
       provider: decoded.provider || "local",
-      ...decoded,
+      email: decoded.email,
     };
 
-    logger.info(`🔐 Acceso permitido al usuario: ${req.user.id}`);
+    logger.info(`🔐 Acceso permitido al usuario: ${req.usuario.id}`);
     next();
   } catch (error) {
     logger.error(`❌ Acceso denegado por token inválido: ${error.message}`);

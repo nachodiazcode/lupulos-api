@@ -4,10 +4,14 @@ import Post from "../models/Post.js";
 import Beer from "../models/Beer.js";
 import Lugares from "../models/Locations.js";
 import RevokedToken from "../models/RevokedToken.js";
+import jwt from "jsonwebtoken";
+
+import config from './../config/config.js';
+
 import {
   generateAccessToken,
   generateRefreshToken,
-  verifyRefreshToken,
+  verifyRefreshToken
 } from "../utils/jwt.js";
 import dotenv from "dotenv";
 dotenv.config();
@@ -81,26 +85,40 @@ export const loginUser = async (req, res) => {
   }
 };
 
-// 🟢 LOGIN CON GOOGLE
 export const loginWithGoogle = async (req, res) => {
   try {
-    const usuario = req.user;
+    console.log("📥 Entrando a loginWithGoogle");
 
-    const accessToken = generateAccessToken(usuario._id);
-    const refreshToken = generateRefreshToken(usuario._id);
+    const user = req.user;
+    if (!user) {
+      console.log("❌ req.user está vacío");
+      return res.status(401).json({ exito: false, mensaje: "Usuario no autenticado con Google" });
+    }
 
-    usuario.refreshToken = refreshToken;
-    await usuario.save();
+    console.log("✅ Usuario autenticado:", user.email);
 
-    // Redirección al frontend con token y datos
-    res.redirect(
-      `http://localhost:3000/login-success?token=${accessToken}&email=${usuario.email}&username=${usuario.username}&userId=${usuario._id}`
+    // 👇 Aquí el cambio clave: aseguramos que se incluya `id`
+    const token = jwt.sign(
+      {
+        id: user._id.toString(),
+        email: user.email
+      },
+      config.jwtSecret,
+      { expiresIn: "1h" }
     );
+
+    const frontendURL = process.env.FRONTEND_URL || "http://localhost:3000";
+    const redirectURL = `${frontendURL}/auth/google/success?token=${token}`;
+
+    console.log("🔁 Redirigiendo a:", redirectURL);
+    res.redirect(redirectURL);
   } catch (error) {
     console.error("❌ Error en loginWithGoogle:", error);
-    res.redirect("http://localhost:3000/auth/login");
+    res.status(500).json({ exito: false, mensaje: "Error al autenticar con Google" });
   }
 };
+
+
 
 // 🟢 LOGOUT
 export const logoutUser = async (req, res) => {
@@ -304,6 +322,33 @@ const buildUserResponse = (user) => ({
   badges: user.badges || [],
   fechaCreacion: user.createdAt,
 });
+
+// 🟢 PERFIL desde token JWT
+export const getPerfilDesdeToken = async (req, res) => {
+  try {
+    const usuarioId = req.usuario?.id;
+    if (!usuarioId) {
+      return res.status(401).json({ exito: false, mensaje: "ID de usuario no encontrado en token" });
+    }
+
+    const user = await User.findById(usuarioId)
+      .select("username email fotoPerfil fotoBanner bio ciudad pais estiloFavorito followers following badges createdAt notasDeCata")
+      .populate("followers", "username fotoPerfil")
+      .populate("following", "username fotoPerfil");
+
+    if (!user) {
+      return res.status(404).json({ exito: false, mensaje: "Usuario no encontrado" });
+    }
+
+    res.json({
+      exito: true,
+      usuario: buildUserResponse(user)
+    });
+  } catch (error) {
+    console.error("❌ Error en getPerfilDesdeToken:", error);
+    res.status(500).json({ exito: false, mensaje: "Error interno del servidor", error: error.message });
+  }
+};
 
 
 // 🛠️ ACTUALIZAR CREDENCIALES DEL USUARIO

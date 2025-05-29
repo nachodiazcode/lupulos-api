@@ -17,8 +17,12 @@ import {
   resetPassword,
   getPerfilUsuario,
   loginWithGoogle,
-  actualizarPerfilUsuario
+  actualizarPerfilUsuario,
+  getPerfilDesdeToken
 } from '../controllers/authController.js';
+
+import { verificarToken } from '../middlewares/authMiddleware.js'; // ✅ Middleware para proteger rutas
+import User from '../models/User.js'; // Necesario para buscar el usuario autenticado
 
 const router = express.Router();
 
@@ -92,12 +96,17 @@ router.get("/google", passport.authenticate("google", {
   scope: ["profile", "email"]
 }));
 
-router.get("/google/callback",
+router.get(
+  "/google/callback",
   passport.authenticate("google", {
     session: false,
-    failureRedirect: "/auth/login"
+    failureRedirect: "/auth/login",
   }),
   loginWithGoogle
+  
 );
+
+router.get("/perfil", verificarToken, getPerfilDesdeToken);
+
 
 export default router;

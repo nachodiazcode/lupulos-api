@@ -10,33 +10,46 @@ if (!config.googleClientId || !config.googleClientSecret || !config.googleCallba
 }
 
 // 📌 Estrategia de Google
-passport.use(new GoogleStrategy({
-  clientID: config.googleClientId,
+
+passport.use(new GoogleStrategy(
+  {
+    clientID: config.googleClientId,
   clientSecret: config.googleClientSecret,
-  callbackURL: config.googleCallbackUrl,
-}, async (accessToken, refreshToken, profile, done) => {
-  try {
-    const email = profile.emails?.[0]?.value;
-    const existingUser = await User.findOne({ email });
+  callbackURL: config.googleCallbackUrl
+  },
+  async (accessToken, refreshToken, profile, done) => {
+    try {
+      console.log("🎯 Profile recibido de Google:", profile);
 
-    if (existingUser) {
-      return done(null, existingUser);
+      const email = profile.emails?.[0]?.value;
+      if (!email) {
+        return done(new Error("El perfil de Google no contiene email."), null);
+      }
+
+      let user = await User.findOne({ email });
+
+      if (user) {
+        console.log("✅ Usuario existente:", user.email);
+      } else {
+        user = new User({
+          username: profile.displayName,
+          email,
+          fotoPerfil: profile.photos?.[0]?.value || "",
+          password: await bcrypt.hash(profile.id, 10), // se usa Google ID como clave dummy
+          authProvider: "google", // 🔒 útil para saber cómo se registró el usuario
+        });
+
+        await user.save();
+        console.log("🆕 Usuario creado con Google:", user.email);
+      }
+
+      return done(null, user);
+    } catch (error) {
+      console.error("❌ Error en estrategia Google:", error);
+      return done(error, null);
     }
-
-    // ✅ Crear nuevo usuario si no existe
-    const newUser = new User({
-      username: profile.displayName,
-      email,
-      fotoPerfil: profile.photos?.[0]?.value || '',
-      password: await bcrypt.hash(profile.id, 10), // Contraseña fake
-    });
-
-    await newUser.save();
-    return done(null, newUser);
-  } catch (error) {
-    return done(error, null);
   }
-}));
+));
 
 // 🎒 Serialización
 passport.serializeUser((user, done) => {

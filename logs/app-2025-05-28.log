@@ -1,0 +1,340 @@
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-28 00:13:43"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-28 02:17:49"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-28 02:17:58"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-28 02:17:58"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 02:18:04"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 02:18:04"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 02:18:20"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 02:18:20"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-28 02:30:12"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 02:30:12"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 02:30:12"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 02:30:16"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x4jBnsy3GyvmJayOptBxHH-aKfH_f6SbdXPjG5OQDxBl43lS9knXRz_IrksE4ZuNg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 02:30:16"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 02:39:26"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 02:39:26"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 02:42:20"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x5lXX13frZeAQNsPkqciz-NvL67b1SgnCY4MvI5FWyxHNFlTFo94TnCgAs8xG8Hxw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none {"timestamp":"2025-05-28 02:42:20"}
+info: [Petición] GET /favicon.ico {"timestamp":"2025-05-28 02:42:21"}
+info: [Petición] GET /.well-known/appspecific/com.chrome.devtools.json {"timestamp":"2025-05-28 02:42:28"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 02:42:46"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x5o79RD1uA1Okz6fTnZ-DgpTEdFmsQjhjfEiAgbO4gfPZy-edryvqlgneEcr3lerA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 02:42:46"}
+info: [Petición] GET /.well-known/appspecific/com.chrome.devtools.json {"timestamp":"2025-05-28 02:42:47"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 02:50:34"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 02:50:34"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 02:50:55"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x6X5ocXD8-TKkfG_dDDlrmdn35asExwXRXDujaY9yz7k7Pxob163pWhZgyzuYQ4Fg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 02:50:56"}
+info: [Petición] GET /.well-known/appspecific/com.chrome.devtools.json {"timestamp":"2025-05-28 02:50:56"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 02:54:00"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 02:54:00"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 02:54:18"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x7AYfLyufkos65cYHKpXwFUd3trzo7cToOICjv7X-qdr2yv16NHEsrdVRKk27Vc6A&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none {"timestamp":"2025-05-28 02:54:19"}
+info: [Petición] GET /.well-known/appspecific/com.chrome.devtools.json {"timestamp":"2025-05-28 02:54:19"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 03:13:59"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 03:13:59"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 03:14:03"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x46H2Xt8Dze70gBRL98QTcO-tjC_JndMRgOLtFUXM6YDoaqY27yJ7lVg6YINj_1tQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 03:14:04"}
+info: [Petición] GET /.well-known/appspecific/com.chrome.devtools.json {"timestamp":"2025-05-28 03:14:04"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 03:14:46"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 03:14:46"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 03:14:49"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 03:14:49"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 03:14:54"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x48rZ93rw5SbEmowW6L1-cux93OoUQPE2ehUJQEl3T7rmAClKRb5MmdYZq6U72TFw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 03:14:54"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 03:21:38"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x6yYR_bmKniUhl3tZgFEOGr5I-CPPQ_HdRziSGe123pN7dwrS-OGutvV8ObPqjcpw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 03:21:38"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 03:23:47"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x7Q-1sj-D0_Fy7HG6kkB9uqDHB4OinHP2pfwtugth8d5YZddyJZcCgf5HYPuprqrA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none {"timestamp":"2025-05-28 03:23:47"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 03:24:05"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x7Jon2_eHWjT_056-9_Z1Ub5QO7mEz4pdo5wr3VoaM9puu4gdaQo4bvBt6LUmcAAQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none {"timestamp":"2025-05-28 03:24:06"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 03:28:31"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x5L4UxLILr34y_Ze3mYZrH0_Vf29Er9OLLZzfAzcl4YLsLsm_bBBmGYShlLMJ2phg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 03:28:31"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 03:28:32"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 03:28:32"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 03:29:14"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 03:29:14"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 03:29:20"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x44lIuL3pKN8PlyjBjb2kNYapvV41PKsek8tSuc5D3WDPXMQl0zUsyfaKd78m6oew&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none {"timestamp":"2025-05-28 03:29:21"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 03:29:23"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 03:29:23"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 03:31:21"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 03:31:21"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 03:31:29"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 03:31:29"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 03:31:44"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x4gI-KqD_IUmgrE863rcO5M9JJRYTAPH1ufYvBW1ontfRslYNHr7EwpE9YKtUz8xw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 03:31:44"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 03:31:45"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 03:32:19"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x7xZ7P0SCwfECLYigyGOKyhodtOHZo-8hpusxhnH5iS5BwuOqfU_F_rw8u8mnfoAw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 03:32:19"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 03:32:20"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 03:32:42"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x70IDDulSK3z_6u7I10IXMTGX4m3Z7NmZrDe4OdypWtphFPQn8JYjIlYEQ1-tVt0A&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 03:32:42"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 03:32:43"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 03:32:46"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 03:34:13"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x6PYSipo-tleuS0rYpsrZoCinDfihtT0Y9Yn3Ob9kCYoJLhmYb0rwci9cpHje8i9g&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none {"timestamp":"2025-05-28 03:34:14"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 03:34:16"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 03:34:50"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 03:34:50"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 03:34:58"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x5gwHhNfKGLaBXANes2NlXBaWQKoQca2FACmPggTVIbx5sWkF5SuLciPWZCIrNl_g&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none {"timestamp":"2025-05-28 03:34:59"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 03:35:11"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 03:35:11"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 03:36:52"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x7Ujb7MeyC7qG3LWi-PzngyaX4H3PLOBs8D5LlgZvqahiBOpfniOK2mM77HS7Fi5A&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none {"timestamp":"2025-05-28 03:36:53"}
+warn: ⚠️ Conexión a MongoDB perdida {"timestamp":"2025-05-28 03:52:42"}
+info: 🔄 MongoDB reconectado {"timestamp":"2025-05-28 03:52:52"}
+warn: ⚠️ Conexión a MongoDB perdida {"timestamp":"2025-05-28 04:01:56"}
+info: 🔄 MongoDB reconectado {"timestamp":"2025-05-28 04:02:06"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 15:09:44"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x6Dn8F_Otjx289CaN4Bh9vrJ143OA_MdewEq9qiRzEhKwHw40X6qVYbUvglPFrH9w&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 15:09:44"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 15:09:51"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x5yMutRkSNTyjIPnQ9dsYZ1texl5y8RLUYRcZscvV_0yG76R9oTZpV6rWuUhtVRQw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none {"timestamp":"2025-05-28 15:09:52"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 15:10:26"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 15:10:26"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 15:10:49"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x5utM3uH_RzYRNWEoIv5ZkX8SGmb4Kqw64jnh8BB8wUfKawlpt6Tl0QVKaNQwJw8g&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent {"timestamp":"2025-05-28 15:10:54"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 15:11:23"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 15:11:40"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 15:11:40"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 15:27:24"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 15:27:24"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 15:28:10"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 15:28:10"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 15:30:30"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 15:30:30"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 15:44:50"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x7Bb4H76De7uUmUKkDCTTQvVpusvcyHj9ga3VlD-Y4x2ZXb9HGHT6SXB_D0xczV4w&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 15:44:50"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 16:05:12"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x5Z8AmHUhZsC4Ov5XvwQO0AKyc7NO0oUgS0Tq79p7M514R8IAUInjVoASRnUK5r0w&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 16:05:13"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 21:06:56"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 21:06:56"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 21:08:39"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 21:08:39"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:09:00"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x7kiRng_BWQHxFcutOeuxPsKvfvphh4t8D_79pBoNVfCUUFITSgW0fNrNCJlGfbUg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none {"timestamp":"2025-05-28 21:09:01"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 21:09:15"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 21:09:15"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 21:09:16"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 21:09:16"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:09:18"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x5SKV_lgJjazxjDP80GGKhBDIb9dY5DRntdfKnv1O6oI-6e8K7I-9ZXPVTYGfucxg&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none {"timestamp":"2025-05-28 21:09:19"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 21:09:32"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 21:09:32"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:09:34"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x5340Q37qHL-N1pihBWnKLpq14p20Bf3SxB98oogNhedI5qkRnhDvTO2mr3I3sUHw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none {"timestamp":"2025-05-28 21:09:34"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 21:09:49"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 21:09:49"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:11:27"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x7NCt4C56wUdT1ysfujVaMUaU56IvLxPMOy5Lf-1Z7-kV6WxD_-6EVCdLL5uHwbeQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none {"timestamp":"2025-05-28 21:11:28"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:11:42"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x67BM4bxuRsFQVfPeMmMuFHwkVIrd4OgoSZquD6dI3tj-cNjMm1vzgU7GxFLwCoiQ&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none {"timestamp":"2025-05-28 21:11:42"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:11:47"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x7cbQiOJAxA8khLKffQCDp_KWofR7lHPaN-bTdbxRcTvayUmEpafZwwokB8-SqvXA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 21:11:47"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:11:54"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x5q5nliEihZcOn1qAfbBRd8Bk4gIaIhYPhcbLMZUtSDzH5I_9U4CI0FLGLg5W81dg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none {"timestamp":"2025-05-28 21:11:55"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 21:12:06"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 21:12:06"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:12:16"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x4Bl0EjJU22Uf7vzXwdgZE9jheevzcJYWoM5UsUgYdrP3copbpRvPkK1mgz_sL8Cw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none {"timestamp":"2025-05-28 21:12:16"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 21:12:35"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 21:12:35"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:13:44"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x45rKAUoUxgHl_JeI-lZPKjzybCU1ykKlp9CB_ekskHlkMSCWuU12EBbBVg6mlIyA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none {"timestamp":"2025-05-28 21:13:45"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 21:13:55"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 21:13:55"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:14:09"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x5ldx3dcLeosKP_HtBZV3tro7ux6ygLeXswf8ODKQOmujLYvyA25kS53ElvGvi5-w&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none {"timestamp":"2025-05-28 21:14:10"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 21:16:57"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 21:16:57"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 21:17:23"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 21:17:23"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 21:17:57"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 21:17:57"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 21:17:58"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 21:17:58"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:18:01"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x7rkuwh__EfnLvpydh3beZZQFGwbnoVEJM0Sr-COwYQrMUi9iJG0lwytihnZBgWgw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 21:18:02"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 21:18:21"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 21:18:21"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:18:22"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x5SH5cT_t7Y1ha0N_VCTlABUj0b8HjfWB9bCCmg9Kn0nUowFfuFS5-DGZ7oj7QZvA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none {"timestamp":"2025-05-28 21:18:23"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 21:19:23"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 21:19:23"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:19:26"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x7D6IbzvbH1YcRYrUmCaUOnsIjrXq2XiJDuGW_CCPMPF58lI-WKYePtPM4TPlwM8A&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none {"timestamp":"2025-05-28 21:19:27"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:19:34"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x4KzTgDyPlgYEdb73r7Cz0tr9zmE537PSoEhO6HzoQvKQhltO-OoUu5TFN0nMEIEQ&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none {"timestamp":"2025-05-28 21:19:35"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-28 21:19:39"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:19:55"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x7aC35XNJcUVlPCojPsGMzJZI1xN77hVvZrocWkfsfuWscJO5UUqxM9ZL2UVCdogQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 21:19:55"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:20:07"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x7rMCsyf1XG-yTMtJzhuR7S4Q3pOwsjpSVOlapIoFsuiqmqays1JcX9BQ5R_frdDA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none {"timestamp":"2025-05-28 21:20:08"}
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-28 21:20:16"}
+info: [Petición] GET /api/auth/perfil/679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-28 21:20:16"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:20:20"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x6Zj5ykPEMUkF5YOuKidAVXbInMQ7wUs1ZxOIsqA5kC5R9NxmKp5FduyL2sbN0ymA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none {"timestamp":"2025-05-28 21:20:20"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-28 21:20:31"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-28 21:20:31"}
+info: [Petición] GET / {"timestamp":"2025-05-28 21:20:54"}
+info: Página de bienvenida accedida desde ::1 {"timestamp":"2025-05-28 21:20:54"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-28 21:21:04"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:21:28"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x7n93dcYXTYqHpIXXGZHPbisVkr38bShmILKtvDl2c9GE4rdipAZnA5Ou7duIgyBQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 21:21:29"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-28 21:21:34"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-28 21:21:34"}
+info: [Petición] GET /api/post {"timestamp":"2025-05-28 21:21:38"}
+info: [Petición] GET /api/post {"timestamp":"2025-05-28 21:21:38"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-28 21:21:46"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-28 21:21:46"}
+info: [Petición] GET /api/user {"timestamp":"2025-05-28 21:21:56"}
+info: [Petición] GET /api/user {"timestamp":"2025-05-28 21:21:57"}
+info: [Petición] GET /api/user/680881c0cb30b200868b2637 {"timestamp":"2025-05-28 21:22:02"}
+info: [Petición] GET /api/user/680881c0cb30b200868b2637 {"timestamp":"2025-05-28 21:22:02"}
+info: [Petición] GET /api/user {"timestamp":"2025-05-28 21:22:04"}
+info: [Petición] GET /api/user {"timestamp":"2025-05-28 21:22:04"}
+info: [Petición] GET / {"timestamp":"2025-05-28 21:22:11"}
+info: Página de bienvenida accedida desde ::1 {"timestamp":"2025-05-28 21:22:11"}
+info: [Petición] GET / {"timestamp":"2025-05-28 21:25:04"}
+info: Página de bienvenida accedida desde ::1 {"timestamp":"2025-05-28 21:25:04"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-28 21:25:20"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:25:37"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x4pHsGo-MXNj6yLs6p08h1GrEFqyL1OcmGMJRTUa-Z3h9pxPCsyr40mIRCbQ0Kcww&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 21:25:38"}
+info: [Petición] GET /api/auth/perfil {"timestamp":"2025-05-28 21:25:39"}
+info: [Petición] GET /api/auth/perfil {"timestamp":"2025-05-28 21:33:27"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:33:41"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x4Y4GPbO-E4CKTbe8fG3hJq2WYcOOPCiFn_nzssdL1Go850ElljGpb-WszCJCCOKQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none {"timestamp":"2025-05-28 21:33:41"}
+info: [Petición] GET /api/auth/perfil {"timestamp":"2025-05-28 21:33:42"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:35:58"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x4HXlYgSIW8xQui907u2JYqjTRq4VRQiHHNQYf2lhDJjU-9RGwU4PoEn97NoOcRWQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 21:35:59"}
+info: [Petición] GET /api/auth/perfil {"timestamp":"2025-05-28 21:36:00"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 21:36:49"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 21:36:49"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:36:59"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x6eV3no2g4sumUm_4lhi9AwOzMLNpwPGuKAIggOoPPH66cEQMemQgCArzaz4_vfJw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 21:37:00"}
+info: [Petición] GET /api/auth/perfil {"timestamp":"2025-05-28 21:37:03"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 21:37:50"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 21:37:50"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:38:04"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x6Zro6rvJ4QHeAtMuTEr4l9KVJIEZQvY4spSNrxpqYvafAlMzF4hTL1PlPxTn9vKA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none {"timestamp":"2025-05-28 21:38:04"}
+info: [Petición] GET /api/auth/perfil {"timestamp":"2025-05-28 21:38:05"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:38:49"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x59mcprC0zRGU6vtPLkodjhGVP6gJrzRLDZ6EFA4r70OfonSV287-tYWv4ImLPa6Q&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none {"timestamp":"2025-05-28 21:38:50"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:39:08"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x59eof_dTBW2WysgjBthkVdh0H-Jdcw59a73rageZ40Toitd3xPRi_tU-SHBSGZDQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none {"timestamp":"2025-05-28 21:39:08"}
+info: [Petición] GET /auth/perfil {"timestamp":"2025-05-28 21:39:09"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:40:21"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x4hSCH5eGxDHdayhTahETIE9Gx_-l_7YMQ7sreuTGG_padPOhvYkdWxsMgdXpAoXA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 21:40:21"}
+info: [Petición] GET /api/auth/perfil {"timestamp":"2025-05-28 21:40:22"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 21:43:07"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 21:43:07"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:46:05"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x6GtBwonpp0uVdas35v-U8YAK6nOmZHbwiKBbqatbqQZlKv6bEF1VXeA2gmrmsIxQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 21:46:05"}
+info: [Petición] GET /api/auth/perfil {"timestamp":"2025-05-28 21:46:06"}
+info: 🔐 Acceso permitido al usuario: 680881c0cb30b200868b2637 {"timestamp":"2025-05-28 21:46:06"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 21:46:22"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 21:46:22"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 21:46:37"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x506jKg5hJkCpxHTR4HR5hvtoxrSLOEcOZpsty46rZPeNX0-esLcKX7oELyLj2I6g&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none {"timestamp":"2025-05-28 21:46:37"}
+info: [Petición] GET /api/auth/perfil {"timestamp":"2025-05-28 21:46:38"}
+info: 🔐 Acceso permitido al usuario: 680881c0cb30b200868b2637 {"timestamp":"2025-05-28 21:46:38"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 22:16:24"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 22:16:24"}
+error: 🔥 Uncaught Exception: getPerfilDesdeToken is not defined
+ReferenceError: getPerfilDesdeToken is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/authRoutes.js:122:39
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-28 22:16:46"}
+error: 🔥 Uncaught Exception: getPerfilDesdeToken is not defined
+ReferenceError: getPerfilDesdeToken is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/authRoutes.js:122:39
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-28 22:18:45"}
+error: 🔥 Uncaught Exception: getPerfilDesdeToken is not defined
+ReferenceError: getPerfilDesdeToken is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/authRoutes.js:108:39
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-28 22:20:49"}
+error: 🔥 Uncaught Exception: getPerfilDesdeToken is not defined
+ReferenceError: getPerfilDesdeToken is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/authRoutes.js:108:39
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-28 22:22:18"}
+error: 🔥 Uncaught Exception: getPerfilDesdeToken is not defined
+ReferenceError: getPerfilDesdeToken is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/authRoutes.js:108:39
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-28 22:31:48"}
+error: 🔥 Uncaught Exception: getPerfilDesdeToken is not defined
+ReferenceError: getPerfilDesdeToken is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/authRoutes.js:108:39
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-28 22:34:34"}
+error: 🔥 Uncaught Exception: getPerfilDesdeToken is not defined
+ReferenceError: getPerfilDesdeToken is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/authRoutes.js:108:39
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-28 22:37:09"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 22:37:18"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 22:37:18"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 23:18:26"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x62SC4L_3GYgUVPb3amtahIFWUPHFYP8lwtwfUlYj6MgurQXWVQRY1j_mO5xp_dgg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 23:18:27"}
+info: [Petición] GET /api/auth/perfil {"timestamp":"2025-05-28 23:18:29"}
+info: 🔐 Acceso permitido al usuario: 680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:18:29"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 23:26:12"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x72zQIrmT0B_CLqL8HzSLVUQzwDROIrXGJf1BHyoK5uguhZ-ebqfegUXgATiNK2lA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 23:26:13"}
+info: [Petición] GET /api/auth/perfil {"timestamp":"2025-05-28 23:26:15"}
+info: 🔐 Acceso permitido al usuario: 680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:26:15"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 23:27:57"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 23:27:57"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 23:28:22"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x6rKVgGHQD8FX8K0gmwNcPxVQvWeG5-Xxe3ovpASFqcUkaFWiex180jMlw7wKq6TA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 23:28:22"}
+info: [Petición] GET /api/auth/perfil {"timestamp":"2025-05-28 23:28:23"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 23:29:16"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 23:29:16"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 23:29:54"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x7csfMpeVhKxpD1Tnl2DhqnXEl7RNtZrOjg45lQGaDtXsaen__d3PiuA-kg6DTXwA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 23:29:54"}
+info: [Petición] GET /api/auth/perfil {"timestamp":"2025-05-28 23:29:58"}
+info: 🔐 Acceso permitido al usuario: 680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:29:58"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 23:30:58"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x7EY-r3KnD11_PVl9UChp9dX7ZNixkJEmAj6kNretJaTjVC3KyCi7_tHg7RC3ne6w&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-05-28 23:30:59"}
+info: [Petición] GET /api/auth/perfil {"timestamp":"2025-05-28 23:31:00"}
+info: 🔐 Acceso permitido al usuario: 680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:31:00"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 23:34:27"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 23:34:28"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 23:34:30"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 23:34:30"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 23:34:34"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x7bbyeN_BoiAwUpWGxBiBzs3wYe4iojZn02NWZziO2_fTjAMhvI--czGbbBBQfYDg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none {"timestamp":"2025-05-28 23:34:35"}
+info: [Petición] GET /api/auth/perfil {"timestamp":"2025-05-28 23:34:36"}
+info: 🔐 Acceso permitido al usuario: 680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:34:36"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 23:35:29"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 23:35:29"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 23:35:40"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x4EFMkkPTFGltX9PK7YK7dzifIe34wOdVog5wcZOuHLdiRwpLtgYi3NKCxAmrQ-xA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none {"timestamp":"2025-05-28 23:35:40"}
+info: [Petición] GET /api/auth/perfil {"timestamp":"2025-05-28 23:35:41"}
+info: 🔐 Acceso permitido al usuario: 680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:35:41"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-05-28 23:36:21"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-05-28 23:36:21"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 23:36:25"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x76n6nD45DBX4KX5PmLaaFQWR-juXLxUaCDg_f29eHWE2is0hHPe40PsYyFE7UOhA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none {"timestamp":"2025-05-28 23:36:25"}
+info: [Petición] GET /api/auth/perfil {"timestamp":"2025-05-28 23:36:26"}
+info: 🔐 Acceso permitido al usuario: 680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:36:26"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:36:27"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:36:27"}
+info: [Petición] GET /api/auth/perfil/680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:36:35"}
+info: [Petición] GET /api/auth/perfil/680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:36:35"}

@@ -481,3 +481,52 @@ error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-27 08:22:0
 error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-27 08:22:10"}
 error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-27 08:22:12"}
 error: ❌ Error de autenticación: jwt expired {"timestamp":"2025-05-27 08:22:12"}
+error: 🔥 Uncaught Exception: getPerfilDesdeToken is not defined
+ReferenceError: getPerfilDesdeToken is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/authRoutes.js:122:39
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-28 22:16:46"}
+error: 🔥 Uncaught Exception: getPerfilDesdeToken is not defined
+ReferenceError: getPerfilDesdeToken is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/authRoutes.js:122:39
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-28 22:18:45"}
+error: 🔥 Uncaught Exception: getPerfilDesdeToken is not defined
+ReferenceError: getPerfilDesdeToken is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/authRoutes.js:108:39
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-28 22:20:49"}
+error: 🔥 Uncaught Exception: getPerfilDesdeToken is not defined
+ReferenceError: getPerfilDesdeToken is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/authRoutes.js:108:39
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-28 22:22:18"}
+error: 🔥 Uncaught Exception: getPerfilDesdeToken is not defined
+ReferenceError: getPerfilDesdeToken is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/authRoutes.js:108:39
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-28 22:31:48"}
+error: 🔥 Uncaught Exception: getPerfilDesdeToken is not defined
+ReferenceError: getPerfilDesdeToken is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/authRoutes.js:108:39
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-28 22:34:34"}
+error: 🔥 Uncaught Exception: getPerfilDesdeToken is not defined
+ReferenceError: getPerfilDesdeToken is not defined
+    at file:///Users/ignaciodiaz/Documents/proyectos/lupulos-api/lupulos-app/src/routes/authRoutes.js:108:39
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-28 22:37:09"}
