@@ -338,3 +338,68 @@ info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:36:27"}
 info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:36:27"}
 info: [Petición] GET /api/auth/perfil/680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:36:35"}
 info: [Petición] GET /api/auth/perfil/680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:36:35"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:37:56"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:37:56"}
+info: [Petición] POST /api/beer/682ea47560bd20858e1b817e/like {"timestamp":"2025-05-28 23:37:57"}
+info: 🔐 Usuario autenticado correctamente: 680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:37:57"}
+info: ✅ Like agregado por 680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:37:57"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:37:57"}
+info: [Petición] POST /api/beer/682c1d7c43d139e895c1d034/like {"timestamp":"2025-05-28 23:38:00"}
+info: 🔐 Usuario autenticado correctamente: 680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:38:00"}
+info: ✅ Like agregado por 680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:38:00"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:38:00"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-28 23:38:09"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-28 23:38:09"}
+info: [Petición] GET /api/location/682ea2d060bd20858e1b8132 {"timestamp":"2025-05-28 23:38:20"}
+info: [Petición] GET /api/auth/perfil/680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:38:27"}
+info: [Petición] GET /api/auth/perfil/680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:38:27"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:40:32"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:40:32"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-28 23:40:34"}
+info: [Petición] GET /api/location {"timestamp":"2025-05-28 23:40:34"}
+info: [Petición] GET /api/location/68102c462b4abded75f230cb {"timestamp":"2025-05-28 23:40:43"}
+info: [Petición] POST /api/auth/login {"timestamp":"2025-05-28 23:40:47"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:40:49"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:40:49"}
+info: [Petición] POST /api/beer/682ea47560bd20858e1b817e/unlike {"timestamp":"2025-05-28 23:40:53"}
+info: 🔐 Usuario autenticado correctamente: 679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-28 23:40:53"}
+info: 👎 Like removido por 679a9a7ec0fd31f8046370ac desde ruta explícita {"timestamp":"2025-05-28 23:40:53"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:40:53"}
+info: [Petición] POST /api/beer/682ea47560bd20858e1b817e/like {"timestamp":"2025-05-28 23:40:54"}
+info: 🔐 Usuario autenticado correctamente: 679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-28 23:40:54"}
+info: ✅ Like agregado por 679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-28 23:40:54"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:40:54"}
+info: [Petición] POST /api/beer/682c1d7c43d139e895c1d034/like {"timestamp":"2025-05-28 23:40:55"}
+info: 🔐 Usuario autenticado correctamente: 679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-28 23:40:55"}
+info: ✅ Like agregado por 679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-28 23:40:55"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:40:55"}
+info: [Petición] POST /api/beer/682f1e5aecb494ebae30cb3d/like {"timestamp":"2025-05-28 23:40:58"}
+info: 🔐 Usuario autenticado correctamente: 679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-28 23:40:58"}
+info: ✅ Like agregado por 679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-28 23:40:58"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:40:58"}
+info: [Petición] POST /api/beer/680baa8e009ac0d8120f1f4b/like {"timestamp":"2025-05-28 23:41:05"}
+info: 🔐 Usuario autenticado correctamente: 679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-28 23:41:05"}
+info: ✅ Like agregado por 679a9a7ec0fd31f8046370ac {"timestamp":"2025-05-28 23:41:05"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:41:05"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:41:33"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:41:36"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:41:37"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:41:41"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-05-28 23:41:47"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x4wVAgo5X6Ik8eP-idjRFrLaRYjUZcY6lM2g6KQTVPO56mb5Dia6uwIYdSEsJUWZg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none {"timestamp":"2025-05-28 23:41:47"}
+info: [Petición] GET /api/auth/perfil {"timestamp":"2025-05-28 23:41:49"}
+info: 🔐 Acceso permitido al usuario: 680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:41:49"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:41:50"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:41:50"}
+info: [Petición] POST /api/beer/682f1e5aecb494ebae30cb3d/like {"timestamp":"2025-05-28 23:41:57"}
+info: 🔐 Usuario autenticado correctamente: 680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:41:57"}
+info: ✅ Like agregado por 680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:41:57"}
+info: [Petición] GET /api/beer {"timestamp":"2025-05-28 23:41:57"}
+info: [Petición] GET /api/beer/682f1e5aecb494ebae30cb3d {"timestamp":"2025-05-28 23:42:03"}
+info: [Petición] GET /api/beer/682f1e5aecb494ebae30cb3d {"timestamp":"2025-05-28 23:42:03"}
+info: [Petición] POST /api/beer/682f1e5aecb494ebae30cb3d/review {"timestamp":"2025-05-28 23:42:10"}
+info: 🔐 Usuario autenticado correctamente: 680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:42:10"}
+info: 📝 Reseña añadida por 680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:42:10"}
+info: [Petición] GET /api/beer/682f1e5aecb494ebae30cb3d {"timestamp":"2025-05-28 23:42:10"}
+info: [Petición] GET /api/auth/perfil/680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:45:12"}
+info: [Petición] GET /api/auth/perfil/680881c0cb30b200868b2637 {"timestamp":"2025-05-28 23:45:12"}

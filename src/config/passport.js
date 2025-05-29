@@ -34,7 +34,7 @@ passport.use(new GoogleStrategy(
         user = new User({
           username: profile.displayName,
           email,
-          fotoPerfil: profile.photos?.[0]?.value || "",
+      fotoPerfil: profile.photos[0].value, // <-- ESTA ES LA CLAVE
           password: await bcrypt.hash(profile.id, 10), // se usa Google ID como clave dummy
           authProvider: "google", // 🔒 útil para saber cómo se registró el usuario
         });
@@ -47,6 +47,7 @@ passport.use(new GoogleStrategy(
     } catch (error) {
       console.error("❌ Error en estrategia Google:", error);
       return done(error, null);
+
     }
   }
 ));
