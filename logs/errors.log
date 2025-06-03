@@ -530,3 +530,5 @@ ReferenceError: getPerfilDesdeToken is not defined
     at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
     at async loadESM (node:internal/process/esm_loader:34:7)
     at async handleMainPromise (node:internal/modules/run_main:106:12) {"timestamp":"2025-05-28 22:37:09"}
+error: ❌ Acceso denegado por token inválido: jwt expired {"timestamp":"2025-06-01 17:56:06"}
+error: ❌ Acceso denegado por token inválido: jwt expired {"timestamp":"2025-06-01 17:56:06"}

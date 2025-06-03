@@ -31,41 +31,44 @@ const storage = multer.diskStorage({
 // 🟢 Crear nuevo lugar
 export const createLocation = async (req, res) => {
   try {
-    console.log("🟡 Body recibido:", req.body);
-    console.log("🟡 Archivo recibido:", req.file);
+    const { nombre, descripcion, direccion, usuario } = req.body;
 
-    const { nombre, descripcion, ciudad, pais, calle } = req.body;
-    const imagen = req.file?.filename;
+    const direccionParsed = JSON.parse(direccion); // convertir string a objeto
 
-    if (!nombre || !descripcion || !ciudad || !pais || !calle || !imagen) {
-      console.warn("⚠️ Falta uno o más campos obligatorios");
-      return res.status(400).json({
-        mensaje: "Todos los campos son obligatorios",
-        data: { nombre, descripcion, ciudad, pais, calle, imagen }
-      });
+    if (
+      !nombre ||
+      !descripcion ||
+      !direccionParsed.calle ||
+      !direccionParsed.ciudad ||
+      !direccionParsed.pais ||
+      !usuario ||
+      !req.file
+    ) {
+      return res.status(400).json({ mensaje: "Faltan campos obligatorios" });
     }
 
-  const nuevoLugar = new Location({
-  nombre,
-  descripcion,
-  direccion: {
-    pais,
-    ciudad,
-    estado: 'Región Metropolitana', // ⚠️ Puedes dejarlo así por ahora si no lo pides en el form
-    calle,
-  },
-  imagen: `/uploads/locations/${imagen}`,
-});
+    const nuevoLugar = await Lugares.create({
+      nombre,
+      descripcion,
+      direccion: {
+        calle: direccionParsed.calle,
+        ciudad: direccionParsed.ciudad,
+        estado: direccionParsed.estado || "", // opcional
+        pais: direccionParsed.pais,
+        codigoPostal: direccionParsed.codigoPostal || "",
+      },
+      usuario,
+      imagen: `/uploads/locations/${req.file.filename}`,
+    });
 
-    await nuevoLugar.save();
-    console.log("✅ Lugar creado con éxito:", nuevoLugar);
-
-    res.status(201).json({ mensaje: "Lugar creado", datos: nuevoLugar });
+    res.status(201).json({ exito: true, mensaje: "Lugar creado correctamente", datos: nuevoLugar });
   } catch (error) {
     console.error("❌ Error al crear lugar:", error);
-    res.status(500).json({ mensaje: "Error del servidor", error });
+    res.status(500).json({ mensaje: "Error interno del servidor" });
   }
 };
+
+
 
 export const createMultipleLocations = async (req, res) => {
   try {

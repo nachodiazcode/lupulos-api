@@ -1,0 +1,14 @@
+[34m[2025-06-02 22:16:56] INFO: Servidor iniciado en el puerto 3940[39m
+[34m[2025-06-02 22:16:56] INFO: ✅ MongoDB conectado: localhost[39m
+[34m[2025-06-02 22:17:05] INFO: Servidor iniciado en el puerto 3940[39m
+[34m[2025-06-02 22:17:05] INFO: ✅ MongoDB conectado: localhost[39m
+[34m[2025-06-02 22:37:32] INFO: [Petición] GET /api/auth/google[39m
+[34m[2025-06-02 22:37:33] INFO: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x4pasHguAEtJYqlGwdb3ZhINaTSUDEuvlTcogGDbtJEGFX40cJfP0fNjhHZb6gAXw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none[39m
+[34m[2025-06-02 22:37:37] INFO: [Petición] GET /api/auth/perfil[39m
+[34m[2025-06-02 22:37:37] INFO: 🔐 Acceso permitido al usuario: 680881c0cb30b200868b2637[39m
+[34m[2025-06-02 22:37:42] INFO: [Petición] GET /api/beer[39m
+[34m[2025-06-02 22:37:42] INFO: [Petición] GET /api/beer[39m
+[34m[2025-06-02 22:37:50] INFO: [Petición] GET /api/user[39m
+[34m[2025-06-02 22:37:50] INFO: [Petición] GET /api/user[39m
+[34m[2025-06-02 22:37:55] INFO: [Petición] GET /api/post[39m
+[34m[2025-06-02 22:37:55] INFO: [Petición] GET /api/post[39m

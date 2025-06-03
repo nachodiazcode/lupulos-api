@@ -1,0 +1,114 @@
+info: [Petición] GET /api/auth/google {"timestamp":"2025-06-02 00:20:28"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x7aetIj3maMCazeN2jIVrh-P5RKFSt5OCXHUl__tXQTL7zxqlvWA6rqkaI4DYaRkg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-06-02 00:20:31"}
+info: [Petición] GET /api/auth/perfil {"timestamp":"2025-06-02 00:20:32"}
+info: 🔐 Acceso permitido al usuario: 680881c0cb30b200868b2637 {"timestamp":"2025-06-02 00:20:32"}
+info: [Petición] GET /api/beer {"timestamp":"2025-06-02 00:20:35"}
+info: [Petición] GET /api/beer {"timestamp":"2025-06-02 00:20:35"}
+info: [Petición] GET /api/location {"timestamp":"2025-06-02 00:20:45"}
+info: [Petición] GET /api/location {"timestamp":"2025-06-02 00:20:45"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-06-02 00:22:22"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-06-02 00:22:22"}
+info: [Petición] GET /api/location {"timestamp":"2025-06-02 00:28:50"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-06-02 00:29:21"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x5NtIPbjn8CUrz1YWMcFG0WcRUVrGMGTosfXRFV1rfRHoPoueXQrtwy7fKZZK5aKQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-06-02 00:29:22"}
+info: [Petición] GET /api/auth/perfil {"timestamp":"2025-06-02 00:29:28"}
+info: 🔐 Acceso permitido al usuario: 680881c0cb30b200868b2637 {"timestamp":"2025-06-02 00:29:28"}
+info: [Petición] GET /api/beer {"timestamp":"2025-06-02 00:29:33"}
+info: [Petición] GET /api/beer {"timestamp":"2025-06-02 00:29:33"}
+info: [Petición] GET /api/location {"timestamp":"2025-06-02 00:29:39"}
+info: [Petición] GET /api/location {"timestamp":"2025-06-02 00:29:39"}
+info: [Petición] POST /api/location {"timestamp":"2025-06-02 00:30:15"}
+info: 🔐 Usuario autenticado correctamente: 680881c0cb30b200868b2637 {"timestamp":"2025-06-02 00:30:15"}
+info: [Petición] GET /api/location {"timestamp":"2025-06-02 00:41:53"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-06-02 00:42:48"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x7Hhf8HBb72Bc2OfbZGJHBLEasw1gvOjyH3zwK738DaxQXEU-rfisJPVLqn8EigsA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-06-02 00:42:48"}
+info: [Petición] GET /api/auth/perfil {"timestamp":"2025-06-02 00:42:49"}
+info: 🔐 Acceso permitido al usuario: 680881c0cb30b200868b2637 {"timestamp":"2025-06-02 00:42:49"}
+info: [Petición] GET /api/beer {"timestamp":"2025-06-02 00:42:58"}
+info: [Petición] GET /api/beer {"timestamp":"2025-06-02 00:42:59"}
+info: [Petición] POST /api/beer/683cd4a7fa95d0bc8726552b/like {"timestamp":"2025-06-02 00:43:11"}
+info: 🔐 Usuario autenticado correctamente: 680881c0cb30b200868b2637 {"timestamp":"2025-06-02 00:43:11"}
+info: ✅ Like agregado por 680881c0cb30b200868b2637 {"timestamp":"2025-06-02 00:43:11"}
+info: [Petición] GET /api/beer {"timestamp":"2025-06-02 00:43:12"}
+info: [Petición] GET /api/location {"timestamp":"2025-06-02 00:43:19"}
+info: [Petición] GET /api/location {"timestamp":"2025-06-02 00:43:20"}
+info: [Petición] POST /api/location {"timestamp":"2025-06-02 00:44:00"}
+info: 🔐 Usuario autenticado correctamente: 680881c0cb30b200868b2637 {"timestamp":"2025-06-02 00:44:00"}
+info: [Petición] GET /api/location {"timestamp":"2025-06-02 00:44:01"}
+info: [Petición] GET /api/post {"timestamp":"2025-06-02 00:44:55"}
+info: [Petición] GET /api/post {"timestamp":"2025-06-02 00:44:55"}
+info: [Petición] POST /api/post/upload {"timestamp":"2025-06-02 00:47:19"}
+info: [Petición] POST /api/post {"timestamp":"2025-06-02 00:47:19"}
+info: ✅ Nuevo post creado por usuario 680881c0cb30b200868b2637: Odissea realmente ! 💪 {"timestamp":"2025-06-02 00:47:19"}
+info: [Petición] GET /api/post {"timestamp":"2025-06-02 00:47:19"}
+info: [Petición] GET /api/post/683d2cd76a4a6ecd807c0f88 {"timestamp":"2025-06-02 00:47:59"}
+info: [Petición] GET /api/post/683d2cd76a4a6ecd807c0f88/comentarios {"timestamp":"2025-06-02 00:47:59"}
+info: [Petición] GET /api/post/683d2cd76a4a6ecd807c0f88 {"timestamp":"2025-06-02 00:47:59"}
+info: [Petición] GET /api/post/683d2cd76a4a6ecd807c0f88/comentarios {"timestamp":"2025-06-02 00:48:00"}
+info: [Petición] DELETE /api/post/683d2cd76a4a6ecd807c0f88 {"timestamp":"2025-06-02 00:48:43"}
+info: [Petición] GET /api/post {"timestamp":"2025-06-02 00:48:53"}
+info: [Petición] GET /api/post {"timestamp":"2025-06-02 00:48:53"}
+info: [Petición] GET /api/post {"timestamp":"2025-06-02 00:56:47"}
+info: [Petición] POST /api/post/upload {"timestamp":"2025-06-02 00:57:35"}
+info: [Petición] POST /api/post {"timestamp":"2025-06-02 00:57:35"}
+info: ✅ Nuevo post creado por usuario 680881c0cb30b200868b2637: Odissea reaelmente!! ❤️🍺 {"timestamp":"2025-06-02 00:57:36"}
+info: [Petición] GET /api/post {"timestamp":"2025-06-02 00:57:36"}
+info: [Petición] GET /api/post/683d2f3f6a4a6ecd807c0f9d {"timestamp":"2025-06-02 00:57:54"}
+info: [Petición] GET /api/post/683d2f3f6a4a6ecd807c0f9d/comentarios {"timestamp":"2025-06-02 00:57:54"}
+info: [Petición] GET /api/post/683d2f3f6a4a6ecd807c0f9d/comentarios {"timestamp":"2025-06-02 00:57:54"}
+info: [Petición] GET /api/post/683d2f3f6a4a6ecd807c0f9d {"timestamp":"2025-06-02 00:57:54"}
+info: [Petición] POST /api/post/683d2f3f6a4a6ecd807c0f9d/like {"timestamp":"2025-06-02 00:57:57"}
+info: [Petición] GET /api/post/683d2f3f6a4a6ecd807c0f9d {"timestamp":"2025-06-02 00:57:58"}
+info: [Petición] GET /api/user {"timestamp":"2025-06-02 00:59:24"}
+info: [Petición] GET /api/user {"timestamp":"2025-06-02 00:59:25"}
+info: [Petición] GET /api/user/679a9a7ec0fd31f8046370ac {"timestamp":"2025-06-02 01:01:50"}
+info: [Petición] GET /api/user/679a9a7ec0fd31f8046370ac {"timestamp":"2025-06-02 01:01:52"}
+info: [Petición] POST /api/follow/679a9a7ec0fd31f8046370ac/follow {"timestamp":"2025-06-02 01:07:16"}
+info: 🔐 Usuario autenticado correctamente: 680881c0cb30b200868b2637 {"timestamp":"2025-06-02 01:07:16"}
+info: [Petición] GET /api/user/679a9a7ec0fd31f8046370ac {"timestamp":"2025-06-02 01:07:17"}
+info: [Petición] GET /api/auth/perfil/680881c0cb30b200868b2637 {"timestamp":"2025-06-02 01:08:24"}
+info: [Petición] GET /api/auth/perfil/680881c0cb30b200868b2637 {"timestamp":"2025-06-02 01:08:24"}
+info: [Petición] GET /api/user {"timestamp":"2025-06-02 01:12:57"}
+info: [Petición] GET /api/user {"timestamp":"2025-06-02 01:12:57"}
+info: [Petición] GET /api/user/680881c0cb30b200868b2637 {"timestamp":"2025-06-02 01:12:59"}
+info: [Petición] GET /api/user/680881c0cb30b200868b2637 {"timestamp":"2025-06-02 01:12:59"}
+warn: ⚠️ Conexión a MongoDB perdida {"timestamp":"2025-06-02 03:39:18"}
+info: 🔄 MongoDB reconectado {"timestamp":"2025-06-02 03:39:28"}
+warn: ⚠️ Conexión a MongoDB perdida {"timestamp":"2025-06-02 04:58:06"}
+info: 🔄 MongoDB reconectado {"timestamp":"2025-06-02 04:58:17"}
+warn: ⚠️ Conexión a MongoDB perdida {"timestamp":"2025-06-02 05:13:37"}
+info: 🔄 MongoDB reconectado {"timestamp":"2025-06-02 05:13:49"}
+warn: ⚠️ Conexión a MongoDB perdida {"timestamp":"2025-06-02 15:25:27"}
+info: 🔄 MongoDB reconectado {"timestamp":"2025-06-02 15:25:36"}
+warn: ⚠️ Conexión a MongoDB perdida {"timestamp":"2025-06-02 16:13:27"}
+info: 🔄 MongoDB reconectado {"timestamp":"2025-06-02 16:13:38"}
+warn: ⚠️ Conexión a MongoDB perdida {"timestamp":"2025-06-02 17:19:52"}
+info: 🔄 MongoDB reconectado {"timestamp":"2025-06-02 17:20:02"}
+warn: ⚠️ Conexión a MongoDB perdida {"timestamp":"2025-06-02 18:00:59"}
+info: 🔄 MongoDB reconectado {"timestamp":"2025-06-02 18:01:09"}
+warn: ⚠️ Conexión a MongoDB perdida {"timestamp":"2025-06-02 19:39:16"}
+info: 🔄 MongoDB reconectado {"timestamp":"2025-06-02 19:39:26"}
+warn: ⚠️ Conexión a MongoDB perdida {"timestamp":"2025-06-02 19:54:47"}
+info: 🔄 MongoDB reconectado {"timestamp":"2025-06-02 19:54:57"}
+warn: ⚠️ Conexión a MongoDB perdida {"timestamp":"2025-06-02 20:22:29"}
+info: 🔄 MongoDB reconectado {"timestamp":"2025-06-02 20:22:39"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-06-02 20:57:05"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-06-02 20:57:05"}
+info: [Petición] GET /api/auth/google {"timestamp":"2025-06-02 21:10:56"}
+info: [Petición] GET /api/auth/google/callback?code=4%2F0AUJR-x4Kow9ndzy-PmayxgV03lR9KHuhP2Dww7e-EbtfsTrDLnh8eutoRjqk6lHrnNSdfw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none {"timestamp":"2025-06-02 21:10:57"}
+info: [Petición] GET /api/auth/perfil {"timestamp":"2025-06-02 21:11:04"}
+info: 🔐 Acceso permitido al usuario: 680881c0cb30b200868b2637 {"timestamp":"2025-06-02 21:11:04"}
+info: [Petición] GET /api/beer {"timestamp":"2025-06-02 21:11:32"}
+info: [Petición] GET /api/beer {"timestamp":"2025-06-02 21:11:32"}
+info: [Petición] GET /api/beer/683cd4a7fa95d0bc8726552b {"timestamp":"2025-06-02 21:12:40"}
+info: [Petición] GET /api/beer/683cd4a7fa95d0bc8726552b {"timestamp":"2025-06-02 21:12:43"}
+info: [Petición] GET /api/beer/683cd4a7fa95d0bc8726552b {"timestamp":"2025-06-02 21:14:12"}
+info: [Petición] GET /api/beer/683cd4a7fa95d0bc8726552b {"timestamp":"2025-06-02 21:14:12"}
+info: [Petición] GET /api/beer/683cd4a7fa95d0bc8726552b {"timestamp":"2025-06-02 21:16:34"}
+info: [Petición] GET /api/beer/683cd4a7fa95d0bc8726552b {"timestamp":"2025-06-02 21:30:59"}
+warn: ⚠️ Conexión a MongoDB perdida {"timestamp":"2025-06-02 21:35:38"}
+info: 🔄 MongoDB reconectado {"timestamp":"2025-06-02 21:35:50"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-06-02 21:41:02"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-06-02 21:41:03"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-06-02 21:41:15"}
+info: ✅ MongoDB conectado: localhost {"timestamp":"2025-06-02 21:41:15"}
