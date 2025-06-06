@@ -2,21 +2,25 @@
 
 echo "🚀 Deploying Lúpulos API..."
 
+# Ir al directorio del backend
+cd /var/www/lupulos-api
+
 # Cargar variables de entorno
 export $(cat .env | grep -v '^#' | xargs)
 
 # Instalar dependencias
-echo "📦 Installing dependencies..."
+echo "📦 Instalando dependencias..."
 npm install
 
-# Build (opcional si usás TypeScript u otra build step)
+# (opcional) Compilar si usás TypeScript
 # npm run build
 
-# Reiniciar el proceso con PM2
-echo "♻️ Restarting PM2 process..."
-pm2 restart lupulos-api || pm2 start src/app.js --name lupulos-api
+# Reiniciar con PM2
+echo "♻️ Reiniciando API con PM2..."
+pm2 delete lupulos-api
+pm2 start src/app.js --name lupulos-api
 
-# Mostrar estado
-pm2 list
+# Guardar configuración de PM2
+pm2 save
 
-echo "✅ Deployment completo!"
+echo "✅ API desplegada correctamente!"
