@@ -1049,3 +1049,5 @@
 [34m[2025-06-04 02:46:44] INFO: [Petición] GET /api/post/683fd97893be927da5739f29/comentarios[39m
 [34m[2025-06-06 14:40:36] INFO: Servidor iniciado en el puerto 3940[39m
 [34m[2025-06-06 14:40:36] INFO: ✅ MongoDB conectado: localhost[39m
+[34m[2025-06-06 15:10:35] INFO: Servidor iniciado en el puerto 3940[39m
+[34m[2025-06-06 15:10:35] INFO: ✅ MongoDB conectado: localhost[39m
