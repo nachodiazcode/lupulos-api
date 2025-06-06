@@ -19,4 +19,4 @@ pm2 restart lupulos-api || pm2 start src/app.js --name lupulos-api
 # Mostrar estado
 pm2 list
 
-echo "✅ Deployment complete!"
+echo "✅ Deployment completo!"
