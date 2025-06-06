@@ -11,9 +11,13 @@ import {
   addComment,
   getPostComments,
   updatePost,
-  uploadPostImage, // ✅ Renombrado como en beerRoutes
+  uploadPostImage,
+  editarComentario,
+  eliminarComentario,
+  contarVisita,
 } from "../controllers/postController.js";
-import { contarVisita } from "../controllers/postController.js";
+
+import { verificarToken } from '../middlewares/authMiddleware.js'; // ✅ Middleware para proteger rutas
 
 const router = express.Router();
 
@@ -38,12 +42,13 @@ router.post("/upload", upload.single("imagen"), (req, res, next) => {
   } else {
     res.status(400).json({ exito: false, mensaje: "❌ No se subió ningún archivo." });
   }
-}, uploadPostImage); // 👈 debe existir en postController.js
+}, uploadPostImage);
 
 // 📌 Rutas de posts
 router.get("/", getAllPosts);
 router.get("/:id", getPostById);
 router.post("/", createPost);
+router.put("/:id", updatePost);
 router.delete("/:id", deletePost);
 
 // 📌 Likes
@@ -53,11 +58,11 @@ router.post("/:id/unlike", unlikePost);
 // 📌 Comentarios
 router.post("/:postId/comentario", addComment);
 router.get("/:postId/comentarios", getPostComments);
+// routes/postRoutes.js (o donde estén)
+router.put("/comentario/:id", editarComentario);
+router.delete("/comentario/:id", eliminarComentario); // ✅ Eliminar comentario
 
-router.put("/:id", updatePost); // 👈 esta es la que te falta
-
-
-router.post("/:postId/visita", contarVisita);
-
+// 📌 Visita única
+router.post("/:postId/visita", verificarToken, contarVisita);
 
 export default router;

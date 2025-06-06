@@ -1,3 +1,4 @@
+// Importaciones
 import Post from "../models/Post.js";
 import User from "../models/User.js";
 import Comment from "../models/Comment.js";
@@ -9,7 +10,6 @@ export const uploadPostImage = (req, res) => {
     if (!req.file) {
       return res.status(400).json({ exito: false, mensaje: "❌ No se subió ninguna imagen." });
     }
-
     const ruta = `/uploads/posts/${req.file.filename}`;
     res.status(200).json({ exito: true, mensaje: "✅ Imagen subida con éxito", ruta });
   } catch (error) {
@@ -24,10 +24,10 @@ export const getAllPosts = async (req, res) => {
     const skip = (parseInt(page) - 1) * parseInt(limit);
 
     const posts = await Post.find()
-    .populate("usuario", "username fotoPerfil _id") // ✅ aseguramos que venga el _id
-    .sort({ [sort]: order === "desc" ? -1 : 1 })
-    .skip(skip)
-    .limit(parseInt(limit));
+      .populate("usuario", "username fotoPerfil _id")
+      .sort({ [sort]: order === "desc" ? -1 : 1 })
+      .skip(skip)
+      .limit(parseInt(limit));
 
     const total = await Post.countDocuments();
 
@@ -43,7 +43,7 @@ export const getAllPosts = async (req, res) => {
         imagenes: Array.isArray(post.imagenes) ? post.imagenes : [],
         usuario: post.usuario
           ? {
-              _id: post.usuario._id, // ✅ agregado
+              _id: post.usuario._id,
               username: post.usuario.username,
               fotoPerfil: post.usuario.fotoPerfil
             }
@@ -67,16 +67,13 @@ export const getAllPosts = async (req, res) => {
 export const createPost = async (req, res) => {
   try {
     const { titulo, contenido, usuario, imagenes = [] } = req.body;
-
     const nuevoPost = new Post({
       titulo,
       contenido,
       usuario,
       imagenes: Array.isArray(imagenes) ? imagenes : [imagenes],
     });
-
     await nuevoPost.save();
-
     logger.info(`✅ Nuevo post creado por usuario ${usuario}: ${titulo}`);
     res.status(201).json({ exito: true, mensaje: "✅ Post creado exitosamente", post: nuevoPost });
   } catch (error) {
@@ -90,16 +87,13 @@ export const getPostById = async (req, res) => {
   try {
     const { id } = req.params;
     const { usuarioId } = req.query;
-
     const post = await Post.findById(id).populate("usuario", "username fotoPerfil");
     if (!post) return res.status(404).json({ exito: false, mensaje: "❌ Post no encontrado" });
-
     if (usuarioId && (!post.vistoPor || !post.vistoPor.includes(usuarioId))) {
       post.visitas += 1;
       post.vistoPor = [...(post.vistoPor || []), usuarioId];
       await post.save();
     }
-
     res.json({ exito: true, post });
   } catch (error) {
     logger.error(`❌ Error obteniendo post: ${error.message}`);
@@ -121,26 +115,21 @@ export const deletePost = async (req, res) => {
   }
 };
 
-// 📌 Like
+// 📌 Like a post
 export const likePost = async (req, res) => {
   const { id } = req.params;
   const { userId, tipo } = req.body;
-
   try {
     const post = await Post.findById(id);
     if (!post) return res.status(404).json({ exito: false, mensaje: "Post no encontrado" });
-
     if (!post.reacciones) post.reacciones = {};
     if (!post.reacciones[tipo]) {
       post.reacciones[tipo] = { count: 0, usuarios: [] };
     }
-
-    // Prevenir duplicados
     if (!post.reacciones[tipo].usuarios.includes(userId)) {
       post.reacciones[tipo].usuarios.push(userId);
       post.reacciones[tipo].count += 1;
     }
-
     await post.save();
     res.json({ exito: true, mensaje: "Like agregado", post });
   } catch (error) {
@@ -149,20 +138,18 @@ export const likePost = async (req, res) => {
   }
 };
 
+// 📌 Quitar like
 export const unlikePost = async (req, res) => {
   const { id } = req.params;
   const { userId, tipo } = req.body;
-
   try {
     const post = await Post.findById(id);
     if (!post) return res.status(404).json({ exito: false, mensaje: "Post no encontrado" });
-
     const reaccion = post.reacciones[tipo];
     if (reaccion && reaccion.usuarios.includes(userId)) {
       reaccion.usuarios = reaccion.usuarios.filter(uid => uid !== userId);
       reaccion.count = Math.max(0, reaccion.count - 1);
     }
-
     await post.save();
     res.json({ exito: true, mensaje: "Like quitado", post });
   } catch (error) {
@@ -175,75 +162,97 @@ export const unlikePost = async (req, res) => {
 export const addComment = async (req, res) => {
   const { contenido, usuarioId } = req.body;
   const { postId } = req.params;
-
   try {
-    const nuevoComentario = new Comment({
-      comentario: contenido,
-      usuario: usuarioId,
-      post: postId,
-    });
-
+    const nuevoComentario = new Comment({ comentario: contenido, usuario: usuarioId, post: postId });
     await nuevoComentario.save();
-
-    await Post.findByIdAndUpdate(postId, {
-      $push: { comentarios: nuevoComentario._id },
-    });
-
+    await Post.findByIdAndUpdate(postId, { $push: { comentarios: nuevoComentario._id } });
     res.status(201).json({ exito: true, comentario: nuevoComentario });
   } catch (error) {
     res.status(500).json({ exito: false, mensaje: "Error al guardar comentario" });
   }
 };
 
-// 📌 Obtener comentarios de un post
+// 📌 Obtener comentarios
 export const getPostComments = async (req, res) => {
   try {
     const comentarios = await Comment.find({ post: req.params.postId })
       .sort({ fecha: -1 })
       .populate("usuario", "username");
-
     res.json({ exito: true, comentarios });
   } catch (error) {
     res.status(500).json({ exito: false, mensaje: "Error al obtener comentarios" });
   }
 };
 
-// 📌 Contar visita única
+// 📌 Editar comentario
+// controllers/postController.js
+// controllers/postController.js
+
+// 📌 Editar comentario
+export const editarComentario = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { comentario } = req.body;
+
+    if (!comentario) {
+      return res.status(400).json({ mensaje: "Comentario requerido" });
+    }
+
+    const comentarioExistente = await Comment.findById(id); // ✅ AQUÍ EL CAMBIO
+    if (!comentarioExistente) {
+      return res.status(404).json({ mensaje: "Comentario no encontrado" });
+    }
+
+    comentarioExistente.comentario = comentario;
+    await comentarioExistente.save();
+
+    res.status(200).json({ mensaje: "Comentario actualizado", comentario: comentarioExistente });
+  } catch (error) {
+    console.error("❌ Error al editar comentario:", error);
+    res.status(500).json({ mensaje: "Error del servidor" });
+  }
+};
+
+
+// 📌 Eliminar comentario
+export const eliminarComentario = async (req, res) => {
+  const { id } = req.params;
+  try {
+    const comentarioEliminado = await Comment.findByIdAndDelete(id);
+    if (!comentarioEliminado) return res.status(404).json({ exito: false, mensaje: "Comentario no encontrado" });
+    await Post.findByIdAndUpdate(comentarioEliminado.post, { $pull: { comentarios: id } });
+    res.json({ exito: true, mensaje: "Comentario eliminado" });
+  } catch (error) {
+    res.status(500).json({ exito: false, mensaje: "Error al eliminar comentario" });
+  }
+};
+
+// 📌 Contar visita
 export const contarVisita = async (req, res) => {
   const postId = req.params.id;
   const userId = req.body.userId;
-
   try {
     const post = await Post.findById(postId);
-
     if (!post.vistoPor.includes(userId)) {
       post.vistoPor.push(userId);
       post.visitas += 1;
       await post.save();
     }
-
     res.json({ exito: true, mensaje: "Visita contada." });
   } catch (error) {
     res.status(500).json({ exito: false, mensaje: "Error al contar visita." });
   }
 };
 
-// 📌 Actualizar un post
+// 📌 Actualizar post
 export const updatePost = async (req, res) => {
   try {
     const { id } = req.params;
     const { titulo, contenido } = req.body;
-
-    const postActualizado = await Post.findByIdAndUpdate(
-      id,
-      { titulo, contenido },
-      { new: true }
-    );
-
+    const postActualizado = await Post.findByIdAndUpdate(id, { titulo, contenido }, { new: true });
     if (!postActualizado) {
       return res.status(404).json({ exito: false, mensaje: "Post no encontrado" });
     }
-
     res.json({ exito: true, mensaje: "Post actualizado", post: postActualizado });
   } catch (error) {
     res.status(500).json({ exito: false, mensaje: "Error al actualizar el post", error: error.message });
