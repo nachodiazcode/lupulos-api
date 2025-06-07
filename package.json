@@ -7,7 +7,14 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/app.js"
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js",
+    "pm2:start": "pm2 start src/app.js --name lupulos-api",
+    "pm2:restart": "pm2 restart lupulos-api",
+    "pm2:stop": "pm2 stop lupulos-api",
+    "pm2:delete": "pm2 delete lupulos-api",
+    "pm2:list": "pm2 list",
+    "pm2:logs": "pm2 logs lupulos-api"
   },
   "keywords": [],
   "author": "",
