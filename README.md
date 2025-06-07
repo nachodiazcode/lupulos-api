@@ -103,3 +103,6 @@ Cada línea de código cuenta para fortalecer esta comunidad cervecera 🍻
 
 **Última actualización:** 22 de mayo de 2025  
 **Autor:** Ignacio Díaz · [nachodiazcode.io](https://nachodiazcode.io)
+
+
+## Cambios Package.json intengrando pm2  
