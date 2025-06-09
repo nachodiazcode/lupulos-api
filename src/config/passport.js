@@ -2,6 +2,8 @@ import passport from "passport";
 import { Strategy as GoogleStrategy } from "passport-google-oauth20";
 import User from "../models/User.js"; // asegúrate que la ruta esté bien
 import dotenv from "dotenv";
+import bcrypt from "bcrypt"; // si estás usando ES Modules (import/export)
+
 dotenv.config();
 
 passport.use(new GoogleStrategy({
