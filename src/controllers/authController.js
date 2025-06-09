@@ -92,15 +92,19 @@ export const loginWithGoogle = async (req, res) => {
     usuario.refreshToken = refreshToken;
     await usuario.save();
 
-    // Redirección al frontend con token y datos
+    // URL del frontend desde variables de entorno (seguro y flexible)
+    const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:3000";
+
     res.redirect(
-      `http://localhost:3000/login-success?token=${accessToken}&email=${usuario.email}&username=${usuario.username}&userId=${usuario._id}`
+      `${FRONTEND_URL}/login-success?token=${accessToken}&email=${usuario.email}&username=${usuario.username}&userId=${usuario._id}`
     );
   } catch (error) {
     console.error("❌ Error en loginWithGoogle:", error);
-    res.redirect("http://localhost:3000/auth/login");
+    const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:3000";
+    res.redirect(`${FRONTEND_URL}/auth/login`);
   }
 };
+
 
 // 🟢 LOGOUT
 export const logoutUser = async (req, res) => {
