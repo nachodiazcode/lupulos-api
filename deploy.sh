@@ -2,25 +2,39 @@
 
 echo "🚀 Desplegando Lúpulos App..."
 
-# Cargar variables de entorno si es necesario
-export $(cat .env | grep -v '^#' | xargs)
+# Ruta base del proyecto
+PROJECT_DIR="/var/www/lupulos-api"
+APP_DIR="$PROJECT_DIR/src"
 
-# Entrar al directorio (ajusta si estás en otro path)
-cd /var/www/lupulos-api/src
+# Entrar al directorio raíz del proyecto
+cd "$PROJECT_DIR" || { echo "❌ No se pudo acceder al directorio $PROJECT_DIR"; exit 1; }
+
+# Cargar variables de entorno si .env existe
+if [ -f .env ]; then
+  export $(grep -v '^#' .env | xargs) || echo "⚠️ No se pudieron exportar algunas variables"
+else
+  echo "❌ Archivo .env no encontrado"
+  exit 1
+fi
+
+# Validar que variables críticas estén definidas
+if [ -z "$JWT_SECRET" ] || [ -z "$JWT_REFRESH_SECRET" ]; then
+  echo "❌ JWT_SECRET o JWT_REFRESH_SECRET faltan en el entorno"
+  exit 1
+fi
+
+# Entrar al directorio con el código fuente
+cd "$APP_DIR" || { echo "❌ No se pudo acceder al directorio $APP_DIR"; exit 1; }
 
 # Instalar dependencias
 echo "📦 Instalando dependencias..."
-npm install
+npm install --production
 
-# (Opcional) Construcción si usas TypeScript
-# echo "🏗️ Compilando código..."
-# npm run build
-
-# Reiniciar con PM2
+# Reiniciar app con PM2
 echo "♻️ Reiniciando PM2..."
 pm2 restart lupulos-api || pm2 start app.js --name lupulos-api
 
-# Estado de PM2
+# Mostrar estado
 pm2 list
 
 echo "✅ ¡Despliegue completo!"
