@@ -1,0 +1,12 @@
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-06-14 00:10:55"}
+info: ✅ Conectado a MongoDB correctamente {"timestamp":"2025-06-14 00:10:56"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-06-14 01:08:06"}
+info: ✅ Conectado a MongoDB correctamente {"timestamp":"2025-06-14 01:08:06"}
+info: [Petición] POST /locations {"timestamp":"2025-06-14 01:45:22"}
+info: [Petición] POST /locations {"timestamp":"2025-06-14 01:45:38"}
+info: [Petición] POST /locations {"timestamp":"2025-06-14 01:46:35"}
+info: [Petición] POST /locations {"timestamp":"2025-06-14 01:49:36"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-06-14 02:00:00"}
+info: ✅ Conectado a MongoDB correctamente {"timestamp":"2025-06-14 02:00:00"}
+info: Servidor iniciado en el puerto 3940 {"timestamp":"2025-06-14 02:00:13"}
+info: ✅ Conectado a MongoDB correctamente {"timestamp":"2025-06-14 02:00:13"}

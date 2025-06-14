@@ -34,38 +34,56 @@ export const createLocation = async (req, res) => {
     console.log("🟡 Body recibido:", req.body);
     console.log("🟡 Archivo recibido:", req.file);
 
-    const { nombre, descripcion, ciudad, pais, calle } = req.body;
+    const { nombre, descripcion, direccion } = req.body;
     const imagen = req.file?.filename;
 
-    if (!nombre || !descripcion || !ciudad || !pais || !calle || !imagen) {
+    if (!nombre || !descripcion || !direccion || !imagen) {
       console.warn("⚠️ Falta uno o más campos obligatorios");
       return res.status(400).json({
         mensaje: "Todos los campos son obligatorios",
-        data: { nombre, descripcion, ciudad, pais, calle, imagen }
+        data: req.body
       });
     }
 
-  const nuevoLugar = new Location({
-  nombre,
-  descripcion,
-  direccion: {
-    pais,
-    ciudad,
-    estado: 'Región Metropolitana', // ⚠️ Puedes dejarlo así por ahora si no lo pides en el form
-    calle,
-  },
-  imagen: `/uploads/locations/${imagen}`,
-});
+    // 👇 parsear la dirección
+    let direccionParsed;
+    try {
+      direccionParsed = JSON.parse(direccion);
+    } catch (e) {
+      return res.status(400).json({ mensaje: "Error al parsear la dirección" });
+    }
+
+    const { ciudad, pais, calle, estado } = direccionParsed;
+
+    if (!ciudad || !pais || !calle || !estado) {
+      return res.status(400).json({
+        mensaje: "Faltan campos dentro de la dirección",
+        data: direccionParsed
+      });
+    }
+
+    const nuevoLugar = new Location({
+      nombre,
+      descripcion,
+      direccion: direccionParsed,
+      imagen: `/uploads/locations/${imagen}`,
+      usuario: req.body.usuario,
+    });
 
     await nuevoLugar.save();
-    console.log("✅ Lugar creado con éxito:", nuevoLugar);
 
-    res.status(201).json({ mensaje: "Lugar creado", datos: nuevoLugar });
+    return res.status(201).json({
+      mensaje: "Lugar creado exitosamente",
+      data: nuevoLugar,
+    });
   } catch (error) {
     console.error("❌ Error al crear lugar:", error);
-    res.status(500).json({ mensaje: "Error del servidor", error });
+    return res.status(500).json({
+      mensaje: "Error del servidor",
+    });
   }
 };
+
 
 
 export const createMultipleLocations = async (req, res) => {
