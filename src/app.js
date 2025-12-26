@@ -28,15 +28,24 @@ app.use(express.urlencoded({ extended: true }));
 
 // 🛡️ Configurar sesión y passport
 app.use(session({
-    secret: process.env.JWT_SECRET || "supersecreto",
-    resave: false,
-    saveUninitialized: false,
-  }));
+  secret: process.env.JWT_SECRET || "supersecreto",
+  resave: false,
+  saveUninitialized: false,
+}));
 app.use(passport.initialize());
 app.use(passport.session());
 
 // 📂 Servir archivos públicos
 app.use("/uploads", express.static(path.join(__dirname, "../public/uploads")));
+
+app.get('/health', (req, res) => {
+  res.status(200).json({
+    status: 'ok',
+    service: 'lupulos-app-api',
+    uptime: process.uptime(),
+    timestamp: new Date().toISOString()
+  });
+});
 
 
 // 📜 Logs básicos

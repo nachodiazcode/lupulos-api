@@ -1,0 +1,108 @@
+################################################################################
+# Node.js / NPM / Yarn / PNPM
+################################################################################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build outputs
+dist/
+build/
+out/
+.tmp/
+.temp/
+.cache/
+.eslintcache
+
+# Coverage / test artifacts
+coverage/
+.nyc_output/
+junit.xml
+
+################################################################################
+# Environment files (never commit secrets)
+################################################################################
+.env
+.env.*
+!.env.example
+!.env.sample
+
+################################################################################
+# Logs
+################################################################################
+logs/
+*.log
+
+################################################################################
+# OS / Editor / IDE
+################################################################################
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VSCode
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# JetBrains
+.idea/
+*.iml
+
+################################################################################
+# Git / tooling
+################################################################################
+# Optional: if you generate local git hooks or tooling outputs
+*.swp
+*.swo
+
+################################################################################
+# Runtime / local data
+################################################################################
+# SQLite / local DB files (if you ever use them)
+*.sqlite
+*.sqlite3
+*.db
+
+# Local uploads (usually should not be versioned)
+public/uploads/
+src/uploads/
+# If you DO want to version a placeholder folder structure, keep .gitkeep files:
+!public/uploads/**/.gitkeep
+!src/uploads/**/.gitkeep
+
+################################################################################
+# Docker
+################################################################################
+# Local override files
+docker-compose.override.yml
+
+################################################################################
+# Security / Certificates
+################################################################################
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+################################################################################
+# Misc
+################################################################################
+*.tgz
+*.gz
+*.zip

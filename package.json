@@ -1,25 +1,45 @@
 {
-  "name": "lupulos-app",
-  "version": "1.0.0",
+  "name": "lupulos-app-api",
+  "version": "1.2.0",
+  "description": "Backend API de lupulos-app con autenticación, seguridad, validaciones, Swagger, logging y soporte AWS (S3, Secrets Manager, SES). Optimizado para AWS EC2/ECS/Fargate.",
   "type": "module",
-  "directories": {
-    "test": "tests"
+  "private": true,
+  "engines": {
+    "node": ">=20.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/app.js"
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js",
+    "start:prod": "NODE_ENV=production node src/app.js",
+    "test": "jest --runInBand"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "lupulos-app",
+    "nodejs",
+    "express",
+    "backend",
+    "api",
+    "aws",
+    "ec2",
+    "ecs",
+    "fargate",
+    "s3",
+    "ses",
+    "secrets-manager",
+    "jwt",
+    "mongodb",
+    "swagger",
+    "devops"
+  ],
+  "author": "Ignacio Sergio Díaz",
+  "license": "MIT",
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@mui/icons-material": "^7.1.0",
-    "@mui/material": "^7.0.2",
-    "async-handler": "^0.0.3",
-    "axios": "^1.8.3",
+    "@aws-sdk/client-cloudwatch-logs": "^3.540.0",
+    "@aws-sdk/client-s3": "^3.540.0",
+    "@aws-sdk/client-secrets-manager": "^3.540.0",
+    "@aws-sdk/client-ses": "^3.540.0",
+    "@aws-sdk/client-ssm": "^3.540.0",
+    "axios": "^1.13.2",
     "bcrypt": "^6.0.0",
     "bcryptjs": "^2.4.3",
     "chalk": "^5.4.1",
@@ -31,6 +51,7 @@
     "express-session": "^1.18.1",
     "google-auth-library": "^9.15.1",
     "helmet": "^8.0.0",
+    "joi": "^17.13.3",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.9.5",
     "mongoose-paginate-v2": "^1.9.0",
@@ -41,25 +62,16 @@
     "passport-facebook": "^3.0.0",
     "passport-google-oauth20": "^2.0.0",
     "socket.io": "^4.8.1",
-    "socket.io-client": "^4.8.1",
-    "swagger": "^0.0.1",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",
     "winston": "^3.17.0",
     "winston-daily-rotate-file": "^5.0.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.0",
-    "@tailwindcss/postcss": "^4.0.14",
     "@types/node": "^22.13.10",
-    "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
     "eslint": "^9.22.0",
-    "eslint-config-next": "^15.2.2",
     "jest": "^29.7.0",
     "nodemon": "^3.1.9",
-    "supertest": "^7.0.0",
-    "tailwindcss": "^4.0.14",
-    "typescript": "^5.8.2"
+    "supertest": "^7.0.0"
   }
 }
