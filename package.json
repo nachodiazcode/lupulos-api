@@ -1,5 +1,5 @@
 {
-  "name": "lupulos-app-api",
+  "name": "lupulos-api",
   "version": "1.2.0",
   "description": "Backend API de lupulos-app con autenticación, seguridad, validaciones, Swagger, logging y soporte AWS (S3, Secrets Manager, SES). Optimizado para AWS EC2/ECS/Fargate.",
   "type": "module",

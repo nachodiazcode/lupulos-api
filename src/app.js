@@ -41,7 +41,7 @@ app.use("/uploads", express.static(path.join(__dirname, "../public/uploads")));
 app.get('/health', (req, res) => {
   res.status(200).json({
     status: 'ok',
-    service: 'lupulos-app-api',
+    service: 'lupulos-api',
     uptime: process.uptime(),
     timestamp: new Date().toISOString()
   });
