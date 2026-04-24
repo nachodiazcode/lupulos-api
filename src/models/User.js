@@ -2,45 +2,49 @@ import mongoose from "mongoose";
 import mongoosePaginate from "mongoose-paginate-v2";
 import bcrypt from "bcryptjs";
 
+/* =========================
+   Sub-schemas
+========================= */
+
 const badgeSchema = new mongoose.Schema({
-  nombre: String,
-  descripcion: String,
-  icono: String,
-  fechaObtenido: { type: Date, default: Date.now },
+  name: String,
+  description: String,
+  icon: String,
+  obtainedAt: { type: Date, default: Date.now },
 });
 
 const tastingNoteSchema = new mongoose.Schema({
-  cerveza: { type: mongoose.Schema.Types.ObjectId, ref: "Beer", required: true },
+  beer: { type: mongoose.Schema.Types.ObjectId, ref: "Beer", required: true },
   aroma: String,
-  sabor: String,
-  amargor: { type: Number, min: 1, max: 5 },
-  comentarioGeneral: String,
-  fecha: { type: Date, default: Date.now },
+  flavor: String,
+  bitterness: { type: Number, min: 1, max: 5 },
+  generalComment: String,
+  date: { type: Date, default: Date.now },
 });
 
 const reportSchema = new mongoose.Schema({
-  motivo: String,
-  fecha: { type: Date, default: Date.now },
-  por: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+  reason: String,
+  date: { type: Date, default: Date.now },
+  reportedBy: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
 });
 
 const historySchema = new mongoose.Schema({
-  accion: String,
-  fecha: { type: Date, default: Date.now },
-  referenciaId: mongoose.Schema.Types.ObjectId,
-  tipo: String,
+  action: String,
+  date: { type: Date, default: Date.now },
+  referenceId: mongoose.Schema.Types.ObjectId,
+  type: String,
 });
 
-const preferencesSchema = new mongoose.Schema({
-  amargor: { type: Number, default: 3, min: 1, max: 5 },
-  dulzor: { type: Number, default: 3, min: 1, max: 5 },
+const flavorPreferencesSchema = new mongoose.Schema({
+  bitterness: { type: Number, default: 3, min: 1, max: 5 },
+  sweetness: { type: Number, default: 3, min: 1, max: 5 },
   aroma: { type: Number, default: 3, min: 1, max: 5 },
 });
 
 const notificationsSchema = new mongoose.Schema({
-  comentarios: { type: Boolean, default: true },
+  comments: { type: Boolean, default: true },
   likes: { type: Boolean, default: true },
-  nuevosSeguidores: { type: Boolean, default: true },
+  newFollowers: { type: Boolean, default: true },
 });
 
 const socialLinksSchema = new mongoose.Schema({
@@ -49,9 +53,13 @@ const socialLinksSchema = new mongoose.Schema({
   twitter: { type: String, default: "" },
 });
 
+/* =========================
+   User Schema
+========================= */
+
 const userSchema = new mongoose.Schema(
   {
-    // Datos básicos
+    // Basic credentials
     username: { type: String, required: true, unique: true, trim: true },
     email: {
       type: String,
@@ -59,83 +67,128 @@ const userSchema = new mongoose.Schema(
       unique: true,
       trim: true,
       lowercase: true,
-      match: [/^\S+@\S+\.\S+$/, "Email inválido"],
+      match: [/^\S+@\S+\.\S+$/, "Invalid email"],
     },
     password: {
       type: String,
-      required: function () { return this.provider === "local"; },
+      required: function () {
+        return this.provider === "local";
+      },
       minlength: 6,
       select: false,
     },
     provider: { type: String, default: "local" },
 
-    // Perfil y personalización
-    fotoPerfil: {
+    // Profile & personalization
+    profilePicture: {
       type: String,
-      default: "https://www.example.com/default-avatar.jpg",
+      default: function () {
+        return `https://ui-avatars.com/api/?name=${this.username}`;
+      },
     },
-    fotoBanner: { type: String, default: "" },
+    bannerPicture: { type: String, default: "" },
     bio: { type: String, default: "", maxlength: 280 },
-    ciudad: { type: String, default: "" },
-    pais: { type: String, default: "" },
-    fechaNacimiento: { type: Date },
-    estiloFavorito: { type: String, default: "" },
-    perfilPublico: { type: Boolean, default: true },
+    city: { type: String, default: "" },
+    country: { type: String, default: "" },
+    birthDate: { type: Date },
+    favoriteStyle: { type: String, default: "" },
+    isPublic: { type: Boolean, default: true },
 
-    // Notificaciones
-    notificaciones: { type: notificationsSchema, default: () => ({}) },
+    // Notifications
+    notifications: { type: notificationsSchema, default: () => ({}) },
 
-    // Seguridad y estado
+    // Security & account status
     isVerified: { type: Boolean, default: false },
     refreshToken: { type: String, default: null },
     resetPasswordToken: { type: String },
     resetPasswordExpires: { type: Date },
-    baneado: { type: Boolean, default: false },
-    motivoBaneo: { type: String, default: "" },
+    isBanned: { type: Boolean, default: false },
+    banReason: { type: String, default: "" },
 
-    // Relaciones sociales
+    // Social relationships
     followers: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
     following: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
 
-    // Actividades
-    cervezasSubidas: [{ type: mongoose.Schema.Types.ObjectId, ref: "Beer" }],
-    lugaresSubidos: [{ type: mongoose.Schema.Types.ObjectId, ref: "Location" }],
-    postsCreados: [{ type: mongoose.Schema.Types.ObjectId, ref: "Post" }],
-    likes: [{ type: mongoose.Schema.Types.ObjectId, ref: "Post" }],
-    comentarios: [{ type: mongoose.Schema.Types.ObjectId, ref: "Comment" }],
+    // Activity tracking
+    beersCreated: [{ type: mongoose.Schema.Types.ObjectId, ref: "Beer" }],
+    placesCreated: [{ type: mongoose.Schema.Types.ObjectId, ref: "Place" }],
+    postsCreated: [{ type: mongoose.Schema.Types.ObjectId, ref: "Post" }],
+    likedPosts: [{ type: mongoose.Schema.Types.ObjectId, ref: "Post" }],
+    comments: [{ type: mongoose.Schema.Types.ObjectId, ref: "Comment" }],
 
-    // Preferencias
-    preferenciasDeSabor: { type: preferencesSchema, default: () => ({}) },
+    // Preferences
+    flavorPreferences: {
+      type: flavorPreferencesSchema,
+      default: () => ({}),
+    },
 
-    // Gamificación
+    // Gamification
     badges: [badgeSchema],
 
-    // Notas de cata
-    notasDeCata: [tastingNoteSchema],
+    // Tasting notes
+    tastingNotes: [tastingNoteSchema],
 
-    // Métricas y historial
+    // Metrics & history
     loginCount: { type: Number, default: 0 },
     lastLogin: { type: Date },
-    reputacion: { type: Number, default: 0 },
-    historial: [historySchema],
+    reputation: { type: Number, default: 0 },
+    history: [historySchema],
 
-    // Reportes
-    reportesRecibidos: [reportSchema],
+    // Reports
+    reportsReceived: [reportSchema],
 
-    // Roles y suscripciones
-    rol: {
+    // Roles & permissions
+    role: {
       type: String,
-      enum: ["usuario", "admin", "moderador", "premium"],
-      default: "usuario",
+      enum: ["owner", "admin", "moderator", "user"],
+      default: "user",
     },
-    suscripcionActiva: { type: Boolean, default: false },
-    plan: { type: String, enum: ["free", "premium", "pro"], default: "free" },
+    customPermissions: [{ type: String }],
 
-    // Metadatos
-    createdAt: { type: Date, default: Date.now, index: true },
+    // Subscriptions
+    hasActiveSubscription: { type: Boolean, default: false },
+    plan: {
+      type: String,
+      enum: ["free", "lupuloso", "pro", "explorer"],
+      default: "free",
+    },
+    activeSubscription: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Subscription",
+      default: null,
+    },
   },
-  { timestamps: true }
+  {
+    timestamps: true,
+    toJSON: { virtuals: true },
+    toObject: { virtuals: true },
+  }
 );
+
+/* =========================
+   Indexes
+========================= */
+
+userSchema.index({ followers: 1 });
+userSchema.index({ following: 1 });
+userSchema.index({ role: 1 });
+userSchema.index({ plan: 1 });
+
+/* =========================
+   Virtuals
+========================= */
+
+userSchema.virtual("followersCount").get(function () {
+  return this.followers?.length || 0;
+});
+
+userSchema.virtual("followingCount").get(function () {
+  return this.following?.length || 0;
+});
+
+/* =========================
+   Hooks & Methods
+========================= */
 
 // Hash password before save
 userSchema.pre("save", async function (next) {
@@ -144,10 +197,14 @@ userSchema.pre("save", async function (next) {
   next();
 });
 
-// Compare password method
+// Compare password
 userSchema.methods.comparePassword = async function (password) {
-  return await bcrypt.compare(password, this.password);
+  return bcrypt.compare(password, this.password);
 };
+
+/* =========================
+   Plugins & Export
+========================= */
 
 userSchema.plugin(mongoosePaginate);
 

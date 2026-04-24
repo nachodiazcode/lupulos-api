@@ -1,7 +1,9 @@
-import express from "express";
-import multer from "multer";
-import fs from "fs";
-import path from "path";
+import express from 'express';
+import multer from 'multer';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
 import {
   createPost,
   getAllPosts,
@@ -11,51 +13,58 @@ import {
   unlikePost,
   addComment,
   getPostComments,
+  updatePost,
   uploadPostImage,
-} from "../controllers/postController.js";
+  contarVisita,
+} from '../controllers/post.controller.js';
+
+import authMiddleware from '../middlewares/authMiddleware.js';
 
 const router = express.Router();
 
-// 📁 Ruta absoluta al directorio uploads/posts
-const uploadsPath = path.join(__dirname, "../uploads/posts");
+/* Resolve __dirname in ESM */
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-// 📁 Asegurarse que el directorio exista
+/* Upload directory */
+const uploadsPath = path.join(__dirname, '../uploads/posts');
 if (!fs.existsSync(uploadsPath)) {
   fs.mkdirSync(uploadsPath, { recursive: true });
 }
 
-// 📸 Configuración de multer
+/* Multer config */
 const storage = multer.diskStorage({
-  destination: (req, file, cb) => cb(null, uploadsPath),
-  filename: (req, file, cb) => cb(null, `${Date.now()}-${file.originalname}`),
+  destination: (_, __, cb) => cb(null, uploadsPath),
+  filename: (_, file, cb) => cb(null, `${Date.now()}-${file.originalname}`),
 });
+
 const upload = multer({ storage });
 
-// 📌 Subida de imagen (estilo beerRoutes)
-router.post("/upload", upload.single("imagen"), (req, res, next) => {
-  if (req.file) {
-    console.log("🖼️ Imagen recibida:", req.file.filename);
-    next();
-  } else {
-    return res.status(400).json({
-      exito: false,
-      mensaje: "❌ No se subió ningún archivo.",
-    });
-  }
-}, uploadPostImage);
+/* Media */
+router.post(
+  '/upload',
+  authMiddleware,
+  upload.single('imagen'),
+  uploadPostImage
+);
 
-// 📌 Rutas de posts
-router.get("/", getAllPosts);
-router.get("/:id", getPostById);
-router.post("/", createPost);
-router.delete("/:id", deletePost);
+/* Posts */
+router.get('/', getAllPosts);
+router.get('/:id', getPostById);
 
-// 📌 Likes
-router.post("/:id/like", likePost);
-router.post("/:id/unlike", unlikePost);
+router.post('/', authMiddleware, createPost);
+router.put('/:id', authMiddleware, updatePost);
+router.delete('/:id', authMiddleware, deletePost);
 
-// 📌 Comentarios
-router.post("/:postId/comentario", addComment);
-router.get("/:postId/comentarios", getPostComments);
+/* Likes */
+router.post('/:id/like', authMiddleware, likePost);
+router.post('/:id/unlike', authMiddleware, unlikePost);
+
+/* Comments */
+router.post('/:postId/comentario', authMiddleware, addComment);
+router.get('/:postId/comentarios', getPostComments);
+
+/* Visits */
+router.post('/:postId/visita', authMiddleware, contarVisita);
 
 export default router;

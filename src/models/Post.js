@@ -1,56 +1,87 @@
-import mongoose from "mongoose";
-const PostSchema = new mongoose.Schema({
-  usuario: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "User",
-    required: true,
-  },
-  titulo: {
-    type: String,
-    required: [true, "El título es obligatorio"],
-    trim: true,
-    minlength: 3,
-    maxlength: 100,
-  },
-  contenido: {
-    type: String,
-    required: [true, "El contenido es obligatorio"],
-    trim: true,
-    minlength: 5,
-    maxlength: 2000,
-  },
-  imagenes: [{ type: String, trim: true }],
-  visitas: { type: Number, default: 0 },
-  vistoPor: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
-  reacciones: {
-    salud: {
-      count: { type: Number, default: 0 },
-      usuarios: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
-    },
-    recomendado: {
-      count: { type: Number, default: 0 },
-      usuarios: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
-    },
-    meGusta: {
-      count: { type: Number, default: 0 },
-      usuarios: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
-    },
-  },
-  comentarios: [{ type: mongoose.Schema.Types.ObjectId, ref: "Comment" }],
-}, {
-  timestamps: true,
-  toJSON: {
-    virtuals: true,
-    transform: (_, ret) => {
-      ret.id = ret._id;
-      delete ret._id;
-      delete ret.__v;
-    },
-  },
-});
+import mongoose from 'mongoose';
 
-PostSchema.index({ usuario: 1 });
-PostSchema.index({ "reacciones.meGusta.count": -1 });
+const ReactionSchema = new mongoose.Schema(
+  {
+    count: { type: Number, default: 0 },
+    users: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }],
+  },
+  { _id: false }
+);
 
-const Post = mongoose.model("Post", PostSchema);
-export default Post;
+const MediaSchema = new mongoose.Schema(
+  {
+    path: {
+      type: String,
+      required: true,
+      trim: true,
+    },
+    type: {
+      type: String,
+      enum: ['image', 'video'],
+      default: 'image',
+    },
+    durationSeconds: {
+      type: Number,
+      default: null,
+    },
+  },
+  { _id: false }
+);
+
+const PostSchema = new mongoose.Schema(
+  {
+    author: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'User',
+      required: true,
+    },
+
+    title: {
+      type: String,
+      required: true,
+      trim: true,
+      minlength: 3,
+      maxlength: 100,
+    },
+
+    content: {
+      type: String,
+      required: true,
+      trim: true,
+      minlength: 5,
+      maxlength: 2000,
+    },
+
+    images: [{ type: String, trim: true }],
+    media: [MediaSchema],
+
+    views: { type: Number, default: 0 },
+    viewedBy: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }],
+
+    reactions: {
+      cheers: ReactionSchema,
+      recommended: ReactionSchema,
+      like: ReactionSchema,
+    },
+
+    comments: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Comment' }],
+  },
+  {
+    timestamps: true,
+    toJSON: {
+      virtuals: true,
+      transform: (_, ret) => {
+        ret.id = ret._id;
+        delete ret._id;
+        delete ret.__v;
+      },
+    },
+  }
+);
+
+/* Indexes */
+PostSchema.index({ author: 1 });
+PostSchema.index({ createdAt: -1 });
+PostSchema.index({ 'reactions.like.count': -1 });
+
+export default mongoose.model('Post', PostSchema);

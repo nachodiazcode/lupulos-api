@@ -1,0 +1,6 @@
+{
+  "watch": ["src"],
+  "ext": "js,mjs,cjs,json",
+  "ignore": ["logs/**", "public/uploads/**"],
+  "exec": "node --env-file=.env.local src/app.js"
+}

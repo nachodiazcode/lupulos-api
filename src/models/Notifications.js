@@ -1,13 +1,61 @@
 import mongoose from "mongoose";
 
-const notificationSchema = new mongoose.Schema({
-    receptor: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true }, // Usuario que recibe la notificación
-    emisor: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },  // Usuario que da el like
-    tipo: { type: String, enum: ["like"], required: true }, // Tipo de notificación (puedes agregar más en el futuro)
-    mensaje: { type: String, required: true },
-    visto: { type: Boolean, default: false },  // Si el usuario ya vio la notificación
-    createdAt: { type: Date, default: Date.now }
-});
+const NotificationSchema = new mongoose.Schema(
+    {
+        recipient: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "User",
+            required: true,
+            index: true,
+        },
 
-const Notification = mongoose.model("Notification", notificationSchema);
-export default Notification;
+        sender: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "User",
+        },
+
+        type: {
+            type: String,
+            enum: [
+                "like",
+                "comment",
+                "reply",
+                "follow",
+                "message",
+                "mention",
+            ],
+            required: true,
+        },
+
+        entityType: {
+            type: String,
+            enum: ["post", "comment", "beer", "message"],
+            required: true,
+        },
+
+        entityId: {
+            type: mongoose.Schema.Types.ObjectId,
+            required: true,
+        },
+
+        isRead: {
+            type: Boolean,
+            default: false,
+            index: true,
+        },
+
+        isDeleted: {
+            type: Boolean,
+            default: false,
+        },
+    },
+    {
+        timestamps: true,
+    }
+);
+
+/* Indexes */
+NotificationSchema.index({ recipient: 1, createdAt: -1 });
+NotificationSchema.index({ recipient: 1, isRead: 1 });
+
+export default mongoose.model("Notification", NotificationSchema);
