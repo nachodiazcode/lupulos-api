@@ -1,40 +1,92 @@
-import passport from "passport";
-import { Strategy as GoogleStrategy } from "passport-google-oauth20";
-import User from "../models/User.js"; // asegúrate que la ruta esté bien
-import dotenv from "dotenv";
-import bcrypt from "bcrypt"; // si estás usando ES Modules (import/export)
+import passport from 'passport';
+import { Strategy as GoogleStrategy } from 'passport-google-oauth20';
+import bcrypt from 'bcryptjs';
 
-dotenv.config();
+import User from '../models/User.js';
+import config from './index.js';
 
-passport.use(new GoogleStrategy({
-  clientID: process.env.GOOGLE_CLIENT_ID,
-  clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-  callbackURL: process.env.GOOGLE_CALLBACK_URL,
-}, async (accessToken, refreshToken, profile, done) => {
-  try {
-    let usuario = await User.findOne({ email: profile.emails[0].value });
+/**
+ * Google OAuth 2.0 strategy.
+ * Responsible only for authentication logic.
+ */
+if (config.oauth.google.clientId && config.oauth.google.clientSecret) {
+  passport.use(
+    new GoogleStrategy(
+      {
+        clientID: config.oauth.google.clientId,
+        clientSecret: config.oauth.google.clientSecret,
+        callbackURL: config.oauth.google.callbackUrl,
+      },
+      async (_accessToken, _refreshToken, profile, done) => {
+        try {
+          const email = profile.emails?.[0]?.value?.toLowerCase();
 
-    if (!usuario) {
-      usuario = new User({
-        username: profile.displayName,
-        email: profile.emails[0].value,
-        fotoPerfil: profile.photos[0].value,
-        password: await bcrypt.hash(profile.id, 10), // genera una "clave falsa"
-      });
-      await usuario.save();
-    }
+          if (!email) {
+            return done(new Error('Google profile does not provide an email'));
+          }
 
-    return done(null, usuario);
-  } catch (error) {
-    return done(error, null);
-  }
-}));
+          let user = await User.findOne({ email });
 
-// Para usar req.user
+          if (!user) {
+            // Generate a unique username based on displayName
+            let baseUsername = profile.displayName || email.split('@')[0];
+            let username = baseUsername;
+            let suffix = 1;
+            while (await User.findOne({ username })) {
+              username = `${baseUsername}${suffix}`;
+              suffix++;
+            }
+
+            user = await User.create({
+              username,
+              email,
+              provider: 'google',
+              profilePicture: profile.photos?.[0]?.value,
+              password: await bcrypt.hash(
+                `${profile.id}-${Date.now()}`,
+                10
+              ),
+            });
+          } else {
+            // Update existing user: link Google provider and refresh profile picture
+            const updates = {};
+            if (user.provider === 'local') updates.provider = 'google';
+            if (profile.photos?.[0]?.value && !user.profilePicture?.startsWith('/uploads')) {
+              updates.profilePicture = profile.photos[0].value;
+            }
+            if (Object.keys(updates).length > 0) {
+              Object.assign(user, updates);
+              await user.save();
+            }
+          }
+
+          return done(null, user);
+        } catch (error) {
+          console.error('Google OAuth strategy error:', error);
+          return done(error);
+        }
+      }
+    )
+  );
+} else {
+  console.warn('Google OAuth credentials not provided. Google Strategy skipped.');
+}
+
+/**
+ * Serialize user ID into the session.
+ */
 passport.serializeUser((user, done) => {
   done(null, user.id);
 });
+
+/**
+ * Deserialize user from session.
+ */
 passport.deserializeUser(async (id, done) => {
-  const user = await User.findById(id);
-  done(null, user);
+  try {
+    const user = await User.findById(id);
+    done(null, user);
+  } catch (error) {
+    done(error);
+  }
 });

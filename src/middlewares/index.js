@@ -1,4 +1,32 @@
-// src/middlewares/index.js
+import authMiddleware, {
+    verifyToken,
+    validateRevokedToken,
+    requirePermission,
+    hasRole,
+    isOwner,
+    isAdmin,
+    isModerator,
+    isUser,
+    authGoogle,
+    authFacebook,
+} from './authMiddleware.js';
 
-export { default as authMiddleware, verificarToken, isAdmin, isUser, isPremium, authGoogle, authFacebook } from "./authMiddleware.js";
-export { default as errorHandler } from "./errorHandler.js";
+import { requirePlan, requireFeature } from './planMiddleware.js';
+import errorHandler from './errorHandler.js';
+
+export {
+    authMiddleware,
+    verifyToken,
+    validateRevokedToken,
+    requirePermission,
+    requirePlan,
+    requireFeature,
+    hasRole,
+    isOwner,
+    isAdmin,
+    isModerator,
+    isUser,
+    authGoogle,
+    authFacebook,
+    errorHandler,
+};

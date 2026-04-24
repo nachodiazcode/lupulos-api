@@ -1,6 +1,6 @@
 import swaggerJSDoc from 'swagger-jsdoc';
 import swaggerUi from 'swagger-ui-express';
-import config from './config.js';
+import config from './index.js';
 
 const swaggerOptions = {
     definition: {
@@ -17,7 +17,7 @@ const swaggerOptions = {
         },
         servers: [
             {
-                url: `http://localhost:${config.port}`,
+                url: `http://localhost:${config.server.port}`,
                 description: "Servidor local",
             },
             {

@@ -1,14 +1,15 @@
-// src/middlewares/errorHandler.js
+import logger from '../utils/logger.js';
+import { sendError } from '../utils/responseHandler.js';
 
-import logger from "../utils/logger.js";
-
-// 📌 Middleware general para manejar errores de la app
+/**
+ * Global application error handler.
+ */
 const errorHandler = (err, req, res, next) => {
-  logger.error(`❌ Error capturado: ${err.message}`);
-
-  res.status(err.statusCode || 500).json({
-    exito: false,
-    mensaje: err.message || "Error interno del servidor"
+  logger.error(err.message, { stack: err.stack });
+  return sendError(res, {
+    statusCode: err.statusCode || err.status || 500,
+    message: err.message || 'Internal server error',
+    errors: err.errors || [],
   });
 };
 

@@ -1,13 +1,18 @@
 import mongoose from 'mongoose';
 import logger from '../utils/logger.js';
-import config from './config.js'; // Asegúrate de que config.js use "export default"
+import config from './index.js';
 
-export async function connectDB() {
+export const connectDB = async () => {
     try {
-        await mongoose.connect(config.mongoURI); // ❌ Elimina `useNewUrlParser` y `useUnifiedTopology`
-        logger.info('✅ Conectado a MongoDB correctamente');
+        if (!config.database.uri) {
+            throw new Error('Database URI is not defined');
+        }
+
+        await mongoose.connect(config.database.uri);
+
+        logger.info('Connected to MongoDB successfully');
     } catch (error) {
-        logger.error(`❌ Error conectando a MongoDB: ${error.message}`);
+        logger.error('Error connecting to MongoDB', error);
         process.exit(1);
     }
-}
+};

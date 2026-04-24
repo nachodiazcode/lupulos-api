@@ -106,3 +106,21 @@ docker-compose.override.yml
 *.tgz
 *.gz
 *.zip
+
+# Local scripts with secrets
+scripts/get-cert.js
+certs/
+
+################################################################################
+# Project-specific ignores
+################################################################################
+# Claude Code workspace
+.claude/
+
+# Database backup dumps
+backup_*.json
+
+# Duplicate / temp editor files
+*\ 2.js
+*\ 2.ts
+

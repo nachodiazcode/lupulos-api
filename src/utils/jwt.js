@@ -1,25 +1,60 @@
-import jwt from "jsonwebtoken";
+import jwt from 'jsonwebtoken';
+import config from '../config/index.js';
 
-export const generateAccessToken = (userId) => {
-  return jwt.sign(
-    { userId },
-    process.env.JWT_SECRET || "secreto_super_seguro",
-    { expiresIn: process.env.JWT_EXPIRATION || "15m" } // Ej: 15 minutos
+const ACCESS_SECRET = config.jwt.accessSecret;
+const REFRESH_SECRET_KEY = config.jwt.refreshSecret;
+const ACCESS_EXPIRATION = config.jwt.accessExpiration || '15m';
+const REFRESH_EXPIRATION = config.jwt.refreshExpiration || '7d';
+
+/**
+ * Generic token signer
+ */
+const signToken = (payload, secret, expiresIn) =>
+  jwt.sign(payload, secret, { expiresIn });
+
+/**
+ * Generic token verifier
+ */
+const verifyToken = (token, secret) =>
+  jwt.verify(token, secret);
+
+const buildAuthPayload = (userId, role, extra = {}) => {
+  const payload = {
+    userId,
+    role,
+  };
+
+  for (const [key, value] of Object.entries(extra)) {
+    if (value !== undefined && value !== null && value !== '') {
+      payload[key] = value;
+    }
+  }
+
+  return payload;
+};
+
+/* ================================
+   Public API
+   (Keep names stable to avoid
+   breaking existing imports)
+================================ */
+
+export const generateAccessToken = (userId, role = 'user', extra = {}) =>
+  signToken(
+    buildAuthPayload(userId, role, extra),
+    ACCESS_SECRET,
+    ACCESS_EXPIRATION
   );
-};
 
-export const generateRefreshToken = (userId) => {
-  return jwt.sign(
-    { userId },
-    process.env.REFRESH_SECRET || "secreto_refresh",
-    { expiresIn: process.env.REFRESH_EXPIRATION || "7d" } // Ej: 7 días
+export const generateRefreshToken = (userId, role = 'user', extra = {}) =>
+  signToken(
+    buildAuthPayload(userId, role, extra),
+    REFRESH_SECRET_KEY,
+    REFRESH_EXPIRATION
   );
-};
 
-export const verifyAccessToken = (token) => {
-  return jwt.verify(token, process.env.JWT_SECRET || "secreto_super_seguro");
-};
+export const verifyAccessToken = (token) =>
+  verifyToken(token, ACCESS_SECRET);
 
-export const verifyRefreshToken = (token) => {
-  return jwt.verify(token, process.env.REFRESH_SECRET || "secreto_refresh");
-};
+export const verifyRefreshToken = (token) =>
+  verifyToken(token, REFRESH_SECRET_KEY);
