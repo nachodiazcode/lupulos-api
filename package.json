@@ -11,7 +11,7 @@
     "npm": ">=9.0.0"
   },
   "scripts": {
-    "dev": "nodemon --config nodemon.json",
+    "dev": "node node_modules/nodemon/bin/nodemon.js --config nodemon.json",
     "start": "node src/app.js",
     "start:prod": "NODE_ENV=production node src/app.js",
     "lint": "eslint src --ext .js",
