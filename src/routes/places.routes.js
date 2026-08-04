@@ -18,6 +18,7 @@ import {
   addReview,
   uploadPlaceImage,
   deletePlaceGalleryImage,
+  claimPlace,
 } from '../controllers/places.controller.js';
 
 const router = express.Router();
@@ -63,6 +64,14 @@ router.post(
   authMiddleware,
   validateRequest(placeValidation.createBulkPlaces),
   createMultiplePlaces
+);
+
+router.patch(
+  '/:id/claim',
+  placesWriteLimiter,
+  authMiddleware,
+  validateRequest(placeValidation.placeIdParam),
+  claimPlace
 );
 
 router.patch(

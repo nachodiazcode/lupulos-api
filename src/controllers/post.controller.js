@@ -212,6 +212,8 @@ const serializeComment = (comment) => {
     comentario: content,
     author,
     usuario: author,
+    parentComment: plain.parentComment ? stringId(plain.parentComment) : null,
+    likesCount: Array.isArray(plain.likes) ? plain.likes.length : 0,
   };
 };
 
@@ -546,7 +548,7 @@ export const reactToPost = asyncHandler(async (req, res) => {
 
 /* Comments */
 export const addComment = asyncHandler(async (req, res) => {
-  const { content } = req.body;
+  const { content, parentComment } = req.body;
   const post = await Post.findById(req.params.postId);
 
   if (!post) {
@@ -556,10 +558,24 @@ export const addComment = asyncHandler(async (req, res) => {
     });
   }
 
+  // Hilos: validar que el comentario padre exista y pertenezca al mismo post
+  let parentId = null;
+  if (parentComment) {
+    const parent = await Comment.findById(parentComment);
+    if (!parent || String(parent.post) !== String(req.params.postId)) {
+      return sendError(res, {
+        statusCode: 400,
+        message: 'Parent comment not found for this post',
+      });
+    }
+    parentId = parent._id;
+  }
+
   const comment = await Comment.create({
     content,
     author: req.user.id,
     post: req.params.postId,
+    parentComment: parentId,
   });
 
   await comment.populate('author', 'username profilePicture fotoPerfil photo');

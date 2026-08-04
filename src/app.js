@@ -9,6 +9,7 @@ import logger from './utils/logger.js';
 import config from './config/index.js';
 import { connectDB } from './config/db.js';
 import { setupSwagger } from './config/swagger.js';
+import { initRealtime } from './config/realtime.js';
 import routes from './routes/index.js';
 import errorHandler from './middlewares/errorHandler.js';
 
@@ -61,6 +62,7 @@ app.use(
       secure: config.isProduction,
       httpOnly: true,
       sameSite: 'lax',
+      maxAge: 2 * 60 * 60 * 1000, // 2 hours
     },
   })
 );
@@ -114,6 +116,9 @@ if (!forceHttp && (config.isProduction || forceHttps) && sslOptions.key && sslOp
     logger.info(`API running on port ${PORT} (HTTP)`);
   });
 }
+
+// Realtime (socket.io) — live chat messages over the same server
+initRealtime(server);
 
 // Graceful shutdown
 process.on('SIGTERM', () => {

@@ -16,9 +16,9 @@
     "start:prod": "NODE_ENV=production node src/app.js",
     "lint": "eslint src --ext .js",
     "lint:fix": "eslint src --ext .js --fix",
-    "test": "jest --runInBand",
-    "test:watch": "jest --watch",
-    "test:ci": "jest --ci --runInBand",
+    "test": "node --test tests/*.test.js",
+    "test:watch": "node --test --watch tests/*.test.js",
+    "test:ci": "node --test tests/*.test.js",
     "build": "echo \"No build step required for Node.js API\"",
     "healthcheck": "node -e \"console.log('OK')\"",
     "seed:demo": "node --env-file=.env.local scripts/seed-demo.js"

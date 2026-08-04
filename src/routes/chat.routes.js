@@ -9,6 +9,8 @@ import {
   sendMessage,
   aiAssistantQuery,
   getGlobalCommunityRoom,
+  getUnreadCount,
+  markChatAsRead,
 } from "../controllers/chat.controller.js";
 
 const router = express.Router();
@@ -16,12 +18,15 @@ const router = express.Router();
 router.use(authMiddleware);
 
 router.get("/", validateRequest(chatValidation.listChats), getUserChats);
+router.get("/unread-count", getUnreadCount);
 router.get("/global/community", getGlobalCommunityRoom);
 router.get(
   "/messages/:chatId",
   validateRequest(chatValidation.messageList),
   getChatMessages
 );
+
+router.post("/:chatId/read", markChatAsRead);
 
 router.post(
   "/direct",

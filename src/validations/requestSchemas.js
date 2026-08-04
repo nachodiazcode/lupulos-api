@@ -255,9 +255,21 @@ export const placeValidation = {
         postalCode: Joi.string().trim().allow(''),
       }),
       amenities: Joi.array().items(Joi.string().trim()),
-      phone: Joi.string().trim().max(40),
-      website: Joi.string().trim().uri(),
-      contactEmail: Joi.string().email(),
+      phone: Joi.string().trim().max(40).allow(''),
+      website: Joi.string().trim().uri().allow(''),
+      contactEmail: Joi.string().email().allow(''),
+      beers: Joi.array().items(objectId),
+      promotions: Joi.array().items(
+        Joi.object({
+          _id: objectId.optional(),
+          description: Joi.string().trim().allow(''),
+          discountPercent: Joi.number().min(0).max(100).optional(),
+          startDate: Joi.date().allow(null).optional(),
+          endDate: Joi.date().allow(null).optional(),
+        })
+      ),
+      owner: objectId.allow(null),
+      isFeatured: Joi.boolean(),
     }).min(1),
   },
   placeIdParam: {
@@ -352,6 +364,7 @@ export const postValidation = {
     }),
     body: Joi.object({
       content: Joi.string().trim().min(1).max(1000).required(),
+      parentComment: objectId.optional().allow(null, ''),
     }),
   },
   postCommentsParams: {

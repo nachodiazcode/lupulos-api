@@ -103,7 +103,8 @@ export const createMultiplePlaces = asyncHandler(async (req, res) => {
 export const getPlaces = asyncHandler(async (_req, res) => {
   const places = await Place.find()
     .sort({ createdAt: -1 })
-    .populate('reviews.user', 'username profilePicture');
+    .populate('reviews.user', 'username profilePicture')
+    .populate('beers');
 
   return sendSuccess(res, {
     message: 'Places retrieved successfully',
@@ -112,10 +113,9 @@ export const getPlaces = asyncHandler(async (_req, res) => {
 });
 
 export const getPlaceById = asyncHandler(async (req, res) => {
-  const place = await Place.findById(req.params.id).populate(
-    'reviews.user',
-    'username profilePicture'
-  );
+  const place = await Place.findById(req.params.id)
+    .populate('reviews.user', 'username profilePicture')
+    .populate('beers');
 
   if (!place) {
     return sendError(res, {
@@ -324,5 +324,36 @@ export const getNearbyPlaces = asyncHandler(async (_req, res) => {
   return sendError(res, {
     statusCode: 501,
     message: 'Not implemented yet',
+  });
+});
+
+export const claimPlace = asyncHandler(async (req, res) => {
+  const place = await Place.findById(req.params.id);
+
+  if (!place) {
+    return sendError(res, {
+      statusCode: 404,
+      message: 'Place not found',
+    });
+  }
+
+  if (place.owner) {
+    return sendError(res, {
+      statusCode: 400,
+      message: 'This place is already claimed by an owner',
+    });
+  }
+
+  place.owner = req.user.id;
+  place.isFeatured = true; // Auto promote claimed places to partner status
+  await place.save();
+
+  const populatedPlace = await Place.findById(place._id)
+    .populate('reviews.user', 'username profilePicture')
+    .populate('beers');
+
+  return sendSuccess(res, {
+    message: 'Place claimed successfully. You are now the owner!',
+    data: populatedPlace,
   });
 });

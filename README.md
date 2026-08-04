@@ -468,20 +468,21 @@ Rutas destacadas:
 
 ## Autenticación y autorización
 
-### JWT
+### JWT y Sesiones
 
-La API usa dos tokens:
+La API utiliza un esquema híbrido de tokens y cookies de sesión para la autenticación:
 
-- **Access token** para autorizar requests con `Authorization: Bearer <token>`
-- **Refresh token** para renovar el access token sin reingresar credenciales
+- **Access Token (JWT):** Utilizado para autorizar peticiones HTTP mediante el encabezado `Authorization: Bearer <token>`. Su duración por defecto es de **2 horas** (configurable mediante la variable de entorno `JWT_EXPIRATION`).
+- **Refresh Token (JWT):** Utilizado para renovar el access token de manera segura sin necesidad de volver a solicitar credenciales. Expira en **7 días** (configurable mediante la variable de entorno `REFRESH_EXPIRATION`).
+- **Session Cookie (`lupulos.sid`):** Utilizada por Express Session y Passport (por ejemplo, en el flujo de Google OAuth). Está configurada con una expiración de **2 horas** (`maxAge: 7200000 ms`), asegurando la persistencia de sesión segura en el navegador.
 
-Flujo esperado:
+#### Flujo esperado:
 
-1. `POST /api/auth/register` o `POST /api/auth/login`
-2. Guardar `accessToken` y `refreshToken`
-3. Enviar el access token en cada request protegida
-4. Usar `POST /api/auth/refresh-token` cuando expire
-5. Ejecutar `POST /api/auth/logout` para revocar tokens
+1. `POST /api/auth/register` o `POST /api/auth/login`.
+2. Almacenar el `accessToken` y `refreshToken` en el cliente.
+3. Enviar el `accessToken` en cada solicitud a rutas protegidas.
+4. Utilizar `POST /api/auth/refresh-token` para obtener un nuevo access token antes de que expire.
+5. Ejecutar `POST /api/auth/logout` para invalidar y revocar los tokens en la base de datos.
 
 ### Roles
 

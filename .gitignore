@@ -124,3 +124,13 @@ backup_*.json
 *\ 2.js
 *\ 2.ts
 
+
+################################################################################
+# Restos de un `git init --bare` accidental en la raíz del proyecto.
+# No son parte del código: se conservan en disco pero no se versionan.
+################################################################################
+/HEAD
+/config
+/description
+/hooks/
+/info/

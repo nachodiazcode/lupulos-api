@@ -7,6 +7,7 @@ import beerRoutes from './beer.routes.js';
 import chatRoutes from './chat.routes.js';
 import placeRoutes from './places.routes.js';
 import subscriptionRoutes from './subscription.routes.js';
+import blogRoutes from './blog.routes.js';
 
 const router = express.Router();
 
@@ -19,5 +20,6 @@ router.use('/chat', chatRoutes);
 router.use('/places', placeRoutes);
 router.use('/location', placeRoutes); // backward compatibility with existing clients
 router.use('/subscription', subscriptionRoutes);
+router.use('/blogs', blogRoutes);
 
 export default router;

@@ -40,7 +40,7 @@ export const MONGO_URI =
   process.env.MONGO_URI || 'mongodb://localhost:27017/lupulos_local';
 
 export const JWT_SECRET = requiredSecret('JWT_SECRET');
-export const JWT_EXPIRATION = process.env.JWT_EXPIRATION || '15m';
+export const JWT_EXPIRATION = process.env.JWT_EXPIRATION || '2h';
 export const REFRESH_SECRET = requiredSecret(
   'REFRESH_SECRET',
   process.env.JWT_REFRESH_SECRET || ''

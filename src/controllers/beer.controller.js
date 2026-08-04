@@ -63,11 +63,125 @@ export const getBeerById = asyncHandler(async (req, res) => {
   });
 });
 
+const parseNaturalLanguageQuery = (query) => {
+  const normalized = query
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim();
+
+  if (!normalized || normalized.split(/\s+/).length === 1) {
+    return null;
+  }
+
+  const styles = [];
+  let abvFilter = null;
+
+  const lowAbvKeywords = ['suave', 'suaves', 'ligera', 'ligeras', 'ligero', 'ligeros', 'liviana', 'livianas', 'liviano', 'livianos', 'bajo alcohol', 'poco alcohol', 'refrescante', 'refrescantes', 'verano'];
+  const highAbvKeywords = ['fuerte', 'fuertes', 'alta graduacion', 'alta graduacion', 'potente', 'potentes', 'intensa', 'intensas', 'intenso', 'intensos', 'mucho alcohol', 'graduacion', 'graduacion', 'invierno', 'calido', 'calidos', 'densa', 'densas', 'denso', 'densos', 'barrica', 'envejecida'];
+
+  const hasLowAbv = lowAbvKeywords.some(kw => normalized.includes(kw));
+  const hasHighAbv = highAbvKeywords.some(kw => normalized.includes(kw));
+
+  if (hasLowAbv) {
+    abvFilter = { $lt: 5.2 };
+  } else if (hasHighAbv) {
+    abvFilter = { $gte: 7.0 };
+  }
+
+  if (/\b(ipa|hazy|neipa|west coast|lupulad[ao]s?|amarg[ao]s?)\b/i.test(normalized)) {
+    styles.push(/(ipa|hazy|pale ale|apa)/i);
+  }
+  if (/\b(stout|porter|negr[ao]s?|oscur[ao]s?|cacao|chocolate|cafe|tostad[ao]s?)\b/i.test(normalized)) {
+    styles.push(/(stout|porter|dark|black|bock)/i);
+  }
+  if (/\b(sour|acid[ao]s?|frutal(es)?|frut[as]|frambuesa|berries|berliner|gose|lambic)\b/i.test(normalized)) {
+    styles.push(/(sour|berliner|gose|lambic|fruit)/i);
+  }
+  if (/\b(trigo|wheat|hefeweizen|witbier|weissbier|weizen)\b/i.test(normalized)) {
+    styles.push(/(wheat|trigo|hefeweizen|witbier|weissbier)/i);
+  }
+  if (/\b(lager|pilsner|pils|rubi[ao]s?|clasic[ao]s?)\b/i.test(normalized)) {
+    styles.push(/(lager|pilsner|golden|pils)/i);
+  }
+  if (/\b(roja|amber|red|caramelo|cobriz[ao]s?|irish)\b/i.test(normalized)) {
+    styles.push(/(red|amber|irish)/i);
+  }
+
+  // Remove matching keywords from query so they don't get searched as literal tokens
+  let cleanQuery = normalized;
+  const wordsToRemove = [
+    ...lowAbvKeywords,
+    ...highAbvKeywords,
+    'ipa', 'hazy', 'neipa', 'west coast', 'lupulada', 'lupulado', 'lupuladas', 'lupulados', 'amarga', 'amargo', 'amargas', 'amargos',
+    'stout', 'porter', 'negra', 'negro', 'negras', 'negros', 'oscura', 'oscuro', 'oscuras', 'oscuros', 'cacao', 'chocolate', 'cafe', 'tostada', 'tostado',
+    'sour', 'acida', 'ácida', 'acidas', 'ácidas', 'frutal', 'frutales', 'fruta', 'frutas', 'frambuesa', 'berries', 'berliner', 'gose', 'lambic',
+    'trigo', 'wheat', 'hefeweizen', 'witbier', 'weissbier', 'weizen',
+    'lager', 'pilsner', 'pils', 'rubia', 'rubio', 'clasica', 'clásica',
+    'roja', 'amber', 'red', 'caramelo', 'cobrizo', 'irish'
+  ];
+
+  for (const word of wordsToRemove) {
+    cleanQuery = cleanQuery.replace(new RegExp(`\\b${word}\\b`, 'g'), '');
+  }
+
+  const stopwords = new Set([
+    'de', 'la', 'el', 'un', 'una', 'con', 'para', 'algo', 'como', 'que',
+    'en', 'los', 'las', 'y', 'o', 'pero', 'no', 'tan', 'muy', 'una', 'del',
+    'cerveza', 'cervezas', 'recomiendame', 'recomienda', 'busca', 'busco'
+  ]);
+
+  const tokens = cleanQuery
+    .split(/[\s,./?¿!¡]+/)
+    .filter(t => t.length > 2 && !stopwords.has(t));
+
+  const queryConditions = [];
+
+  if (abvFilter) {
+    queryConditions.push({ abv: abvFilter });
+  }
+
+  if (styles.length > 0) {
+    queryConditions.push({
+      $or: styles.map(styleRegex => ({ style: styleRegex }))
+    });
+  }
+
+  if (tokens.length > 0) {
+    const tokenOrConditions = tokens.map(token => {
+      const regex = new RegExp(token, 'i');
+      return {
+        $or: [
+          { name: regex },
+          { brewery: regex },
+          { style: regex },
+          { description: regex }
+        ]
+      };
+    });
+    queryConditions.push({ $and: tokenOrConditions });
+  }
+
+  if (queryConditions.length > 0) {
+    return { $and: queryConditions };
+  }
+
+  return null;
+};
+
 export const searchBeers = asyncHandler(async (req, res) => {
   const { name, beerStyle, brewery, minAbv, maxAbv } = req.query;
-  const filter = {};
+  let filter = {};
 
-  if (name) filter.name = new RegExp(name, 'i');
+  if (name) {
+    const nlFilter = parseNaturalLanguageQuery(name);
+    if (nlFilter) {
+      filter = nlFilter;
+    } else {
+      filter.name = new RegExp(name, 'i');
+    }
+  }
+
   if (beerStyle) filter.style = new RegExp(beerStyle, 'i');
   if (brewery) filter.brewery = new RegExp(brewery, 'i');
 
@@ -77,15 +191,44 @@ export const searchBeers = asyncHandler(async (req, res) => {
     if (maxAbv !== undefined) filter.abv.$lte = Number(maxAbv);
   }
 
-  const beers = await Beer.find(filter)
+  let beers = await Beer.find(filter)
     .populate('createdBy', 'username profilePicture')
     .populate('reviews.user', 'username profilePicture');
+
+  if (name && beers.length === 0) {
+    const tokens = name
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase()
+      .split(/[\s,./?¿!¡]+/)
+      .filter(t => t.length > 2);
+
+    if (tokens.length > 0) {
+      const fallbackFilter = {
+        $or: tokens.map(t => {
+          const regex = new RegExp(t, 'i');
+          return {
+            $or: [
+              { name: regex },
+              { style: regex },
+              { brewery: regex },
+              { description: regex }
+            ]
+          };
+        })
+      };
+      beers = await Beer.find(fallbackFilter)
+        .populate('createdBy', 'username profilePicture')
+        .populate('reviews.user', 'username profilePicture');
+    }
+  }
 
   return sendSuccess(res, {
     message: 'Beer search completed',
     data: beers.map(serializeBeer),
   });
 });
+
 
 export const getTopRatedBeers = asyncHandler(async (_req, res) => {
   const beers = await Beer.find().sort({ averageRating: -1 }).limit(10);

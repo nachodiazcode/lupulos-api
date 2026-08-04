@@ -239,6 +239,8 @@ export const sendMessage = asyncHandler(async (req, res) => {
     chatId: toStringId(chat._id),
     chatType: chat.chatType,
     isGlobal: isGlobalCommunityChat(chat),
+    participantIds: (chat.participants || []).map(toStringId),
+    senderId: toStringId(userId),
     message: serializedMessage,
   });
 
@@ -434,6 +436,42 @@ export const getChatMessages = asyncHandler(async (req, res) => {
       order: 'asc',
       sortedBy: 'createdAt',
       paginationStrategy: 'latest-first',
+    },
+  });
+});
+
+/**
+ * Get unread message/chat count for the messages badge.
+ * Scoped to the user's direct & group chats (excludes the global community room).
+ */
+export const getUnreadCount = asyncHandler(async (req, res) => {
+  const userId = req.user.id;
+
+  const chats = await Chat.find({
+    participants: userId,
+    archivedBy: { $ne: userId },
+    globalRoomKey: { $ne: GLOBAL_COMMUNITY_ROOM_KEY },
+  }).select('_id');
+
+  const chatIds = chats.map((chat) => chat._id);
+
+  const unreadFilter = {
+    chat: { $in: chatIds },
+    sender: { $ne: userId },
+    'readBy.user': { $ne: userId },
+    deletedFor: { $ne: userId },
+  };
+
+  const [unreadMessages, unreadChatIds] = await Promise.all([
+    Message.countDocuments(unreadFilter),
+    Message.distinct('chat', unreadFilter),
+  ]);
+
+  return sendSuccess(res, {
+    message: 'Unread count retrieved successfully',
+    data: {
+      unreadMessages,
+      unreadChats: unreadChatIds.length,
     },
   });
 });

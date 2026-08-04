@@ -11,7 +11,7 @@ import { sendError, sendSuccess } from '../utils/responseHandler.js';
 import { getRoleLevel, getAllPermissions } from '../config/permissions.js';
 
 const publicProfileProjection =
-  'username profilePicture bannerPicture bio city country favoriteStyle createdAt';
+  'username profilePicture bannerPicture bio city country favoriteStyle createdAt followers following beersCreated plan reputation role';
 
 const writableProfileFields = [
   'username',
