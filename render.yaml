@@ -1,0 +1,72 @@
+# Blueprint de Render para la API de Lúpulos.
+#
+# Cómo usarlo:
+#   Render → New → Blueprint → elige el repositorio nachodiazcode/lupulos-api.
+#   Render crea el servicio con este arranque; las variables marcadas como
+#   `sync: false` se piden en pantalla al aplicar el Blueprint (así los
+#   secretos nunca quedan escritos en el repositorio).
+#
+# La base de datos no se define aquí: el proyecto ya usa MongoDB Atlas.
+
+services:
+  - type: web
+    name: lupulos-api
+    runtime: node
+    plan: free
+    region: oregon
+    branch: main
+    buildCommand: npm ci --omit=dev
+    startCommand: npm run start:prod
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: NODE_ENV
+        value: production
+
+      # Render termina el TLS por nosotros: la app debe escuchar en HTTP plano
+      # y confiar en la cabecera X-Forwarded-Proto del proxy.
+      - key: FORCE_HTTP
+        value: "true"
+      - key: TRUST_PROXY
+        value: "1"
+
+      # ── Secretos: se ingresan al aplicar el Blueprint ──
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: REFRESH_SECRET
+        sync: false
+      - key: EXPRESS_SESSION_SECRET
+        sync: false
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: GOOGLE_CLIENT_SECRET
+        sync: false
+      - key: MERCADOPAGO_ACCESS_TOKEN
+        sync: false
+      - key: MERCADOPAGO_WEBHOOK_SECRET
+        sync: false
+
+      # ── URLs: ajústalas a los dominios reales del frontend ──
+      - key: FRONTEND_URL
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false
+      - key: GOOGLE_CALLBACK_URL
+        sync: false
+      - key: MERCADOPAGO_BACK_URL
+        sync: false
+
+      # ── Tiempos de vida de los tokens ──
+      - key: JWT_EXPIRATION
+        value: 15m
+      - key: REFRESH_EXPIRATION
+        value: 7d
+
+      # ── Límites de payload ──
+      - key: BODY_LIMIT
+        value: 10mb
+      - key: URLENCODED_LIMIT
+        value: 10mb
