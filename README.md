@@ -186,13 +186,13 @@ La configuración carga primero `.env` y luego usa `.env.local` o `.env.prod` co
 | --- | --- | --- |
 | `NODE_ENV` | No | `development` o `production`. |
 | `PORT` | No | Puerto HTTP/HTTPS. Default: `3940`. |
-| `MONGO_URI` | Recomendado | URI de MongoDB. Default local: `mongodb://localhost:27017/lupulos_local`. |
+| `MONGO_URI` | Sí en producción | URI de MongoDB. En desarrollo cae a `mongodb://localhost:27017/lupulos_local`; en producción (`NODE_ENV=production`) es obligatoria y el arranque falla si falta. |
 | `JWT_SECRET` | Sí | Secreto para access tokens. |
 | `REFRESH_SECRET` | Sí | Secreto para refresh tokens. También acepta fallback desde `JWT_REFRESH_SECRET`. |
 | `SESSION_SECRET` | Sí | Secreto para sesión Express. También acepta fallback desde `EXPRESS_SESSION_SECRET` o `JWT_SECRET`. |
 | `FRONTEND_URL` | No | URL del frontend. Default: `https://lupulos.app`. |
 | `TRUST_PROXY` | No | Controla `app.set('trust proxy')`. |
-| `CORS_ORIGINS` | No | Lista CSV de orígenes. La configuración actual mantiene como válidos `FRONTEND_URL` y `http://localhost:3000`. |
+| `CORS_ORIGINS` | No | Lista CSV de orígenes adicionales permitidos, sumados a `FRONTEND_URL` y `http://localhost:3000`. |
 | `BODY_LIMIT` | No | Límite de JSON body. Default: `1mb`. |
 | `URLENCODED_LIMIT` | No | Límite para `application/x-www-form-urlencoded`. Default: `1mb`. |
 | `JWT_EXPIRATION` | No | Expiración del access token. Default: `15m`. |
@@ -211,7 +211,7 @@ La configuración carga primero `.env` y luego usa `.env.local` o `.env.prod` co
 | Variable | Requerida | Descripción |
 | --- | --- | --- |
 | `MERCADOPAGO_ACCESS_TOKEN` | Opcional | Necesaria para crear suscripciones reales. |
-| `MERCADOPAGO_WEBHOOK_SECRET` | Opcional | Reservada para endurecer validación del webhook. |
+| `MERCADOPAGO_WEBHOOK_SECRET` | Sí si MP está habilitado en producción | Verifica la firma `x-signature` del webhook (HMAC-SHA256). En producción, sin secreto configurado o con firma inválida, el webhook responde `401`. |
 | `MERCADOPAGO_BACK_URL` | Opcional | URL de retorno del flujo de pago. Por defecto usa `${FRONTEND_URL}/planes`. |
 
 ### Transporte y arranque
@@ -251,7 +251,7 @@ Todas las rutas de negocio cuelgan del prefijo:
 
 | Método | Ruta | Descripción |
 | --- | --- | --- |
-| `GET` | `/health` | Salud del servicio, uptime y nombre de servicio. |
+| `GET` | `/health` | Salud del servicio, uptime, nombre de servicio y estado de conexión a MongoDB. Responde `503` si la DB está desconectada. |
 | `GET` | `/api/documentacion` | Swagger UI. |
 | `GET` | `/uploads/*` | Archivos públicos subidos por la aplicación. |
 

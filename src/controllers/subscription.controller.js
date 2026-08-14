@@ -6,7 +6,9 @@ import {
   createMPSubscription,
   cancelMPSubscription,
   getMPSubscriptionStatus,
+  verifyWebhookSignature,
 } from '../services/mercadopago.service.js';
+import config from '../config/index.js';
 import logger from '../utils/logger.js';
 import asyncHandler from '../utils/asyncHandler.js';
 import { sendError, sendSuccess } from '../utils/responseHandler.js';
@@ -236,6 +238,21 @@ export const cancelSubscription = asyncHandler(async (req, res) => {
 export const webhook = asyncHandler(async (req, res) => {
   const { type, data } = req.body;
 
+  const signatureValid = verifyWebhookSignature({
+    dataId: data?.id ? String(data.id) : req.query['data.id'],
+    xSignature: req.headers['x-signature'],
+    xRequestId: req.headers['x-request-id'],
+  });
+
+  if (!signatureValid) {
+    if (config.isProduction) {
+      logger.warn('MP webhook rejected: invalid or missing signature');
+      return sendError(res, { statusCode: 401, message: 'Invalid webhook signature' });
+    }
+    logger.warn('MP webhook signature could not be verified (allowed outside production)');
+  }
+
+  // Acknowledge receipt immediately; MP retries on non-2xx responses.
   sendSuccess(res, {
     message: 'Webhook received',
     data: { received: true },
@@ -248,44 +265,45 @@ export const webhook = asyncHandler(async (req, res) => {
   const mpId = data.id;
   logger.info(`MP webhook received: type=${type} id=${mpId}`);
 
-  let mpSubscription;
+  // The response is already sent above, so from here on we only log —
+  // throwing would hit asyncHandler -> errorHandler and try to send a
+  // second response on an already-closed request.
   try {
-    mpSubscription = await getMPSubscriptionStatus(mpId);
+    const mpSubscription = await getMPSubscriptionStatus(mpId);
+
+    const subscription = await Subscription.findOne({ mpPreapprovalId: mpId });
+    if (!subscription) {
+      logger.warn(`No local subscription found for MP id: ${mpId}`);
+      return;
+    }
+
+    switch (mpSubscription.status) {
+      case 'authorized':
+        if (subscription.status === 'pending') {
+          await activateSubscription(subscription);
+          logger.info(`Subscription activated via webhook: mp_id=${mpId}`);
+        }
+        break;
+
+      case 'paused':
+        subscription.status = 'past_due';
+        await subscription.save();
+        logger.info(`Subscription paused: mp_id=${mpId}`);
+        break;
+
+      case 'cancelled':
+        subscription.status = 'cancelled';
+        subscription.cancelledAt = new Date();
+        subscription.autoRenew = false;
+        await subscription.save();
+        logger.info(`Subscription cancelled via MP: mp_id=${mpId}`);
+        break;
+
+      default:
+        logger.info(`Unhandled MP status: ${mpSubscription.status} for mp_id=${mpId}`);
+    }
   } catch (error) {
-    logger.error(`Failed to verify MP subscription ${mpId}: ${error.message}`);
-    return;
-  }
-
-  const subscription = await Subscription.findOne({ mpPreapprovalId: mpId });
-  if (!subscription) {
-    logger.warn(`No local subscription found for MP id: ${mpId}`);
-    return;
-  }
-
-  switch (mpSubscription.status) {
-    case 'authorized':
-      if (subscription.status === 'pending') {
-        await activateSubscription(subscription);
-        logger.info(`Subscription activated via webhook: mp_id=${mpId}`);
-      }
-      break;
-
-    case 'paused':
-      subscription.status = 'past_due';
-      await subscription.save();
-      logger.info(`Subscription paused: mp_id=${mpId}`);
-      break;
-
-    case 'cancelled':
-      subscription.status = 'cancelled';
-      subscription.cancelledAt = new Date();
-      subscription.autoRenew = false;
-      await subscription.save();
-      logger.info(`Subscription cancelled via MP: mp_id=${mpId}`);
-      break;
-
-    default:
-      logger.info(`Unhandled MP status: ${mpSubscription.status} for mp_id=${mpId}`);
+    logger.error(`Failed to process MP webhook ${mpId}: ${error.message}`, error);
   }
 });
 

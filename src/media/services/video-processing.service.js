@@ -9,7 +9,6 @@ import ffmpeg from 'fluent-ffmpeg';
 import ffmpegInstaller from '@ffmpeg-installer/ffmpeg';
 import path from 'path';
 import fs from 'fs/promises';
-import os from 'os';
 import { FilterType } from '../enums/filter-type.enum.js';
 import { MediaProcessingException } from '../exceptions/media.exceptions.js';
 
@@ -21,13 +20,6 @@ const promisifyFfmpeg = (cmd) =>
   new Promise((resolve, reject) =>
     cmd.on('end', resolve).on('error', (err) => reject(err)).run()
   );
-
-const tmpFile = (ext) =>
-  path.join(os.tmpdir(), `lupulos-vid-${Date.now()}-${Math.random().toString(36).slice(2)}.${ext}`);
-
-const safeUnlink = async (fp) => {
-  try { await fs.unlink(fp); } catch { /* noop */ }
-};
 
 /* ── Video filter presets (FFmpeg vf strings) ───────────────────────────── */
 

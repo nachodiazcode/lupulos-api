@@ -75,6 +75,9 @@ process.on('unhandledRejection', (error) => {
 
 process.on('uncaughtException', (error) => {
   logger.error('Uncaught Exception', error);
+  // The process is in an undefined state after an uncaught exception;
+  // exit so the process manager (PM2/systemd/Docker) restarts it cleanly.
+  process.exit(1);
 });
 
 export default logger;

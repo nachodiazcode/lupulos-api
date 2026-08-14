@@ -22,6 +22,11 @@ import {
   revokeToken,
 } from '../utils/tokenSecurity.js';
 
+// Only echo raw error details outside production; in production they may
+// contain internal details (Mongo driver text, stack info) that shouldn't
+// reach the client.
+const safeErrors = (error) => (config.isProduction ? [] : [error.message]);
+
 const issueAuthTokens = (user) => {
   const tokenPayload = {
     provider: user.provider || 'local',
@@ -70,11 +75,20 @@ export const registerUser = async (req, res) => {
       },
     });
   } catch (error) {
-    logger.error(`Register error: ${error.message}`);
+    logger.error(`Register error: ${error.message}`, error);
+
+    if (error.code === 11000) {
+      const field = Object.keys(error.keyPattern || {})[0] || 'email';
+      return sendError(res, {
+        statusCode: 409,
+        message: `That ${field} is already in use`,
+      });
+    }
+
     return sendError(res, {
       statusCode: 500,
       message: 'Failed to register user',
-      errors: [error.message],
+      errors: safeErrors(error),
     });
   }
 };
@@ -125,7 +139,7 @@ export const loginUser = async (req, res) => {
     return sendError(res, {
       statusCode: 500,
       message: 'Login failed',
-      errors: [error.message],
+      errors: safeErrors(error),
     });
   }
 };
@@ -215,7 +229,7 @@ export const logoutUser = async (req, res) => {
     return sendError(res, {
       statusCode: 500,
       message: 'Logout failed',
-      errors: [error.message],
+      errors: safeErrors(error),
     });
   }
 };
@@ -283,7 +297,7 @@ export const refreshToken = async (req, res) => {
     return sendError(res, {
       statusCode: 500,
       message: 'Failed to refresh token',
-      errors: [error.message],
+      errors: safeErrors(error),
     });
   }
 };
@@ -330,7 +344,7 @@ export const getUserProfile = async (req, res) => {
     return sendError(res, {
       statusCode: 500,
       message: 'Failed to load profile',
-      errors: [error.message],
+      errors: safeErrors(error),
     });
   }
 };

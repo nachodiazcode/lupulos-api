@@ -117,6 +117,30 @@ export const subscriptionValidation = {
   },
 };
 
+export const blogValidation = {
+  createBlog: {
+    body: Joi.object({
+      title: Joi.string().trim().min(3).max(150).required(),
+      content: Joi.string().trim().min(1).required(),
+      coverImage: mediaPath.optional(),
+      tags: Joi.array().items(Joi.string().trim().max(40)).default([]),
+      status: Joi.string().valid('draft', 'published').default('draft'),
+    }),
+  },
+  updateBlog: {
+    params: Joi.object({
+      id: objectId.required(),
+    }),
+    body: Joi.object({
+      title: Joi.string().trim().min(3).max(150),
+      content: Joi.string().trim().min(1),
+      coverImage: mediaPath,
+      tags: Joi.array().items(Joi.string().trim().max(40)),
+      status: Joi.string().valid('draft', 'published'),
+    }).min(1),
+  },
+};
+
 export const userValidation = {
   updateProfile: {
     params: Joi.object({

@@ -35,7 +35,7 @@ export const createPlace = asyncHandler(async (req, res) => {
   let parsedAddress;
   try {
     parsedAddress = parseAddress(address);
-  } catch (_error) {
+  } catch {
     return sendError(res, {
       statusCode: 400,
       message: 'Invalid address format',
@@ -45,7 +45,7 @@ export const createPlace = asyncHandler(async (req, res) => {
   let parsedCoordinates;
   try {
     parsedCoordinates = parseCoordinates(coordinates);
-  } catch (_error) {
+  } catch {
     /* coordinates are optional – ignore parse errors */
   }
 
@@ -210,7 +210,7 @@ export const updatePlace = asyncHandler(async (req, res) => {
   if (updates.address) {
     try {
       updates.address = parseAddress(updates.address);
-    } catch (_error) {
+    } catch {
       return sendError(res, {
         statusCode: 400,
         message: 'Invalid address format',

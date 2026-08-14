@@ -36,8 +36,9 @@ export const TRUST_PROXY = process.env.TRUST_PROXY
   ? process.env.TRUST_PROXY === 'true'
   : isProduction;
 
-export const MONGO_URI =
-  process.env.MONGO_URI || 'mongodb://localhost:27017/lupulos_local';
+export const MONGO_URI = isProduction
+  ? requiredSecret('MONGO_URI')
+  : process.env.MONGO_URI || 'mongodb://localhost:27017/lupulos_local';
 
 export const JWT_SECRET = requiredSecret('JWT_SECRET');
 export const JWT_EXPIRATION = process.env.JWT_EXPIRATION || '2h';
@@ -52,12 +53,10 @@ export const SESSION_SECRET = requiredSecret(
 );
 
 const envCorsOrigins = parseCsv(process.env.CORS_ORIGINS);
-const mergedCorsOrigins = toUnique([
+export const CORS_ORIGINS = toUnique([
   ...DEFAULT_CORS_ORIGINS,
   ...envCorsOrigins,
-]).filter((origin) => [FRONTEND_URL, 'http://localhost:3000'].includes(origin));
-
-export const CORS_ORIGINS = mergedCorsOrigins;
+]);
 
 export const BODY_LIMIT = process.env.BODY_LIMIT || '1mb';
 export const URLENCODED_LIMIT = process.env.URLENCODED_LIMIT || '1mb';

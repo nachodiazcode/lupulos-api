@@ -1,3 +1,4 @@
+import crypto from 'crypto';
 import { MercadoPagoConfig, PreApproval } from 'mercadopago';
 import config from '../config/index.js';
 import { getPlan } from '../config/plans.js';
@@ -104,4 +105,54 @@ export const cancelMPSubscription = async (preapprovalId) => {
     id: preapprovalId,
     body: { status: 'cancelled' },
   });
+};
+
+/**
+ * Verify the `x-signature` header MercadoPago sends on each webhook call.
+ *
+ * MP builds an HMAC-SHA256 over a manifest string using the account's
+ * webhook secret; we must recompute it and compare in constant time.
+ * https://www.mercadopago.com.ar/developers/en/docs/checkout-api/webhooks#editor_5
+ *
+ * @param {Object} params
+ * @param {string} params.dataId - `data.id` from the webhook body
+ * @param {string} params.xSignature - `x-signature` request header
+ * @param {string} params.xRequestId - `x-request-id` request header
+ * @returns {boolean}
+ */
+export const verifyWebhookSignature = ({ dataId, xSignature, xRequestId }) => {
+  const secret = config.mercadopago?.webhookSecret;
+  if (!secret) {
+    // No secret configured: caller decides whether that's acceptable (e.g. local dev).
+    return false;
+  }
+  if (!xSignature || !xRequestId || !dataId) {
+    return false;
+  }
+
+  const parts = Object.fromEntries(
+    xSignature.split(',').map((part) => {
+      const [key, value] = part.split('=');
+      return [key?.trim(), value?.trim()];
+    })
+  );
+
+  const { ts, v1 } = parts;
+  if (!ts || !v1) {
+    return false;
+  }
+
+  const manifest = `id:${dataId};request-id:${xRequestId};ts:${ts};`;
+  const expected = crypto
+    .createHmac('sha256', secret)
+    .update(manifest)
+    .digest('hex');
+
+  const expectedBuffer = Buffer.from(expected, 'hex');
+  const receivedBuffer = Buffer.from(v1, 'hex');
+
+  return (
+    expectedBuffer.length === receivedBuffer.length &&
+    crypto.timingSafeEqual(expectedBuffer, receivedBuffer)
+  );
 };

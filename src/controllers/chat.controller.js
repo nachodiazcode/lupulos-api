@@ -45,6 +45,7 @@ const toStringId = (value) => {
 };
 
 const normalizeMessageInput = (content = '') =>
+  // eslint-disable-next-line no-control-regex -- deliberately stripping null bytes
   String(content).replace(/\u0000/g, '').trim();
 
 const moderateContent = (content = '') => {

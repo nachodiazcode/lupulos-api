@@ -18,8 +18,8 @@ else
 fi
 
 # Validar que variables críticas estén definidas
-if [ -z "$JWT_SECRET" ] || [ -z "$JWT_REFRESH_SECRET" ]; then
-  echo "❌ JWT_SECRET o JWT_REFRESH_SECRET faltan en el entorno"
+if [ -z "$JWT_SECRET" ] || [ -z "$REFRESH_SECRET" ] || [ -z "$SESSION_SECRET" ] || [ -z "$MONGO_URI" ]; then
+  echo "❌ Faltan variables requeridas en el entorno (JWT_SECRET, REFRESH_SECRET, SESSION_SECRET, MONGO_URI)"
   exit 1
 fi
 

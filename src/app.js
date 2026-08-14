@@ -4,12 +4,13 @@ import helmet from 'helmet';
 import session from 'express-session';
 import passport from 'passport';
 import path from 'path';
+import mongoose from 'mongoose';
 
 import logger from './utils/logger.js';
 import config from './config/index.js';
 import { connectDB } from './config/db.js';
 import { setupSwagger } from './config/swagger.js';
-import { initRealtime } from './config/realtime.js';
+import { initRealtime, getIO } from './config/realtime.js';
 import routes from './routes/index.js';
 import errorHandler from './middlewares/errorHandler.js';
 
@@ -75,11 +76,14 @@ app.use('/uploads', express.static(path.join(process.cwd(), 'public', 'uploads')
 
 // Healthcheck
 app.get('/health', (_req, res) => {
-  res.status(200).json({
-    status: 'ok',
+  const dbConnected = mongoose.connection.readyState === 1;
+
+  res.status(dbConnected ? 200 : 503).json({
+    status: dbConnected ? 'ok' : 'degraded',
     service: 'lupulos-api',
     uptime: process.uptime(),
     timestamp: new Date().toISOString(),
+    db: dbConnected ? 'connected' : 'disconnected',
   });
 });
 
@@ -121,10 +125,21 @@ if (!forceHttp && (config.isProduction || forceHttps) && sslOptions.key && sslOp
 initRealtime(server);
 
 // Graceful shutdown
-process.on('SIGTERM', () => {
-  logger.info('SIGTERM received. Shutting down server...');
-  server.close(() => {
-    logger.info('Server closed gracefully');
-    process.exit(0);
+const shutdown = (signal) => {
+  logger.info(`${signal} received. Shutting down server...`);
+  server.close(async () => {
+    try {
+      const io = getIO();
+      if (io) await io.close();
+      await mongoose.connection.close();
+      logger.info('Server closed gracefully');
+      process.exit(0);
+    } catch (error) {
+      logger.error('Error during graceful shutdown', error);
+      process.exit(1);
+    }
   });
-});
+};
+
+process.on('SIGTERM', () => shutdown('SIGTERM'));
+process.on('SIGINT', () => shutdown('SIGINT'));

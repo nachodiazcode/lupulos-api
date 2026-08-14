@@ -47,12 +47,6 @@ const notificationsSchema = new mongoose.Schema({
   newFollowers: { type: Boolean, default: true },
 });
 
-const socialLinksSchema = new mongoose.Schema({
-  github: { type: String, default: "" },
-  linkedin: { type: String, default: "" },
-  twitter: { type: String, default: "" },
-});
-
 /* =========================
    User Schema
 ========================= */
