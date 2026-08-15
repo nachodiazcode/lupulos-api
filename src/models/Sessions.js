@@ -13,7 +13,6 @@ const SessionSchema = new mongoose.Schema(
             type: String,
             required: true,
             unique: true,
-            index: true,
         },
 
         userAgent: {
