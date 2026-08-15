@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lúpulos API — Estado y funciones</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍺</text></svg>" />
+<style>
+  :root {
+    --bg-0: #0f0c08;
+    --bg-1: #171209;
+    --bg-2: #1f180d;
+    --gold: #d8a94e;
+    --gold-bright: #f0c874;
+    --gold-dim: #9c7a3a;
+    --text: #efe6d4;
+    --text-dim: #b8ab90;
+    --text-faint: #8a7d64;
+    --line: #35291a;
+    --ok: #7fbf6a;
+    --ok-dim: #4f7a42;
+    --warn: #d99a4e;
+    --bad: #d9614e;
+    --radius: 14px;
+    --serif: Georgia, "Times New Roman", Times, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-0);
+    color: var(--text);
+    font-family: var(--sans);
+  }
+
+  body {
+    background:
+      radial-gradient(1200px 600px at 15% -10%, rgba(216, 169, 78, 0.14), transparent 60%),
+      radial-gradient(900px 500px at 100% 0%, rgba(216, 169, 78, 0.08), transparent 55%),
+      linear-gradient(180deg, var(--bg-0) 0%, var(--bg-1) 45%, var(--bg-0) 100%);
+    min-height: 100vh;
+  }
+
+  .wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 5rem;
+  }
+
+  /* ── Header ───────────────────────────────────────────── */
+
+  header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--serif);
+    font-size: clamp(2.2rem, 6vw, 3.4rem);
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, var(--gold-bright), var(--gold) 60%, var(--gold-dim));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 0 0 0.6rem;
+  }
+
+  .rune {
+    color: var(--gold);
+    font-size: 0.8em;
+    opacity: 0.85;
+  }
+
+  .tagline {
+    color: var(--text-dim);
+    font-size: 1.05rem;
+    margin: 0 0 1.6rem;
+    letter-spacing: 0.01em;
+  }
+
+  .meta-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+  }
+
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: rgba(216, 169, 78, 0.05);
+    font-size: 0.82rem;
+    color: var(--text-dim);
+    font-family: var(--sans);
+    letter-spacing: 0.02em;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--text-faint);
+    flex: none;
+  }
+
+  .dot.ok { background: var(--ok); box-shadow: 0 0 8px rgba(127, 191, 106, 0.7); }
+  .dot.bad { background: var(--bad); box-shadow: 0 0 8px rgba(217, 97, 78, 0.7); }
+  .dot.pending {
+    background: var(--gold);
+    animation: pulse 1.4s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.35; }
+  }
+
+  /* ── Grid ─────────────────────────────────────────────── */
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.1rem;
+  }
+
+  .card {
+    background: linear-gradient(180deg, var(--bg-2), var(--bg-1));
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 1.4rem 1.5rem 1.6rem;
+    transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-3px);
+    border-color: var(--gold-dim);
+    box-shadow: 0 12px 30px -14px rgba(0, 0, 0, 0.6);
+  }
+
+  .card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .card-title {
+    display: flex;
+    align-items: baseline;
+    gap: 0.55rem;
+    font-family: var(--serif);
+    font-size: 1.15rem;
+    color: var(--gold-bright);
+    letter-spacing: 0.02em;
+  }
+
+  .card-icon {
+    font-size: 1.15rem;
+    filter: saturate(0.9);
+  }
+
+  .prefix {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.72rem;
+    color: var(--text-faint);
+    border: 1px solid var(--line);
+    padding: 0.15rem 0.5rem;
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+
+  .card ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .card li {
+    position: relative;
+    padding-left: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    color: var(--text-dim);
+  }
+
+  .card li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--gold-dim);
+  }
+
+  .card li strong {
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  .badge-ready {
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ok);
+    border: 1px solid var(--ok-dim);
+    background: rgba(127, 191, 106, 0.08);
+    padding: 0.2rem 0.5rem;
+    border-radius: 999px;
+    flex: none;
+  }
+
+  /* ── Footer ───────────────────────────────────────────── */
+
+  footer {
+    margin-top: 3.5rem;
+    text-align: center;
+    color: var(--text-faint);
+    font-size: 0.82rem;
+    line-height: 1.8;
+  }
+
+  footer a {
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+
+  footer a:hover {
+    border-bottom-color: var(--gold);
+  }
+
+  .divider {
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
+    margin: 2.4rem auto;
+  }
+
+  @media (max-width: 520px) {
+    .wrap { padding: 2.8rem 1.1rem 3.5rem; }
+    .brand { letter-spacing: 0.1em; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="brand"><span class="rune">ᛚ</span>LÚPULOS API<span class="rune">ᛚ</span></p>
+      <p class="tagline">Backend de la comunidad cervecera artesanal · Express + MongoDB</p>
+      <div class="meta-row">
+        <span class="pill"><span class="dot pending" id="health-dot"></span><span id="health-text">Consultando estado…</span></span>
+        <span class="pill">v1.2.0</span>
+        <span class="pill"><a href="/api/documentacion" style="color: var(--gold); text-decoration: none;">Swagger ↗</a></span>
+      </div>
+    </header>
+
+    <main class="grid" id="modules"></main>
+
+    <footer>
+      <div class="divider"></div>
+      Lúpulos App · <a href="https://github.com/nachodiazcode/lupulos-api" target="_blank" rel="noopener">GitHub</a>
+      <br />
+      Página generada de forma estática — refleja el estado del código, no depende de datos en vivo salvo el indicador de salud.
+    </footer>
+  </div>
+
+<script>
+  const MODULES = [
+    {
+      icon: "🔑",
+      title: "Autenticación",
+      prefix: "/api/auth",
+      items: [
+        "Registro y login local (<strong>bcrypt</strong> + JWT access/refresh)",
+        "Logout con revocación real de tokens",
+        "Refresh de access token (con migración de tokens legacy)",
+        "Login con Google OAuth",
+        "Perfil autenticado y subida de foto de perfil",
+      ],
+    },
+    {
+      icon: "👤",
+      title: "Usuarios",
+      prefix: "/api/user",
+      items: [
+        "Listado y perfil público",
+        "Actualizar perfil propio",
+        "Seguir / dejar de seguir",
+        "Admin: eliminar usuario, cambiar rol, permisos granulares, dashboard",
+        "Zonas condicionadas por proveedor OAuth",
+      ],
+    },
+    {
+      icon: "🤝",
+      title: "Follows",
+      prefix: "/api/follow",
+      items: [
+        "Seguir / dejar de seguir",
+        "Listar seguidores de un usuario",
+        "Listar seguidos de un usuario",
+      ],
+    },
+    {
+      icon: "🍺",
+      title: "Cervezas",
+      prefix: "/api/beer",
+      items: [
+        "CRUD completo + búsqueda, top rated, nuevas",
+        "Reviews con rating",
+        "Like / unlike",
+        "Galería de imágenes (hasta 10, 8MB c/u)",
+      ],
+    },
+    {
+      icon: "📍",
+      title: "Lugares",
+      prefix: "/api/places",
+      items: [
+        "CRUD completo + búsqueda, cercanos (geo), top rated",
+        "Reviews",
+        "Carga masiva (<strong>/bulk</strong>)",
+        "Reclamar lugar (dueños)",
+        "Galería de imágenes",
+      ],
+    },
+    {
+      icon: "📝",
+      title: "Posts · Muro Vikingo",
+      prefix: "/api/post",
+      items: [
+        "Feed general y feed Muro Vikingo (paginado)",
+        "Crear / editar / borrar posts",
+        "Reacciones (cheers, like, etc.)",
+        "Comentarios con hilos",
+        "Upload de imagen y video (hasta 250MB)",
+      ],
+    },
+    {
+      icon: "💬",
+      title: "Chat",
+      prefix: "/api/chat",
+      items: [
+        "Tiempo real vía <strong>Socket.IO</strong> (JWT en el handshake)",
+        "Sala global de comunidad + chats directos",
+        "Historial paginado de mensajes",
+        "Contador de no leídos y marcar como leído",
+        "Query al asistente (búsqueda por contenido)",
+      ],
+    },
+    {
+      icon: "📰",
+      title: "Blog",
+      prefix: "/api/blogs",
+      items: [
+        "Listado público paginado y detalle por slug",
+        "Crear / editar / borrar (autor o admin)",
+        "Slug autogenerado",
+        "Validación estricta contra mass assignment",
+      ],
+    },
+    {
+      icon: "💳",
+      title: "Suscripciones",
+      prefix: "/api/subscription",
+      items: [
+        "Planes: Gratis, Lupuloso, Cervecero Pro, Explorador",
+        "Suscribirse / cancelar vía Mercado Pago",
+        "Webhook con verificación de firma",
+        "Admin: regalar plan, ver suscripciones de un usuario",
+      ],
+    },
+    {
+      icon: "🛠️",
+      title: "Transversal",
+      prefix: "sistema",
+      items: [
+        "Swagger UI en <strong>/api/documentacion</strong>",
+        "Healthcheck real en <strong>/health</strong> (refleja estado de Mongo)",
+        "Archivos estáticos servidos en <strong>/uploads</strong>",
+        "Procesamiento de imagen y video (filtros, thumbnails)",
+      ],
+    },
+  ];
+
+  const grid = document.getElementById("modules");
+  grid.innerHTML = MODULES.map((m) => `
+    <section class="card">
+      <div class="card-head">
+        <span class="card-title"><span class="card-icon">${m.icon}</span>${m.title}</span>
+        <span class="badge-ready">Listo</span>
+      </div>
+      <p class="prefix" style="display:inline-block; margin-bottom: 0.9rem;">${m.prefix}</p>
+      <ul>${m.items.map((i) => `<li>${i}</li>`).join("")}</ul>
+    </section>
+  `).join("");
+
+  const dot = document.getElementById("health-dot");
+  const text = document.getElementById("health-text");
+
+  fetch("/health")
+    .then((r) => r.json().then((data) => ({ ok: r.ok, data })))
+    .then(({ ok, data }) => {
+      if (ok && data.db === "connected") {
+        dot.className = "dot ok";
+        text.textContent = `Operativa · uptime ${Math.floor((data.uptime || 0) / 60)}m`;
+      } else {
+        dot.className = "dot bad";
+        text.textContent = "Degradada (DB desconectada)";
+      }
+    })
+    .catch(() => {
+      dot.className = "dot bad";
+      text.textContent = "No se pudo consultar /health";
+    });
+</script>
+</body>
+</html>

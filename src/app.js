@@ -74,6 +74,11 @@ app.use(passport.session());
 // Static files
 app.use('/uploads', express.static(path.join(process.cwd(), 'public', 'uploads')));
 
+// Human-friendly status page (feature overview + live /health indicator)
+app.get('/status', (_req, res) => {
+  res.sendFile(path.join(process.cwd(), 'public', 'status.html'));
+});
+
 // Healthcheck
 app.get('/health', (_req, res) => {
   const dbConnected = mongoose.connection.readyState === 1;
